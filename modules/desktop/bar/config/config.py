@@ -1,5 +1,4 @@
-import os
-from config.modules import clock_label
+import modules.timenow
 from ignis import widgets
 from ignis.utils import Utils
 
