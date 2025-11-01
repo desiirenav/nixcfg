@@ -1,19 +1,19 @@
-import modules.timenow
 from ignis import widgets
-from ignis.utils import Utils
 
-def bar(monitor: int) -> widgets.Window:
-    clock_label = Widget.Label()
-
-    Utils.Poll(1000, lambda x: update_label(clock_label))
-
-    return Widget.Window(
-        namespace=f"some-window-{monitor}",
-        monitor=monitor,
-        child=Widget.Box(
-            vertical=True,
-            spacing=10,
-            child=[clock_label],
-        ),
-    )
-
+widgets.Window(
+    namespace="some-window",
+    child=widgets.Box(
+        vertical=True,  # this box is vertical
+        spacing=10,  # add some spacing between widgets
+        child=[  # define list of child widgets here
+            widgets.Label(label="This is the first child of the first box"),
+            widgets.Box(
+                spacing=26,
+                child=[
+                    widgets.Label(label="This is the first child of the second box"),
+                    widgets.Label(label="Second child (by default this box child will be added horizontally)"),
+                ]
+            ),
+        ],
+    ),
+)
