@@ -20,7 +20,7 @@
 
   networking.mihoyo-telemetry.block = true;
   programs = {
-    anime-game-launcher.enable = true;
+    sleepy-launcher.enable = true;
   };
 
   programs.steam = {
@@ -36,7 +36,7 @@
     users.narayan = {
       directories = [
         ".local/share/Steam"
-        ".local/share/anime-game-launcher"
+        ".local/share/sleepy-launcher"
         ".steam"
       ];
     };
