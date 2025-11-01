@@ -1,0 +1,10 @@
+configuration {
+    modes: [drun];
+    drun-display-format: "{name}";
+    matching: "fuzzy";
+    sort: true;
+    sorting-method: "fzf";
+    display-drun: "";
+}
+
+@theme "themes/appdrawer.rasi"
