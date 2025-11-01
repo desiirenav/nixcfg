@@ -1,6 +1,7 @@
+import os
+from config.modules import clock_label
 from ignis import widgets
 from ignis.utils import Utils
-from time import clock_label
 
 def bar(monitor: int) -> widgets.Window:
     clock_label = Widget.Label()
