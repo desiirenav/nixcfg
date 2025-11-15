@@ -1,0 +1,492 @@
+{
+  "nodes": {
+    "aagl": {
+      "inputs": {
+        "flake-compat": "flake-compat",
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "rust-overlay": "rust-overlay"
+      },
+      "locked": {
+        "lastModified": 1762958586,
+        "narHash": "sha256-1MryKS54NVQld+xDvCN0OBmAC8Jk+HmplqWbuerrhlk=",
+        "owner": "ezKEa",
+        "repo": "aagl-gtk-on-nix",
+        "rev": "0d212e20bebe63b49b588323d37c0cc46bd7000f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ezKEa",
+        "repo": "aagl-gtk-on-nix",
+        "type": "github"
+      }
+    },
+    "apple-fonts": {
+      "inputs": {
+        "nixpkgs": "nixpkgs_2",
+        "ny": "ny",
+        "sf-arabic": "sf-arabic",
+        "sf-armenian": "sf-armenian",
+        "sf-compact": "sf-compact",
+        "sf-georgian": "sf-georgian",
+        "sf-hebrew": "sf-hebrew",
+        "sf-mono": "sf-mono",
+        "sf-pro": "sf-pro"
+      },
+      "locked": {
+        "lastModified": 1758228441,
+        "narHash": "sha256-3mA9oFuhJ1EHyhPd17g/EuJi4jDYPGhyxkEitdh3Kmc=",
+        "owner": "Lyndeno",
+        "repo": "apple-fonts.nix",
+        "rev": "aba9944f6606a69ebedf7bfb723316139eec3f72",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Lyndeno",
+        "repo": "apple-fonts.nix",
+        "type": "github"
+      }
+    },
+    "disko": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1746728054,
+        "narHash": "sha256-eDoSOhxGEm2PykZFa/x9QG5eTH0MJdiJ9aR00VAofXE=",
+        "owner": "nix-community",
+        "repo": "disko",
+        "rev": "ff442f5d1425feb86344c028298548024f21256d",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-community",
+        "ref": "latest",
+        "repo": "disko",
+        "type": "github"
+      }
+    },
+    "flake-compat": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1761588595,
+        "narHash": "sha256-XKUZz9zewJNUj46b4AJdiRZJAvSZ0Dqj2BNfXvFlJC4=",
+        "owner": "edolstra",
+        "repo": "flake-compat",
+        "rev": "f387cd2afec9419c8ee37694406ca490c3f34ee5",
+        "type": "github"
+      },
+      "original": {
+        "owner": "edolstra",
+        "repo": "flake-compat",
+        "type": "github"
+      }
+    },
+    "flake-compat_2": {
+      "locked": {
+        "lastModified": 1747046372,
+        "narHash": "sha256-CIVLLkVgvHYbgI2UpXvIIBJ12HWgX+fjA8Xf8PUmqCY=",
+        "owner": "edolstra",
+        "repo": "flake-compat",
+        "rev": "9100a0f413b0c601e0533d1d94ffd501ce2e7885",
+        "type": "github"
+      },
+      "original": {
+        "owner": "edolstra",
+        "repo": "flake-compat",
+        "type": "github"
+      }
+    },
+    "hjem": {
+      "inputs": {
+        "ndg": "ndg",
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "smfh": "smfh"
+      },
+      "locked": {
+        "lastModified": 1761789347,
+        "narHash": "sha256-HLoZMumCNn/8wubRFFxHWcXFrQOx3rr++w+Puqt0w6Y=",
+        "owner": "feel-co",
+        "repo": "hjem",
+        "rev": "6e144632e3d8cfa7d7cfcc9504e10a032837f22a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "feel-co",
+        "repo": "hjem",
+        "type": "github"
+      }
+    },
+    "ignis": {
+      "inputs": {
+        "ignis-gvc": "ignis-gvc",
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1758101718,
+        "narHash": "sha256-qxY1q6ppBK5zWueAWVibiQLXUKbmot3/Zlb+J6q7RS0=",
+        "owner": "ignis-sh",
+        "repo": "ignis",
+        "rev": "57017f8fbde4c4c67bdd4fa69c72589358882928",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ignis-sh",
+        "repo": "ignis",
+        "type": "github"
+      }
+    },
+    "ignis-gvc": {
+      "inputs": {
+        "nixpkgs": [
+          "ignis",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1754064086,
+        "narHash": "sha256-ft5KvY2OYrWF+jEsfBL/Zx8Iuo2C10C6COk8wHwZw34=",
+        "owner": "ignis-sh",
+        "repo": "ignis-gvc",
+        "rev": "f2c9f10d8b49cc38106a2f07a51ea959c6aa4e63",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ignis-sh",
+        "repo": "ignis-gvc",
+        "type": "github"
+      }
+    },
+    "impermanence": {
+      "locked": {
+        "lastModified": 1737831083,
+        "narHash": "sha256-LJggUHbpyeDvNagTUrdhe/pRVp4pnS6wVKALS782gRI=",
+        "owner": "nix-community",
+        "repo": "impermanence",
+        "rev": "4b3e914cdf97a5b536a889e939fb2fd2b043a170",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-community",
+        "repo": "impermanence",
+        "type": "github"
+      }
+    },
+    "ndg": {
+      "inputs": {
+        "flake-compat": "flake-compat_2",
+        "nixpkgs": [
+          "hjem",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1760777965,
+        "narHash": "sha256-PHmDh1GxoBixpgtRCrBCvXJee/tCb6T57MLbwKfIURg=",
+        "owner": "feel-co",
+        "repo": "ndg",
+        "rev": "30b955582f0cd869a86007f491252bbffde48f8b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "feel-co",
+        "repo": "ndg",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1744536153,
+        "narHash": "sha256-awS2zRgF4uTwrOKwwiJcByDzDOdo3Q1rPZbiHQg/N38=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "18dd725c29603f582cf1900e0d25f9f1063dbf11",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixpkgs-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs_2": {
+      "locked": {
+        "lastModified": 1757745802,
+        "narHash": "sha256-hLEO2TPj55KcUFUU1vgtHE9UEIOjRcH/4QbmfHNF820=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "c23193b943c6c689d70ee98ce3128239ed9e32d1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs_3": {
+      "locked": {
+        "lastModified": 1761672384,
+        "narHash": "sha256-o9KF3DJL7g7iYMZq9SWgfS1BFlNbsm6xplRjVlOCkXI=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "08dacfca559e1d7da38f3cf05f1f45ee9bfd213c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs_4": {
+      "locked": {
+        "lastModified": 1758690382,
+        "narHash": "sha256-NY3kSorgqE5LMm1LqNwGne3ZLMF2/ILgLpFr1fS4X3o=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "e643668fd71b949c53f8626614b21ff71a07379d",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "ny": {
+      "flake": false,
+      "locked": {
+        "narHash": "sha256-3257NAH4qlan2YHVLpNRy7x8IJqR2pal3OzFo/ykqXs=",
+        "type": "file",
+        "url": "https://devimages-cdn.apple.com/design/resources/download/NY.dmg"
+      },
+      "original": {
+        "type": "file",
+        "url": "https://devimages-cdn.apple.com/design/resources/download/NY.dmg"
+      }
+    },
+    "root": {
+      "inputs": {
+        "aagl": "aagl",
+        "apple-fonts": "apple-fonts",
+        "disko": "disko",
+        "hjem": "hjem",
+        "ignis": "ignis",
+        "impermanence": "impermanence",
+        "nixpkgs": "nixpkgs_3",
+        "sf-mono-liga-src": "sf-mono-liga-src",
+        "wrappers": "wrappers"
+      }
+    },
+    "rust-overlay": {
+      "inputs": {
+        "nixpkgs": "nixpkgs"
+      },
+      "locked": {
+        "lastModified": 1761791894,
+        "narHash": "sha256-myRIDh+PxaREz+z9LzbqBJF+SnTFJwkthKDX9zMyddY=",
+        "owner": "oxalica",
+        "repo": "rust-overlay",
+        "rev": "59c45eb69d9222a4362673141e00ff77842cd219",
+        "type": "github"
+      },
+      "original": {
+        "owner": "oxalica",
+        "repo": "rust-overlay",
+        "type": "github"
+      }
+    },
+    "rust-overlay_2": {
+      "inputs": {
+        "nixpkgs": [
+          "hjem",
+          "smfh",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1759113356,
+        "narHash": "sha256-xm4kEUcV2jk6u15aHazFP4YsMwhq+PczA+Ul/4FDKWI=",
+        "owner": "oxalica",
+        "repo": "rust-overlay",
+        "rev": "be3b8843a2be2411500f6c052876119485e957a2",
+        "type": "github"
+      },
+      "original": {
+        "owner": "oxalica",
+        "repo": "rust-overlay",
+        "type": "github"
+      }
+    },
+    "sf-arabic": {
+      "flake": false,
+      "locked": {
+        "narHash": "sha256-/0gjRimqvZyE60xYxxPdlU+7Q2LJnnvtbmwOP0YmS9U=",
+        "type": "file",
+        "url": "https://devimages-cdn.apple.com/design/resources/download/SF-Arabic.dmg"
+      },
+      "original": {
+        "type": "file",
+        "url": "https://devimages-cdn.apple.com/design/resources/download/SF-Arabic.dmg"
+      }
+    },
+    "sf-armenian": {
+      "flake": false,
+      "locked": {
+        "narHash": "sha256-rRoDkbNMYkzOHZmQm96Zv80TZvRlAeoxkv4pMHP5nUg=",
+        "type": "file",
+        "url": "https://devimages-cdn.apple.com/design/resources/download/SF-Armenian.dmg"
+      },
+      "original": {
+        "type": "file",
+        "url": "https://devimages-cdn.apple.com/design/resources/download/SF-Armenian.dmg"
+      }
+    },
+    "sf-compact": {
+      "flake": false,
+      "locked": {
+        "narHash": "sha256-WeqT80cdK/XzTLSaJs5DHodzxoeAzwL/xTgdq0YwQbM=",
+        "type": "file",
+        "url": "https://devimages-cdn.apple.com/design/resources/download/SF-Compact.dmg"
+      },
+      "original": {
+        "type": "file",
+        "url": "https://devimages-cdn.apple.com/design/resources/download/SF-Compact.dmg"
+      }
+    },
+    "sf-georgian": {
+      "flake": false,
+      "locked": {
+        "narHash": "sha256-IevVNOC28IiR45YfI3PsZzXLMRxuB5u7UiE53Zn6tRU=",
+        "type": "file",
+        "url": "https://devimages-cdn.apple.com/design/resources/download/SF-Georgian.dmg"
+      },
+      "original": {
+        "type": "file",
+        "url": "https://devimages-cdn.apple.com/design/resources/download/SF-Georgian.dmg"
+      }
+    },
+    "sf-hebrew": {
+      "flake": false,
+      "locked": {
+        "narHash": "sha256-Dw84kYwMpCtKKKqm8cZcQ9TZ7GayU5MO7W0LJw0Rcwk=",
+        "type": "file",
+        "url": "https://devimages-cdn.apple.com/design/resources/download/SF-Hebrew.dmg"
+      },
+      "original": {
+        "type": "file",
+        "url": "https://devimages-cdn.apple.com/design/resources/download/SF-Hebrew.dmg"
+      }
+    },
+    "sf-mono": {
+      "flake": false,
+      "locked": {
+        "narHash": "sha256-ICdHRFdNL7PM/fXJUzS7LgZxZiqcyIuCMHLze4En4vg=",
+        "type": "file",
+        "url": "https://devimages-cdn.apple.com/design/resources/download/SF-Mono.dmg"
+      },
+      "original": {
+        "type": "file",
+        "url": "https://devimages-cdn.apple.com/design/resources/download/SF-Mono.dmg"
+      }
+    },
+    "sf-mono-liga-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1688258025,
+        "narHash": "sha256-AYjKrVLISsJWXN6Cj74wXmbJtREkFDYOCRw1t2nVH2w=",
+        "owner": "shaunsingh",
+        "repo": "SFMono-Nerd-Font-Ligaturized",
+        "rev": "dc5a3e6fcc2e16ad476b7be3c3c17c2273b260ea",
+        "type": "github"
+      },
+      "original": {
+        "owner": "shaunsingh",
+        "repo": "SFMono-Nerd-Font-Ligaturized",
+        "type": "github"
+      }
+    },
+    "sf-pro": {
+      "flake": false,
+      "locked": {
+        "narHash": "sha256-vprahHpCUf9O8RualBrEuLEfuLfzI/2d8AQmwlCGPPk=",
+        "type": "file",
+        "url": "https://devimages-cdn.apple.com/design/resources/download/SF-Pro.dmg"
+      },
+      "original": {
+        "type": "file",
+        "url": "https://devimages-cdn.apple.com/design/resources/download/SF-Pro.dmg"
+      }
+    },
+    "smfh": {
+      "inputs": {
+        "nixpkgs": [
+          "hjem",
+          "nixpkgs"
+        ],
+        "rust-overlay": "rust-overlay_2",
+        "systems": "systems"
+      },
+      "locked": {
+        "lastModified": 1760525934,
+        "narHash": "sha256-1HtxuA45R/jExzE9iuimuECHWbV2c+CBdJmr/RtluaI=",
+        "owner": "feel-co",
+        "repo": "smfh",
+        "rev": "7123a00cc3c3e90ba703a37ca8d997be95c62d99",
+        "type": "github"
+      },
+      "original": {
+        "owner": "feel-co",
+        "repo": "smfh",
+        "type": "github"
+      }
+    },
+    "systems": {
+      "locked": {
+        "lastModified": 1681028828,
+        "narHash": "sha256-Vy1rq5AaRuLzOxct8nz4T6wlgyUR7zLU309k9mBC768=",
+        "owner": "nix-systems",
+        "repo": "default",
+        "rev": "da67096a3b9bf56a91d16901293e51ba5b49a27e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-systems",
+        "repo": "default",
+        "type": "github"
+      }
+    },
+    "wrappers": {
+      "inputs": {
+        "nixpkgs": "nixpkgs_4"
+      },
+      "locked": {
+        "lastModified": 1763145956,
+        "narHash": "sha256-+EnzpOimRHx2cq3Ll2tPsjmB7LL7sklEmODHR4LUx8s=",
+        "owner": "lassulus",
+        "repo": "wrappers",
+        "rev": "d938968f09516409064128ec453606692883140c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "lassulus",
+        "repo": "wrappers",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

@@ -1,0 +1,59 @@
+vim.opt.number = true
+vim.opt.relativenumber = true
+vim.opt.swapfile = false
+
+vim.lsp.enable({"lua_ls", "nixd", "tinymist"})
+
+require('base16-colorscheme').setup({
+  base00 = "{{colors.surface.default.hex}}",       
+  base01 = "{{colors.surface_bright.default.hex}}",            
+  base02 = "{{colors.surface_bright.default.hex}}",            
+  base03 = "{{colors.on_surface.default.hex}}",                
+  base04 = "{{colors.on_surface.default.hex}}",                
+  base05 = "{{colors.on_surface.default.hex}}",                
+  base06 = "{{colors.on_surface.default.hex}}",                
+  base07 = "{{colors.surface_bright.default.hex}}",          
+  base08 = "{{colors.error.default.hex}}",                     
+  base09 = "{{colors.tertiary.default.hex}}",                  
+  base0A = "{{colors.tertiary.default.hex}}",                  
+  base0B = "{{colors.primary.default.hex}}",                   
+  base0C = "{{colors.on_secondary_container.default.hex}}",    
+  base0D = "{{colors.on_primary_container.default.hex}}",      
+  base0E = "{{colors.secondary.default.hex}}",                 
+  base0F = "{{colors.error.default.hex}}",                     
+})
+
+vim.api.nvim_set_hl(0, 'Visual', {
+  bg = "{{colors.on_primary_container.default.hex}}",          
+  fg = "{{colors.surface.default.hex}}",                       
+})
+
+require('lualine').setup({
+  options = {
+    theme = "base16",
+  }
+})
+
+local function source_matugen()
+  local matugen_path = os.getenv("HOME") .. "/.config/nvim/generated.lua"
+
+  local file, err = io.open(matugen_path, "r")
+  if err ~= nil then
+    vim.cmd('colorscheme base16-catppuccin-mocha')
+    vim.print("A matugen style file was not found, but that's okay! The colorscheme will dynamically change if matugen runs!")
+  else
+    dofile(matugen_path)
+    io.close(file)
+  end
+end
+
+local function auxiliary_function()
+  source_matugen()
+  dofile(os.getenv("HOME") .. '/.config/nvim/config/plugins/lualine-nvim.lua')
+  vim.api.nvim_set_hl(0, "Comment", { italic = true })
+end
+
+vim.api.nvim_create_autocmd("Signal", {
+  pattern = "SIGUSR1",
+  callback = auxiliary_function,
+})
