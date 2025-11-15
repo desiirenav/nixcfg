@@ -1,7 +1,6 @@
-{ config, lib,pkgs,inputs,system,...}: 
+{ config,lib,inputs,system,...}: 
 
 { 
-
   users = {
     mutableUsers = false;
     users = {
@@ -11,7 +10,7 @@
         description = "Narayan";
         extraGroups = [ "wheel" "networkmanager"];
         hashedPasswordFile = "/persist/passwords/narayan";
-        openssh.authorizedKeys.keys = ["sh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIAY8RGLYYV/3VmoKhHa/HfAUjHbL0MoYhvTfHLu9yIgI narayan@nixos"];
+        openssh.authorizedKeys.keys = ["ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIM3m3WdPpqOlujSI0wYNqebU7tY0+pSYQKLAkMndxcZE narayan@nixos"];
       };
     };
   };
