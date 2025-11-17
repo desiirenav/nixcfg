@@ -11,15 +11,14 @@
   environment.systemPackages = with pkgs; [
     mangohud
     qbittorrent
-    protonplus
   ];
 
   environment.sessionVariables = {
     STEAM_EXTRA_COMPAT_TOOLS_PATHS = "\${HOME}/.steam/root/compatibilitytools.d";
   };
 
-  programs = {    
-    anime-game-launcher.enable = true;
+  programs = {
+    an-anime-game-launcher.enable = true;
     sleepy-launcher.enable = true;
     gamemode.enable = true;
     steam = {
@@ -36,8 +35,8 @@
     users.narayan = {
       directories = [
         ".local/share/Steam"
-        #".local/share/anime-game-launcher"
-        #".local/share/sleepy-launcher"
+        ".local/share/anime-game-launcher"
+        ".local/share/sleepy-launcher"
         ".steam"
         "Games"
       ];
