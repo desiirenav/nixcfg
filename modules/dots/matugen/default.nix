@@ -5,8 +5,8 @@
     (pkgs.writeShellScriptBin "matugen-autostart" ''
        matugen image /home/narayan/nixcfg/modules/dots/wal/nixos.png
     '')
-    (pkgs.writeShellScriptBin "matugen-vivian" ''
-       matugen image /home/narayan/nixcfg/modules/dots/wal/vivian.png
+    (pkgs.writeShellScriptBin "matugen-yixuan" ''
+       matugen image /home/narayan/nixcfg/modules/dots/wal/yixuan.png
     '')
   ];
 
