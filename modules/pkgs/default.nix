@@ -13,10 +13,8 @@
     imagemagick
     matugen
     swww
-    lua-language-server
-    nil
-    tinymist
     kitty
+    ghostty
     termusic
     pywalfox-native
     starship

@@ -9,6 +9,7 @@
   imports = [
     ./firefox
     ./fish
+    ./ghostty
     ./gtk
     ./ignis
     ./matugen

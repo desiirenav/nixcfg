@@ -37,6 +37,10 @@
           input_path = ./templates/fuzzel.ini;
           output_path = "~/.config/fuzzel/fuzzel.ini";
         };
+        ghostty = {
+          input_path = ./templates/ghostty;
+          output_path = "~/.config/ghostty/themes/matugen.conf";
+        };
         kitty = {
           input_path = ./templates/kitty-colors.conf;
           output_path = "~/.config/kitty/kitty.conf";
