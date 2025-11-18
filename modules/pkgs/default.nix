@@ -14,7 +14,6 @@
     matugen
     swww
     kitty
-    ghostty
     termusic
     pywalfox-native
     starship
