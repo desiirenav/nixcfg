@@ -39,7 +39,7 @@
         };
         ghostty = {
           input_path = ./templates/ghostty;
-          output_path = "~/.config/ghostty/themes/matugen.conf";
+          output_path = "~/.config/ghostty/themes/matugen";
         };
         kitty = {
           input_path = ./templates/kitty-colors.conf;
