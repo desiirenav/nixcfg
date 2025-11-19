@@ -25,6 +25,8 @@ require('base16-colorscheme').setup({
   base0E = '{{colors.secondary_container.default.hex}}',
   base0F = '{{colors.error.default.hex}}',
 })
+
+
 -- We first theme base16, but we also need to fix some other colors that don't
 -- contrast well by default
 
