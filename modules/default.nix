@@ -4,6 +4,7 @@
     ./dots
     ./extras
     ./pkgs
+    ./theme
   ];
 }
 

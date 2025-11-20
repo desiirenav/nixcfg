@@ -10,6 +10,7 @@
     ./firefox
     ./fish
 #    ./gtk/gtk.nix
+    ./kitty
     ./ignis
     #./matugen
     ./niri
