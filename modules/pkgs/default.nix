@@ -13,11 +13,11 @@
     imagemagick
     matugen
     swww
-    kitty
     termusic
     pywalfox-native
     starship
     (callPackage ./neovim.nix {})
+    (callPackage ./kitty.nix {})
     (discord.override {
       withVencord = true;
     })
