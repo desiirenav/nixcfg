@@ -24,6 +24,12 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    hjem-rum = {
+      url = "github:snugnug/hjem-rum";
+      inputs.nixpkgs.follows = "nixpkgs";
+      inputs.hjem.follows = "hjem";
+    };
+
     ignis = {
       url = "github:ignis-sh/ignis";
       inputs.nixpkgs.follows = "nixpkgs";

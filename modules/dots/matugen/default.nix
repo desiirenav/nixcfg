@@ -6,7 +6,7 @@
        matugen image /home/narayan/nixcfg/modules/dots/wal/nixos.png
     '')
     (pkgs.writeShellScriptBin "matugen-vivian" ''
-       matugen image /home/narayan/nixcfg/modules/dots/wal/vivan.png
+       matugen image /home/narayan/nixcfg/modules/dots/wal/vivian.png
     '')
   ];
 

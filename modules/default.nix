@@ -1,5 +1,6 @@
 {...}: {
   imports = [
+    ./apps
     ./base
     ./dots
     ./extras

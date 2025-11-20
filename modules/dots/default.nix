@@ -9,9 +9,9 @@
   imports = [
     ./firefox
     ./fish
-    ./gtk
+#    ./gtk/gtk.nix
     ./ignis
-    ./matugen
+    #./matugen
     ./niri
   ];
 }
