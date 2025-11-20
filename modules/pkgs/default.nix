@@ -8,6 +8,7 @@
     gtk3
     gtk4
     vlc
+    kitty
     ffmpeg
     fuzzel
     imagemagick
@@ -17,7 +18,6 @@
     pywalfox-native
     starship
     (callPackage ./neovim.nix {})
-    (callPackage ./kitty.nix {})
     (discord.override {
       withVencord = true;
     })
