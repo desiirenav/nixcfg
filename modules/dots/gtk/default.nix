@@ -1,4 +1,4 @@
-{ pkgs, lib, config ...}: let 
+{ pkgs, lib, config, ...}: let 
   theme-name = "adw-gtk3";
   icon-theme-name = "adwaita-icon-theme";
   gtk-css = ''
@@ -23,7 +23,6 @@
 	@define-color view_fg_color #${config.theme.base05};
 	@define-color headerbar_bg_color #${config.theme.base01};
 	@define-color headerbar_fg_color #${config.theme.base05};
-	@define-color headerbar_border_color rgba(${config.theme.base01-dec-r}, ${config.theme.base01-dec-g}, ${config.theme.base01-dec-b}, 0.7);
 	@define-color headerbar_backdrop_color @window_bg_color;
 	@define-color headerbar_shade_color rgba(0, 0, 0, 0.07);
 	@define-color headerbar_darker_shade_color rgba(0, 0, 0, 0.07);
@@ -98,7 +97,7 @@ in {
       gtk-icon-theme-name=${icon-theme-name}
       gtk-theme-name=${theme-name}
     '';
-    ".config/gtk-4.0/gtk.css".text = ''
+    ".config/gtk-3.0/gtk.css".text = ''
       ${gtk-css}
     '';
     ".config/gtk-4.0/settings.ini".text = ''

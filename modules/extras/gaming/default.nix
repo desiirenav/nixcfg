@@ -10,7 +10,6 @@
 
   environment.systemPackages = with pkgs; [
     mangohud
-    qbittorrent
   ];
 
   environment.sessionVariables = {

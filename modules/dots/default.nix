@@ -14,7 +14,6 @@
     ./gtk
     ./kitty
     ./ignis
-    #./matugen
     ./niri
   ];
 }

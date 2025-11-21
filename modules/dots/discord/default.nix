@@ -2,7 +2,7 @@
 
 {
   hjem.users.narayan.files = {
-    ".config/vesktop/themes/theme.css".text = ''
+    ".config/Vencord/themes/theme.css".text = ''
 	:root {
 	      --base00: #${config.theme.base00}; /* Black */
 	      --base01: #${config.theme.base01}; /* Bright Black */

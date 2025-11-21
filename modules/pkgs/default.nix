@@ -15,8 +15,10 @@
     matugen
     swww
     termusic
-    pywalfox-native
     starship
+    (discord.override {
+      withVencord = true;
+    })
     (callPackage ./neovim.nix {})
     vesktop
     capitaine-cursors

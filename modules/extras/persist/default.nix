@@ -37,7 +37,7 @@
         ".ssh"
 	"nixcfg"
         ".config/discord"
-        ".config/Vencord"
+	".config/Vencord"
       ];
       files = [
         ".bash_history"
