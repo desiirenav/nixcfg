@@ -1,8 +1,10 @@
 {...}: {
   imports = [
+    ./gaming
     ./hjem
     ./persist
-    ./gaming
+    ./pkgs
+    ./theme
   ];
 }
 
