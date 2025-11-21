@@ -18,9 +18,7 @@
     pywalfox-native
     starship
     (callPackage ./neovim.nix {})
-    (discord.override {
-      withVencord = true;
-    })
+    vesktop
     capitaine-cursors
     adwaita-icon-theme
     xwayland-satellite

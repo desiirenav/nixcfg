@@ -2,16 +2,17 @@
 
 {
   hjem.users.narayan.files.".config/fuzzel/fuzzel.ini".text = ''
-    background = ${config.theme.base00}
-    text = ${config.theme.base05}
-    placeholder = ${config.theme.base03}
-    prompt = ${config.theme.base05}
-    input = ${config.theme.base05}
-    match = ${config.theme.base0A}
-    selection = ${config.theme.base03}
-    selection-text = ${config.theme.base05}
-    selection-match = ${config.theme.base0A}
-    counter = ${config.theme.base06}
-    border = ${config.theme.base0D}
+    [colors]
+    background=${lib.toLower config.theme.base00}ff
+    text=${lib.toLower config.theme.base05}ff
+    placeholder=${lib.toLower config.theme.base03}ff
+    prompt=${lib.toLower config.theme.base05}ff
+    input=${lib.toLower config.theme.base05}ff
+    match=${lib.toLower config.theme.base0A}ff
+    selection=${lib.toLower config.theme.base03}ff
+    selection-text=${lib.toLower config.theme.base05}ff
+    selection-match=${lib.toLower config.theme.base0A}ff
+    counter=${lib.toLower config.theme.base06}ff
+    border=${lib.toLower config.theme.base0D}ff
   '';
 }

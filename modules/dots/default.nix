@@ -7,9 +7,11 @@
   ...
 }: {
   imports = [
+    ./discord
     ./firefox
     ./fish
-#    ./gtk/gtk.nix
+    ./fuzzel
+    ./gtk
     ./kitty
     ./ignis
     #./matugen
