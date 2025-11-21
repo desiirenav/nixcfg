@@ -15,15 +15,15 @@
     color3 #${config.theme.base0A}
     color4 #${config.theme.base0D}
     color5 #${config.theme.base0E}
-    color6 #${config.theme.base0C}
+    color6 #${config.theme.base0D}
     color7 #${config.theme.base05}
-    color8 #${config.theme.base03}
-    color9 #${config.theme.base09}
-    color10 #${config.theme.base01}
-    color11 #${config.theme.base02}
-    color12 #${config.theme.base04}
-    color13 #${config.theme.base06}
-    color14 #${config.theme.base0F}
+    color8 #${config.theme.base02}
+    color9 #${config.theme.base08}
+    color10 #${config.theme.base0B}
+    color11 #${config.theme.base0A}
+    color12 #${config.theme.base0D}
+    color13 #${config.theme.base0E}
+    color14 #${config.theme.base0C}
     color15 #${config.theme.base07}
   '';
 }
