@@ -5,10 +5,15 @@
 
   programs.mnw = {
     enable = true;
+    aliases = [
+      "vi"
+      "vim"
+    ];
     initLua = ''
       vim.opt.number = true
       vim.opt.relativenumber = true
       vim.opt.swapfile = false
+      vim.lsp.enable({"lua_ls", "nixd", "tinymist"})
     '';
     plugins = {
       start = with pkgs.vimPlugins;[

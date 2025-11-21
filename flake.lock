@@ -179,6 +179,21 @@
         "type": "github"
       }
     },
+    "mnw": {
+      "locked": {
+        "lastModified": 1763076462,
+        "narHash": "sha256-zaoxXoR9rk7jRwfzpvAcoD1tPb6IK3WfpFd3x10aIg8=",
+        "owner": "Gerg-L",
+        "repo": "mnw",
+        "rev": "5b634fd1b77b0e14b1034a4cf9bfc0bef3a22055",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Gerg-L",
+        "repo": "mnw",
+        "type": "github"
+      }
+    },
     "ndg": {
       "inputs": {
         "flake-compat": "flake-compat_2",
@@ -269,6 +284,7 @@
         "hjem": "hjem",
         "ignis": "ignis",
         "impermanence": "impermanence",
+        "mnw": "mnw",
         "nixpkgs": "nixpkgs_3",
         "sf-mono-liga-src": "sf-mono-liga-src"
       }

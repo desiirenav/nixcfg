@@ -1,11 +1,4 @@
-{
-  config,
-  lib,
-  pkgs,
-  inputs,
-  system,
-  ...
-}: {
+{...}: {
   imports = [
     ./discord
     ./firefox

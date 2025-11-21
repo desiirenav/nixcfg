@@ -35,6 +35,7 @@
         "Videos"
         "Projects"
         ".ssh"
+	".mozilla"
 	"nixcfg"
         ".config/discord"
 	".config/Vencord"
