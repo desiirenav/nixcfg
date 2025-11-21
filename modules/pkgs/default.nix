@@ -7,20 +7,10 @@
     swaybg
     gtk3
     gtk4
-    vlc
     kitty
-    ffmpeg
     fuzzel
-    imagemagick
-    matugen
-    swww
-    termusic
     starship
-    (discord.override {
-      withVencord = true;
-    })
     (callPackage ./neovim.nix {})
-    vesktop
     capitaine-cursors
     adwaita-icon-theme
     xwayland-satellite

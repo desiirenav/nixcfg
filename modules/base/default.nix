@@ -4,7 +4,6 @@
   imports = [
     ./hardware
     ./system
-    ./theme
   ];
 }
 
