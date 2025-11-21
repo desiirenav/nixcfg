@@ -10,7 +10,6 @@
     kitty
     fuzzel
     starship
-    (callPackage ./neovim.nix {})
     capitaine-cursors
     adwaita-icon-theme
     xwayland-satellite
