@@ -10,6 +10,8 @@
     kitty
     fuzzel
     starship
+    librewolf
+    pywalfox-native
     capitaine-cursors
     adwaita-icon-theme
     xwayland-satellite
