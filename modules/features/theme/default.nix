@@ -22,22 +22,22 @@
   };
   config = {
     theme = {
-      base00 = "2E3440";
-      base01 = "3B4252";
-      base02 = "434C5E";
-      base03 = "4C566A";
-      base04 = "D8DEE9";
-      base05 = "E5E9F0";
-      base06 = "ECEFF4";
-      base07 = "8FBCBB";
-      base08 = "BF616A";
-      base09 = "D08770";
-      base0A = "EBCB8B";
-      base0B = "A3BE8C";
-      base0C = "88C0D0";
-      base0D = "81A1C1";
-      base0E = "B48EAD";
-      base0F = "5E81AC";
+      base00 = "09090b";
+      base01 = "18181b";
+      base02 = "27272a";
+      base03 = "52525b";
+      base04 = "a1a1aa";
+      base05 = "d4d4d8";
+      base06 = "e4e4e7";
+      base07 = "ffffff";
+      base08 = "dc2626";
+      base09 = "ca8a04";
+      base0A = "eab308";
+      base0B = "16a34a";
+      base0C = "60a5fa";
+      base0D = "2563eb";
+      base0E = "7300ff";
+      base0F = "e879f9";
     };
   };
 }

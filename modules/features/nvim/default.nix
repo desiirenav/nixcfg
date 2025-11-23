@@ -14,6 +14,7 @@
       vim.opt.relativenumber = true
       vim.opt.swapfile = false
       vim.lsp.enable({"lua_ls", "nixd", "tinymist"})
+      vim.cmd.colorscheme("dark-orchid")
     '';
     plugins = {
       start = with pkgs.vimPlugins;[

@@ -42,10 +42,10 @@ in
 	    "color7": "",
 	    "color8": "",
 	    "color9": "",
-	    "color10": "#${config.theme.base0B}",
+	    "color10": "#${config.theme.base07}",
 	    "color11": "",
 	    "color12": "",
-	    "color13": "#${config.theme.base0D}",
+	    "color13": "#${config.theme.base07}",
 	    "color14": "",
 	    "color15": "#${config.theme.base07}"
 	  }
