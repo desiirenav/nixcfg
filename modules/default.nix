@@ -27,6 +27,10 @@
           input_path = ./midnight-discord.css;
           output_path = "~/.config/Vencord/themes/midnight-discord.css";
         };
+        pywalfox = {
+          input_path = ./colors.json;
+          output_path = "~/.cache/colors.json";
+        };
       };
     };
   };
