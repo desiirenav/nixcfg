@@ -2,472 +2,136 @@
 
 {
   hjem.users.narayan.files = {
-    ".config/Vencord/themes/theme.css".text = ''
-	:root {
-	      --base00: #${config.theme.base00}; /* Black */
-	      --base01: #${config.theme.base01}; /* Bright Black */
-	      --base02: #${config.theme.base02}; /* Grey */
-	      --base03: #${config.theme.base03}; /* Brighter Grey */
-	      --base04: #${config.theme.base04}; /* Bright Grey */
-	      --base05: #${config.theme.base05}; /* White */
-	      --base06: #${config.theme.base06}; /* Brighter White */
-	      --base07: #${config.theme.base07}; /* Bright White */
-	      --base08: #${config.theme.base08}; /* Red */
-	      --base09: #${config.theme.base09}; /* Orange */
-	      --base0A: #${config.theme.base0A}; /* Yellow */
-	      --base0B: #${config.theme.base0B}; /* Green */
-	      --base0C: #${config.theme.base0C}; /* Cyan */
-	      --base0D: #${config.theme.base0D}; /* Blue */
-	      --base0E: #${config.theme.base0E}; /* Purple */
-	      --base0F: #${config.theme.base0F}; /* Magenta */
-
-	      --primary-630: var(--base00); /* Autocomplete background */
-	      --primary-660: var(--base00); /* Search input background */
-	  }
-	    /* Copyright (c) 2025 Cole Schaefer
-
-	    Permission is hereby granted, free of charge, to any person obtaining a copy
-	    of this software and associated documentation files (the "Software"), to deal
-	    in the Software without restriction, including without limitation the rights
-	    to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-	    copies of the Software, and to permit persons to whom the Software is
-	    furnished to do so, subject to the following conditions:
-
-	    The above copyright notice and this permission notice shall be included in all
-	    copies or substantial portions of the Software.
-
-	    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-	    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-	    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-	    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-	    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-	    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-	    SOFTWARE. */
-
-	  .theme-light,
-	  .theme-dark,
-	  .theme-darker,
-	  .theme-midnight,
-	  .visual-refresh {
-	      --activity-card-background: var(--base01) !important;
-	      --background-accent: var(--base03) !important;
-	      --background-floating: var(--base02) !important;
-	      --background-mentioned-hover: var(--base02) !important;
-	      --background-mentioned: var(--base01) !important;
-	      --background-message-highlight: var(--base01) !important;
-	      --background-message-hover: var(--base00) !important;
-	      --background-modifier-accent: var(--base02) !important;
-	      --background-modifier-active: var(--base02) !important;
-	      --background-modifier-hover: var(--base00) !important;
-	      --background-modifier-selected: var(--base01) !important;
-	      --background-primary: var(--base00) !important;
-	      --background-secondary-alt: var(--base01) !important;
-	      --background-secondary: var(--base01) !important;
-	      --background-surface-highest: var(--base02) !important;
-	      --background-surface-higher: var(--base02) !important;
-	      --background-surface-high: var(--base02) !important;
-	      --background-tertiary: var(--base00) !important;
-	      --background-base-low: var(--base01) !important;
-	      --background-base-lower: var(--base00) !important;
-	      --background-base-lowest: var(--base00) !important;
-	      --background-base-tertiary: var(--base00) !important;
-	      --background-code: var(--base02) !important;
-	      --background-mod-subtle: var(--base02) !important;
-	      --bg-base-secondary: var(--base01) !important;
-	      --bg-base-tertiary: var(--base00) !important;
-	      --bg-brand: var(--base03) !important;
-	      --bg-mod-faint: var(--base01) !important;
-	      --bg-overlay-2: var(--base01) !important;
-	      --bg-overlay-3: var(--base01) !important;
-	      --bg-overlay-color-inverse: var(--base03) !important;
-	      --bg-surface-raised: var(--base02) !important;
-	      --bg-surface-overlay: var(--base00) !important;
-	      --black: var(--base00) !important;
-	      --blurple-50: var(--base0B) !important;
-	      --border-faint: var(--base02) !important;
-	      --brand-05a: var(--base01) !important;
-	      --brand-10a: var(--base01) !important;
-	      --brand-15a: var(--base01) !important;
-	      --brand-260: var(--base0D) !important;
-	      --brand-360: var(--base0D) !important;
-	      --brand-500: var(--base0F) !important;
-	      --brand-560: var(--base01) !important;
-	      --button-danger-background: var(--base08) !important;
-	      --button-filled-brand-background: var(--base0D) !important;
-	      --button-filled-brand-background-hover: var(--base03) !important;
-	      --button-filled-brand-text: var(--base00) !important;
-	      --button-filled-brand-text-hover: var(--base05) !important;
-	      --button-outline-positive-border: var(--base0B) !important;
-	      --button-outline-danger-background-hover: var(--base08) !important;
-	      --button-outline-danger-border-hover: var(--base08) !important;
-	      --button-positive-background: var(--base0B) !important;
-	      --button-positive-background-hover: var(--base03) !important;
-	      --button-secondary-background: var(--base02) !important;
-	      --button-secondary-background-hover: var(--base03) !important;
-	      --card-primary-bg: var(--base02) !important;
-	      --channel-icon: var(--base04) !important;
-	      --channels-default: var(--base04) !important;
-	      --channel-text-area-placeholder: var(--base03) !important;
-	      --channeltextarea-background: var(--base01) !important;
-	      --chat-background-default: var(--base02) !important;
-	      --checkbox-background-checked: var(--base0D) !important;
-	      --checkbox-border-checked: var(--base0D) !important;
-	      --checkbox-background-default: var(--base02) !important;
-	      --checkbox-border-default: var(--base03) !important;
-	      --control-brand-foreground-new: var(--base0D) !important;
-	      --control-brand-foreground: var(--base04) !important;
-	      --custom-notice-text: var(--base01) !important;
-	      --font-display: var(--font, "gg sans") !important;
-	      --font-headline: var(--font, "gg sans") !important;
-	      --font-primary: var(--font, "gg sans") !important;
-	      --green-330: var(--base0B) !important;
-	      --green-360: var(--base0B) !important;
-	      --header-primary: var(--base04) !important;
-	      --header-secondary: var(--base04) !important;
-	      --home-background: var(--base00) !important;
-	      --info-warning-foreground: var(--base0A) !important;
-	      --input-background: var(--base02) !important;
-	      --interactive-active: var(--base05) !important;
-	      --interactive-hover: var(--base05) !important;
-	      --interactive-muted: var(--base03) !important;
-	      --interactive-normal: var(--base05) !important;
-	      --mention-background: var(--base03) !important;
-	      --mention-foreground: var(--base05) !important;
-	      --menu-item-danger-active-bg: var(--base08) !important;
-	      --menu-item-danger-hover-bg: var(--base08) !important;
-	      --menu-item-default-hover-bg: var(--base03) !important;
-	      --message-reacted-background: var(--base02) !important;
-	      --message-reacted-text: var(--base05) !important;
-	      --modal-background: var(--base01) !important;
-	      --modal-footer-background: var(--base00) !important;
-	      --notice-background-positive: var(--base0B) !important;
-	      --notice-text-positive: var(--base01) !important;
-	      --plum-23: var(--base02) !important;
-	      --primary-130: var(--base05) !important;
-	      --primary-300: var(--base05) !important;
-	      --primary-500: var(--base02) !important;
-	      --primary-600: var(--base00) !important;
-	      --primary-630: var(--base01) !important;
-	      --primary-660: var(--base00) !important;
-	      --primary-800: var(--base00) !important;
-	      --red-400: var(--base08) !important;
-	      --red-460: var(--base08) !important;
-	      --red-500: var(--base08) !important;
-	      --red-630: var(--base08) !important;
-	      --red: var(--base08) !important;
-	      --scrollbar-auto-thumb: var(--base00) !important;
-	      --scrollbar-auto-track: transparent;
-	      --scrollbar-thin-thumb: var(--base00) !important;
-	      --scrollbar-thin-track: transparent;
-	      --search-popout-option-fade: none;
-	      --search-popout-option-non-text-color: var(--base07) !important;
-	      --status-danger-background: var(--base08) !important;
-	      --status-danger: var(--base08) !important;
-	      --status-negative: var(--base08) !important;
-	      --status-positive-background: var(--base0B) !important;
-	      --status-positive-text: var(--base0B) !important;
-	      --status-positive: var(--base0B) !important;
-	      --status-success: var(--base0B) !important;
-	      --status-warning-background: var(--base03) !important;
-	      --status-warning: var(--base09) !important;
-	      --teal-430: var(--base0C) !important;
-	      --text-brand: var(--base07) !important;
-	      --text-feedback-positive: var(--base0B) !important;
-	      --text-feedback-negative: var(--base08) !important;
-	      --text-feedback-warning: var(--base09) !important;
-	      --text-feedback-success: var(--base0B) !important;
-	      --text-link: var(--base04) !important;
-	      --text-muted: var(--base05) !important;
-	      --text-negative: var(--base08) !important;
-	      --text-normal: var(--base05) !important;
-	      --text-positive: var(--base0B) !important;
-	      --text-primary: var(--base05) !important;
-	      --text-secondary: var(--base04) !important;
-	      --text-tertiary: var(--base03) !important;
-	      --text-warning: var(--base09) !important;
-	      --textbox-markdown-syntax: var(--base05) !important;
-	      --theme-base-color: var(--base00) !important;
-	      --white-100: var(--base05) !important;
-	      --white-200: var(--base05) !important;
-	      --white-500: var(--base05) !important;
-	      --white: var(--base05) !important;
-	      --yellow-360: var(--base0A) !important;
-	      --yellow-300: var(--base0A) !important;
-	      --__lottieIconColor: var(--base03) !important;
-	  }
-
-	  /*--- Default Folder Color Recolor ---*/
-	  .default__459fb {
-	      background-color: var(--base07) !important;
-	  }
-
-	  /*--- Add Friend Button Text Recolor ---*/
-	  .addFriend__133bf {
-	      color: var(--base00) !important;
-	  }
-
-	  /*--- Close Icon Path Recolor ---*/
-	  svg[class^="closeIcon__"] path {
-	      fill: var(--base01) !important;
-	  }
-
-	  /*--- Listen Along Invite Recolor ---*/
-	  .invite__4d3fa {
-	      background: var(--base01) !important;
-	      border-color: var(--base02) !important;
-	  }
-
-	  /*--- Activity Card Background Recolor ---*/
-	  .card__73069 {
-	      background-color: var(--base01);
-	  }
-
-	  div[class^="bar__"] {
-	      background-color: var(--base01) !important;
-	      border-color: var(--base02) !important;
-	  }
-	  /*--- Voice Bar Text Recolor ---*/
-	  .barText__7aaec {
-	      color: var(--base0B) !important;
-	  }
-	  .unreadIcon__7aaec {
-	      color: var(--base0B) !important;
-	  }
-
-	  /*--- Mentions Bar Text Recolor ---*/
-	  .mentionsBar__7aaec .barText__7aaec {
-	      color: var(--base05) !important;
-	  }
-
-	  /*--- Forum Background Recolor ---*/
-	  .container_f369db {
-	      background-color: var(--bg-overlay-2);
-	  }
-
-	  /*--- Sidebar Icon Recolor ---*/
-	  .circleIconButton__5bc7e {
-	      color: var(--base04);
-	  }
-
-	  /*--- Summaries Tag Icon Recolor ---*/
-	  .summariesBetaTag_cf58b5 {
-	      color: var(--base03);
-	  }
-
-	  /*--- Folder Icon Recolor ---*/
-	  div.folderIconWrapper__48112 {
-	      background-color: var(--base01) !important;
-	  }
-
-	  /*--- Voice Chat Action Icon Recolor ---*/
-	  path[fill^="rgb(88,101,242)"],
-	  path[stroke^="rgb(88,101,242)"] {
-	      fill: var(--base05) !important;
-	      stroke: var(--base05) !important;
-	  }
-	  .lottieIcon__5eb9b.lottieIconColors__5eb9b.buttonIcon_e131a9 {
-	      --__lottieIconColor: var(--base05) !important;
-	  }
-	  div[class^="actionButtons"] [class^="button"][class*="buttonColor_"],
-	  div[class^="actionButtons"] [class^="button"] [class*="buttonColor_"] {
-	      background-color: var(--base02);
-	  }
-
-	  /* --- Checkbox Recolor (OFF) --- */
-	  .container__87bf1 {
-	      background-color: var(--base03) !important;
-	  }
-	  /* --- Checkbox Recolor (ON) --- */
-	  .checked__87bf1 {
-	      background-color: var(--base0B) !important;
-	  }
-	  path[fill^="rgba(35, 165, 90, 1)"] {
-	      fill: var(--base0B) !important;
-	  }
-
-	  /* --- Secure Lock Icon Recolor --- */
-	  .lockIcon__2666b {
-	      display: none;
-	  }
-
-	  /*--- Status Icon Recolor (DO NOT DISTURB) ---*/
-	  svg[fill^="#f23f43"],
-	  rect[fill^="#f23f43"] {
-	      fill: var(--status-danger) !important;
-	  }
-	  /*--- Status Icon Recolor (IDLE) ---*/
-	  svg[fill^="#f0b232"],
-	  rect[fill^="#f0b232"] {
-	      fill: var(--status-warning) !important;
-	  }
-	  /*--- Status Icon Recolor (ONLINE) ---*/
-	  path[fill^="#23a55a"],
-	  svg[fill^="#23a55a"],
-	  rect[fill^="#23a55a"] {
-	      fill: var(--status-positive) !important;
-	  }
-	  /*--- Status Icon Recolor (OFFLINE) ---*/
-	  svg[fill^="#80848e"],
-	  rect[fill^="#80848e"] {
-	      fill: var(--base03) !important;
-	  }
-
-	  /*--- Default Color Swap ---*/
-	  path[fill^="currentColor"],
-	  svg[fill^="currentColor"],
-	  rect[fill^="currentColor"] {
-	      fill: var(--base06) !important;
-	  }
-	  path[d^="M12 22a10 10 0 1"] {
-	      fill: var(--base02) !important;
-	  }
-
-	  /*--- Voice Chat Icon Badge Recolor ---*/
-	  div[class^="iconBadge"] path[d^="M12 3a1 1 0 0 0-1-1h-.06"],
-	  div[class^="iconBadge"] path[d^="M15.16 16.51c-.57.28"] {
-	      fill: var(--base05) !important;
-	  }
-
-	  /*--- Nitro Icon Recolor ---*/
-	  .premiumLabel_e681d1 svg path,
-	  svg.guildBoostBadge__5dba5 path {
-	      fill: var(--base0E) !important;
-	  }
-
-	  /*--- Server Booster Icon Recolor ---*/
-	  .premiumIcon__5d473 {
-	      color: var(--base0F);
-	  }
-
-	  /*--- Call Container Recolor ---*/
-	  .callContainer_cb9592 {
-	      background-color: var(--base00);
-	  }
-	  .gradientContainer_bfe55a {
-	      background-image: var(--base00);
-	  }
-
-	  /*--- Store Gradient Recolors ---*/
-	  .gradient_e9ef78 {
-	      background: var(--base01) !important;
-	  }
-	  .bannerGradient__955a3 {
-	      background: var(--base00) !important;
-	  }
-
-	  /*--- Increase Text Legibility ---*/
-	  * {
-	      text-rendering: optimizeLegibility !important;
-	  }
-
-	  /*--- Codeblock Syntax Highlighting Recolor ---*/
-	  .hljs-attr {
-	      color: var(--base06) !important;
-	  }
-	  .hljs-attribute {
-	      color: var(--base06) !important;
-	  }
-	  .hljs-number {
-	      color: var(--base06) !important;
-	  }
-	  .hljs-selector-class {
-	      color: var(--base06) !important;
-	  }
-	  .hljs-comment {
-	      color: var(--base03) !important;
-	  }
-	  .hljs-subst {
-	      color: var(--base0D) !important;
-	  }
-	  .hljs-selector-pseudo {
-	      color: var(--base0B) !important;
-	  }
-	  .hljs-section {
-	      color: var(--base0B) !important;
-	  }
-	  .hljs-keyword {
-	      color: var(--base08) !important;
-	  }
-	  .hljs-variable {
-	      color: var(--base08) !important;
-	  }
-	  .hljs-meta {
-	      color: var(--base03) !important;
-	  }
-	  .hljs-built_in {
-	      color: var(--base09) !important;
-	  }
-	  .hljs-string {
-	      color: var(--base0B) !important;
-	  }
-	  .hljs-title {
-	      color: var(--base0E) !important;
-	  }
-
-	  /*--- Visual Refresh Recolor ---*/
-	  /*--- BIG WORK IN PROGRESS. DISCORD MADE SOME BIG CHANGES. ---*/
-	  .visual-refresh {
-	      div[class^="autocomplete__"] {
-		  background-color: var(--base02) !important;
-	      }
-	      path[fill^="rgba(88, 101, 242, 1)"] {
-		  fill: var(--base0B) !important;
-	      }
-	      div[class^="topicsPillContainer"] {
-		  --bg-overlay-2: var(--base02) !important;
-	      }
-	      .bg__960e4 {
-		  background: var(--base00) !important;
-	      }
-	      .wrapper_ef3116 {
-		  background-color: var(--base00) !important;
-	      }
-	      .sidebar_c48ade {
-		  background-color: var(--base00) !important;
-	      }
-	      .searchBar__97492 {
-		  background-color: var(--base02) !important;
-	      }
-	      .channelTextArea_f75fb0 {
-		  background: var(--base02) !important;
-	      }
-	      .chatContent_f75fb0 {
-		  background-color: var(--base01) !important;
-	      }
-	      .members_c8ffbb,
-	      .member_c8ffbb {
-		  background: var(--base00) !important;
-	      }
-	      .voiceBar__7aaec {
-		  background-color: var(--base02) !important;
-	      }
-	      button.button__67645.redGlow__67645,
-	      span.button__67645.redGlow__67645 {
-		  background-color: var(--base02) !important;
-	      }
-
-	      /*--- Status Icon Recolor (DO NOT DISTURB) ---*/
-	      svg[fill^="#d83a42"],
-	      rect[fill^="#d83a42"] {
-		  fill: var(--status-danger) !important;
-	      }
-	      /*--- Status Icon Recolor (IDLE) ---*/
-	      svg[fill^="#ca9654"],
-	      rect[fill^="#ca9654"] {
-		  fill: var(--status-warning) !important;
-	      }
-	      /*--- Status Icon Recolor (ONLINE) ---*/
-	      path[fill^="#43a25a"],
-	      svg[fill^="#43a25a"],
-	      rect[fill^="#43a25a"] {
-		  fill: var(--status-positive) !important;
-	      }
-	      /*--- Status Icon Recolor (OFFLINE) ---*/
-	      svg[fill^="#83838b"],
-	      rect[fill^="#83838b"] {
-		  fill: var(--base03) !important;
-	      }
-	  }
+    ".config/vesktop/themes/midnight-discord.css".text = ''
+/**
+ * @name midnight
+ * @description a dark, customizable discord theme.
+ * @author refact0r
+ * @version 2.1.1
+ * @invite nz87hXyvcy
+ * @website https://github.com/refact0r/midnight-discord
+ * @source https://github.com/refact0r/midnight-discord/blob/master/themes/midnight.theme.css
+ * @authorId 508863359777505290
+ * @authorLink https://www.refact0r.dev
+*/
+/* import theme modules */
+@import url('https://refact0r.github.io/midnight-discord/build/midnight.css');
+body {
+    /* font options */
+    --font: 'figtree'; /* change to '' for default discord font */
+    --code-font: ''; /* change to '' for default discord font */
+    font-weight: 400; /* normal text font weight. DOES NOT AFFECT BOLD TEXT */
+    /* sizes */
+    --gap: 12px; /* spacing between panels */
+    --divider-thickness: 4px; /* thickness of unread messages divider and highlighted message borders */
+    --border-thickness: 1px; /* thickness of borders around main panels. DOES NOT AFFECT OTHER BORDERS */
+    /* animation/transition options */
+    --animations: on; /* off: disable animations/transitions, on: enable animations/transitions */
+    --list-item-transition: 0.2s ease; /* transition for list items */
+    --dms-icon-svg-transition: 0.4s ease; /* transition for the dms icon */
+    --border-hover-transition: 0.2s ease; /* transition for borders when hovered */
+    /* top bar options */
+    --top-bar-height: var(--gap); /* height of the top bar (discord default is 36px, old discord style is 24px, var(--gap) recommended if button position is set to titlebar) */
+    --top-bar-button-position: titlebar; /* off: default position, hide: hide buttons completely, serverlist: move inbox button to server list, titlebar: move inbox button to channel titlebar (will hide title) */
+    --top-bar-title-position: off; /* off: default centered position, hide: hide title completely, left: left align title (like old discord) */
+    --subtle-top-bar-title: off; /* off: default, on: hide the icon and use subtle text color (like old discord) */
+    /* window controls */
+    --custom-window-controls: on; /* off: default window controls, on: custom window controls */
+    --window-control-size: 14px; /* size of custom window controls */
+    /* dms button options */
+    --custom-dms-icon: custom; /* off: use default discord icon, hide: remove icon entirely, custom: use custom icon */
+    --dms-icon-svg-url: url('https://refact0r.github.io/midnight-discord/assets/Font_Awesome_5_solid_moon.svg'); /* icon svg url. MUST BE A SVG. */
+    --dms-icon-svg-size: 90%; /* size of the svg (css mask-size property) */
+    --dms-icon-color-before: var(--icon-secondary); /* normal icon color */
+    --dms-icon-color-after: var(--white); /* icon color when button is hovered/selected */
+    --custom-dms-background: off; /* off to disable, image to use a background image (must set url variable below), color to use a custom color/gradient */
+    --dms-background-image-url: url(''); /* url of the background image */
+    --dms-background-image-size: cover; /* size of the background image (css background-size property) */
+    --dms-background-color: linear-gradient(70deg, var(--blue-2), var(--purple-2), var(--red-2)); /* fixed color/gradient (css background property) */
+    /* background image options */
+    --background-image: off; /* off: no background image, on: enable background image (must set url variable below) */
+    --background-image-url: url(''); /* url of the background image */
+    /* transparency/blur options */
+    /* NOTE: TO USE TRANSPARENCY/BLUR, YOU MUST HAVE TRANSPARENT BG COLORS. FOR EXAMPLE: --bg-4: hsla(220, 15%, 10%, 0.7); */
+    --transparency-tweaks: off; /* off: no changes, on: remove some elements for better transparency */
+    --remove-bg-layer: off; /* off: no changes, on: remove the base --bg-3 layer for use with window transparency (WILL OVERRIDE BACKGROUND IMAGE) */
+    --panel-blur: off; /* off: no changes, on: blur the background of panels */
+    --blur-amount: 12px; /* amount of blur */
+    --bg-floating: var(--bg-3); /* set this to a more opaque color if floating panels look too transparent. only applies if panel blur is on  */
+    /* chatbar options */
+    --custom-chatbar: off; /* off: default chatbar, separated: chatbar separated from chat */
+    --chatbar-height: 47px; /* height of the chatbar (56px by default, 47px to align with user panel, 56px recommended for separated) */
+    /* other options */
+    --small-user-panel: on; /* off: default user panel, on: smaller user panel like in old discord */
+}
+/* color options */
+:root {
+    --colors: on; /* off: discord default colors, on: midnight custom colors */
+    /* text colors */
+    --text-0: var(--bg-4); /* text on colored elements */
+    --text-1: #${config.theme.base05}; /* other normally white text */
+    --text-2: #${config.theme.base06}; /* headings and important text */
+    --text-3: #${config.theme.base04}; /* normal text */
+    --text-4: #${config.theme.base03}; /* icon buttons and channels */
+    --text-5: #${config.theme.base03}; /* muted channels/chats and timestamps */
+    /* background and dark colors */
+    --bg-1: #${config.theme.base02}; /* dark buttons when clicked */
+    --bg-2: #${config.theme.base01}; /* dark buttons */
+    --bg-3: #${config.theme.base01}; /* spacing, secondary elements */
+    --bg-4: #${config.theme.base00}; /* main background color */
+    --hover: color-mix(in srgb, #${config.theme.base03} 10%, transparent); /* channels and buttons when hovered */
+    --active: color-mix(in srgb, #${config.theme.base03} 20%, transparent); /* channels and buttons when clicked or selected */
+    --active-2: color-mix(in srgb, #${config.theme.base03} 30%, transparent); /* extra state for transparent buttons */
+    --message-hover: color-mix(in srgb, #${config.theme.base00} 10%, transparent); /* messages when hovered */
+    /* accent colors */
+    --accent-1: #${config.theme.base0D}; /* links and other accent text */
+    --accent-2: #${config.theme.base0D}; /* small accent elements */
+    --accent-3: #${config.theme.base0D}; /* accent buttons */
+    --accent-4: color-mix(in srgb, #${config.theme.base0D} 80%, #${config.theme.base05}); /* accent buttons when hovered */
+    --accent-5: color-mix(in srgb, #${config.theme.base0D} 60%, #${config.theme.base05}); /* accent buttons when clicked */
+    --accent-new: #${config.theme.base08}; /* stuff that's normally red like mute/deafen buttons */
+    --mention: linear-gradient(to right, color-mix(in srgb, #${config.theme.base0D} 10%, transparent) 40%, transparent); /* background of messages that mention you */
+    --mention-hover: linear-gradient(to right, color-mix(in srgb, #${config.theme.base0D} 5%, transparent) 40%, transparent); /* background of messages that mention you when hovered */
+    --reply: linear-gradient(to right, color-mix(in srgb, #${config.theme.base04} 10%, transparent) 40%, transparent); /* background of messages that reply to you */
+    --reply-hover: linear-gradient(to right, color-mix(in srgb, #${config.theme.base04} 5%, transparent) 40%, transparent); /* background of messages that reply to you when hovered */
+    /* status indicator colors */
+    --online: #${config.theme.base0B}; /* change to #40a258 for default */
+    --dnd: #${config.theme.base08}; /* change to #d83a41 for default */
+    --idle: #${config.theme.base0A}; /* change to #cc954c for default */
+    --streaming: #${config.theme.base0E}; /* change to ##9147ff for default */
+    --offline: var(--text-4); /* change to #82838b for default offline color */
+    /* border colors */
+    --border-light: var(--hover); /* general light border color */
+    --border: var(--active); /* general normal border color */
+    --border-hover: var(--active); /* border color of panels when hovered */
+    --button-border: color-mix(in srgb, #${config.theme.base05} 10%, transparent); /* neutral border color of buttons */
+    /* base colors - mapped to base16 scheme */
+    --red-1: #${config.theme.base08};
+    --red-2: #${config.theme.base08};
+    --red-3: color-mix(in srgb, #${config.theme.base08} 90%, #${config.theme.base00});
+    --red-4: color-mix(in srgb, #${config.theme.base08} 80%, #${config.theme.base00});
+    --red-5: color-mix(in srgb, #${config.theme.base08} 70%, #${config.theme.base00});
+    --green-1: #${config.theme.base0B};
+    --green-2: #${config.theme.base0B};
+    --green-3: color-mix(in srgb, #${config.theme.base0B} 90%, #${config.theme.base00});
+    --green-4: color-mix(in srgb, #${config.theme.base0B} 80%, #${config.theme.base00});
+    --green-5: color-mix(in srgb, #${config.theme.base0B} 70%, #${config.theme.base00});
+    --blue-1: #${config.theme.base0D};
+    --blue-2: #${config.theme.base0D};
+    --blue-3: color-mix(in srgb, #${config.theme.base0D} 90%, #${config.theme.base00});
+    --blue-4: color-mix(in srgb, #${config.theme.base0D} 80%, #${config.theme.base00});
+    --blue-5: color-mix(in srgb, #${config.theme.base0D} 70%, #${config.theme.base00});
+    --yellow-1: #${config.theme.base0A};
+    --yellow-2: #${config.theme.base0A};
+    --yellow-3: color-mix(in srgb, #${config.theme.base0A} 90%, #${config.theme.base00});
+    --yellow-4: color-mix(in srgb, #${config.theme.base0A} 80%, #${config.theme.base00});
+    --yellow-5: color-mix(in srgb, #${config.theme.base0A} 70%, #${config.theme.base00});
+    --purple-1: #${config.theme.base0E};
+    --purple-2: #${config.theme.base0E};
+    --purple-3: color-mix(in srgb, #${config.theme.base0E} 90%, #${config.theme.base00});
+    --purple-4: color-mix(in srgb, #${config.theme.base0E} 80%, #${config.theme.base00});
+    --purple-5: color-mix(in srgb, #${config.theme.base0E} 70%, #${config.theme.base00});
+}
     '';
   };
 }

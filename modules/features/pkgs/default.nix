@@ -10,7 +10,8 @@
     kitty
     fuzzel
     starship
-    librewolf
+    matugen
+    vesktop
     pywalfox-native
     capitaine-cursors
     adwaita-icon-theme
