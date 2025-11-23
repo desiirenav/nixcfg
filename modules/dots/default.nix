@@ -1,6 +1,6 @@
 {...}: {
   imports = [
-#    ./discord
+    ./discord
     ./firefox
     ./fish
     ./fuzzel
