@@ -9,9 +9,9 @@
     gtk4
     kitty
     fuzzel
+    ghostty
     starship
     vesktop
-    ghostty
     pywalfox-native
     capitaine-cursors
     adwaita-icon-theme

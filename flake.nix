@@ -37,6 +37,9 @@
       url = "github:Gerg-L/mnw";
     };
 
+    plugin-oldworld.url = "github:dgox16/oldworld.nvim";
+    plugin-oldworld.flake = false;
+
     sf-mono-liga-src = {
       url = "github:shaunsingh/SFMono-Nerd-Font-Ligaturized";
       flake = false;

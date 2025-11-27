@@ -1,11 +1,11 @@
 {...}: {
   imports = [
-    ./discord
+#    ./discord
     ./firefox
     ./fish
-    ./fuzzel
-    ./gtk
-    ./kitty
+#    ./fuzzel
+#    ./gtk
+#    ./kitty
     ./ignis
     ./niri
   ];

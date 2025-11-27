@@ -20,24 +20,22 @@
       base0F = mkOption { type = str; };
     };
   };
-  config = {
-    theme = {
-      base00 = "09090b";
-      base01 = "18181b";
-      base02 = "27272a";
-      base03 = "52525b";
-      base04 = "a1a1aa";
-      base05 = "d4d4d8";
-      base06 = "e4e4e7";
-      base07 = "ffffff";
-      base08 = "dc2626";
-      base09 = "ca8a04";
-      base0A = "eab308";
-      base0B = "16a34a";
-      base0C = "60a5fa";
-      base0D = "2563eb";
-      base0E = "7300ff";
-      base0F = "e879f9";
-    };
+  theme = {
+    base00 = "09090b";
+    base01 = "18181b";
+    base02 = "27272a";
+    base03 = "52525b";
+    base04 = "a1a1aa";
+    base05 = "d4d4d8";
+    base06 = "e4e4e7";
+    base07 = "ffffff";
+    base08 = "dc2626";
+    base09 = "ca8a04";
+    base0A = "eab308";
+    base0B = "16a34a";
+    base0C = "60a5fa";
+    base0D = "2563eb";
+    base0E = "7300ff";
+    base0F = "e879f9";
   };
 }

@@ -60,8 +60,8 @@ cursor {
 prefer-no-csd
 
 spawn-at-startup "xwayland-satellite"
-// spawn-at-startup "swww-daemon"
-// spawn-sh-at-startup "matugen-autostart"
+spawn-sh-at-startup "swaybg -m fill -i /home/narayan/nixcfg/modules/dots/wal/nord.jpg
+"
 
 environment {
     DISPLAY ":0"
