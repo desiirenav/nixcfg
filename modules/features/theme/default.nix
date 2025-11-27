@@ -2,6 +2,11 @@
 {
   options = with lib; with types; {
     theme = {
+      background = mkOption { type = str; }; 
+      foreground = mkOption { type = str; }; 
+      cursor-color = mkOption { type = str; };
+      selection-background = mkOption { type = str; };
+      selection-foreground = mkOption { type = str; };
       base00 = mkOption { type = str; };
       base01 = mkOption { type = str; };
       base02 = mkOption { type = str; };
@@ -20,22 +25,27 @@
       base0F = mkOption { type = str; };
     };
   };
-  theme = {
-    base00 = "09090b";
-    base01 = "18181b";
-    base02 = "27272a";
-    base03 = "52525b";
-    base04 = "a1a1aa";
-    base05 = "d4d4d8";
-    base06 = "e4e4e7";
-    base07 = "ffffff";
-    base08 = "dc2626";
-    base09 = "ca8a04";
-    base0A = "eab308";
-    base0B = "16a34a";
-    base0C = "60a5fa";
-    base0D = "2563eb";
-    base0E = "7300ff";
-    base0F = "e879f9";
+  config = {
+    theme = {
+      background = "161617";
+      foreground = "c9c7cd";
+      cursor-color = "c9c7cd";
+      base00 = "27272a";
+      base01 = "ea83a5";
+      base02 = "90b99f";
+      base03 = "e6b99d";
+      base04 = "9ca2cf";
+      base05 = "aca1cf";
+      base06 = "85b5ba";
+      base07 = "c9c7cd";
+      base08 = "353539";
+      base09 = "ED96B3";
+      base0A = "a7c8b3";
+      base0B = "eac5ae";
+      base0C = "acb1d7";
+      base0D = "b7aed5";
+      base0E = "97c0c4";
+      base0F = "d3d1d7";
+    };
   };
 }

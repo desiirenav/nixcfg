@@ -4,6 +4,7 @@
     ./firefox
     ./fish
 #    ./fuzzel
+     ./ghostty
 #    ./gtk
 #    ./kitty
     ./ignis
