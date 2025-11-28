@@ -9,8 +9,8 @@
     gtk4
     kitty
     fuzzel
-    ghostty
     starship
+    qbittorrent
     vesktop
     pywalfox-native
     capitaine-cursors
@@ -25,4 +25,6 @@
     zathura
     git
   ];
+
+  services.gnome.core-apps.enable = true;
 }

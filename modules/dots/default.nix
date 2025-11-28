@@ -4,9 +4,8 @@
     ./firefox
     ./fish
 #    ./fuzzel
-     ./ghostty
 #    ./gtk
-#    ./kitty
+    ./kitty
     ./ignis
     ./niri
   ];
