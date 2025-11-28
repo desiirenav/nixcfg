@@ -19,6 +19,8 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    flake-parts.url = "github:hercules-ci/flake-parts";
+
     hjem = {
       url = "github:feel-co/hjem";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -37,6 +39,14 @@
       url = "github:Gerg-L/mnw";
     };
 
+    wrappers.url = "github:Lassulus/wrappers";
+    wrappers.inputs.nixpkgs.follows = "nixpkgs";
+
+    plugin-base2tone ={ 
+      url = "github:atelierbram/Base2Tone-nvim";
+      flake = false;
+    };
+
     sf-mono-liga-src = {
       url = "github:shaunsingh/SFMono-Nerd-Font-Ligaturized";
       flake = false;
@@ -44,18 +54,5 @@
 
   };
 
-  outputs = inputs@{ self, nixpkgs, ... }: {
-    nixosConfigurations = {
-      nixos = nixpkgs.lib.nixosSystem {
-        system = "x86_64-linux";
-        specialArgs = { inherit inputs; };
-        modules = [ 
-          ./modules/default.nix
-          inputs.disko.nixosModules.disko
-          inputs.hjem.nixosModules.default
-          inputs.impermanence.nixosModules.impermanence
-        ];
-      };
-    };
-  };
+  outputs = inputs: inputs.flake-parts.lib.mkFlake {inherit inputs;} (inputs.import-tree ./modules);
 }

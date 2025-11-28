@@ -276,19 +276,19 @@
         "url": "https://devimages-cdn.apple.com/design/resources/download/NY.dmg"
       }
     },
-    "plugin-oldworld": {
+    "plugin-base2tone": {
       "flake": false,
       "locked": {
-        "lastModified": 1751868937,
-        "narHash": "sha256-nmekLu0N7fib6EeWZJ/jZyaGFxVCnCdlwf5inmL8WT0=",
-        "owner": "dgox16",
-        "repo": "oldworld.nvim",
-        "rev": "d0af80cf6bd5d17789cd1214a8054fe1cf23fc22",
+        "lastModified": 1670424467,
+        "narHash": "sha256-XcPZBL4QeiQVCtIoZF63vHdQjl7aCf408MhiFvlrwvI=",
+        "owner": "atelierbram",
+        "repo": "Base2Tone-nvim",
+        "rev": "c32c1d3dfdc8fb6e91cbf6078c078d6c3eaaa673",
         "type": "github"
       },
       "original": {
-        "owner": "dgox16",
-        "repo": "oldworld.nvim",
+        "owner": "atelierbram",
+        "repo": "Base2Tone-nvim",
         "type": "github"
       }
     },
@@ -302,8 +302,9 @@
         "impermanence": "impermanence",
         "mnw": "mnw",
         "nixpkgs": "nixpkgs_3",
-        "plugin-oldworld": "plugin-oldworld",
-        "sf-mono-liga-src": "sf-mono-liga-src"
+        "plugin-base2tone": "plugin-base2tone",
+        "sf-mono-liga-src": "sf-mono-liga-src",
+        "wrappers": "wrappers"
       }
     },
     "rust-overlay": {
@@ -481,6 +482,26 @@
       "original": {
         "owner": "nix-systems",
         "repo": "default",
+        "type": "github"
+      }
+    },
+    "wrappers": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1764326721,
+        "narHash": "sha256-JT6Nz/I4IpJNIbY5Oy+NpHTe4fqEsIuxIpIZAfEZWEc=",
+        "owner": "Lassulus",
+        "repo": "wrappers",
+        "rev": "94d1131dd8c8a310f3e23c82ee75919cb401e716",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Lassulus",
+        "repo": "wrappers",
         "type": "github"
       }
     }

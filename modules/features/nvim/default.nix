@@ -3,13 +3,14 @@
 {
   imports = [ inputs.mnw.nixosModules.default ];
 
+
   nixpkgs = {
     overlays = [
       (final: prev: {
         vimPlugins = prev.vimPlugins // {
-          oldworld-nvim = prev.vimUtils.buildVimPlugin {
-            name = "oldworld-nvim";
-            src = inputs.plugin-oldworld;
+          base2tone-nvim = prev.vimUtils.buildVimPlugin {
+            name = "base2tone-nvim";
+            src = inputs.plugin-base2tone;
           };
         };
       })
@@ -27,20 +28,20 @@
       vim.opt.relativenumber = true
       vim.opt.swapfile = false
       vim.lsp.enable({"lua_ls", "nixd", "tinymist"})
-      vim.cmd("colorscheme oldworld")
+      vim.cmd("colorscheme base2tone_lavender_dark")
       require('lualine').setup({
 	options = {
-	  theme = 'oldworld',
+	  theme = 'base2tone_lavender_dark',
 	},
       })
     '';
+
     plugins = {
       start = with pkgs.vimPlugins;[
 	lualine-nvim
 	nvim-lspconfig
 	which-key-nvim
-	nord-nvim
-        oldworld-nvim
+	base2tone-nvim
       ];
     };
     extraBinPath = with pkgs; [

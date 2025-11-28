@@ -25,6 +25,4 @@
     zathura
     git
   ];
-
-  services.gnome.core-apps.enable = true;
 }

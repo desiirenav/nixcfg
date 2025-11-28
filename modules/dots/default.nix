@@ -5,7 +5,7 @@
     ./fish
 #    ./fuzzel
 #    ./gtk
-    ./kitty
+#    ./kitty
     ./ignis
     ./niri
   ];
