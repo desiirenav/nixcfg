@@ -1,4 +1,4 @@
-{ pkgs, inputs, config, ... }:
+{ self, pkgs, inputs, config, ... }:
 
 { 
   environment.systemPackages = with pkgs; [
@@ -7,7 +7,7 @@
     swaybg
     gtk3
     gtk4
-    kitty
+    alacritty
     fuzzel
     starship
     qbittorrent

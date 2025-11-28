@@ -54,5 +54,28 @@
 
   };
 
-  outputs = inputs: inputs.flake-parts.lib.mkFlake {inherit inputs;} (inputs.import-tree ./modules);
+  outputs = inputs@{ self, nixpkgs, flake-parts, ... }: 
+
+    flake-parts.lib.mkFlake {inherit inputs;} {
+      systems = ["x86_64-linux"];
+
+      imports = [
+        ./modules/dots/kitty
+      ];
+
+      flake = {
+        nixosConfigurations = {
+          nixos = nixpkgs.lib.nixosSystem {
+            system = "x86_64-linux";
+            specialArgs = { inherit inputs self; };
+            modules = [ 
+              ./modules/default.nix
+              inputs.disko.nixosModules.disko
+              inputs.hjem.nixosModules.default
+              inputs.impermanence.nixosModules.impermanence
+            ];
+          };
+        };
+      };
+    };
 }

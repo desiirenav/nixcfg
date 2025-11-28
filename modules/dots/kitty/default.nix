@@ -1,12 +1,16 @@
-{ pkgs, inputs, ... }:
+{self, ...}: {
+  perSystem = {
+    pkgs,
+    self',
+    ...
+  }: {
+    packages.terminal = self'.packages.kitty;
 
-{
-  environment.systemPackages = [
-    (inputs.wrappers.wrapperModules.kitty.apply {
+    packages.kitty = self.inputs.wrappers.wrapperModules.kitty.apply {
       inherit pkgs;
       config = {
-        font_size = 13;
+        font_size = 15;
       };
-    }).wrapper
-  ];
+    };
+  };
 }

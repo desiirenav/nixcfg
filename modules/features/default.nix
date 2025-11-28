@@ -4,7 +4,7 @@
     ./hjem
     ./nvim
     ./persist
-    ./pkgs
+#    ./pkgs
     ./theme
   ];
 }
