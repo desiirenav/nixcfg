@@ -19,8 +19,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    flake-parts.url = "github:hercules-ci/flake-parts";
-
     hjem = {
       url = "github:feel-co/hjem";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -49,33 +47,20 @@
       flake = false;
     };
 
-    wrappers = { 
-      url = "github:Lassulus/wrappers";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
   };
 
-  outputs = inputs@{ self, nixpkgs, flake-parts,... }: 
-    flake-parts.lib.mkFlake {inherit inputs; } (top@{ config, withSystem, moduleWithSystem, ... }: {
-      imports = [
-        ./packages
-      ];
-      flake = {
-        nixosConfigurations = {
-          nixos = nixpkgs.lib.nixosSystem {
-	    system = "x86_64-linux";
-	    specialArgs = { inherit inputs; };
-	    modules = [
-	      ./modules/default.nix
-	      inputs.disko.nixosModules.disko
-	      inputs.hjem.nixosModules.default
-              inputs.impermanence.nixosModules.impermanence
-	    ];
-	  };
-        };
+  outputs = inputs@{ self, nixpkgs, ... }: {
+    nixosConfigurations = {
+      nixos = nixpkgs.lib.nixosSystem {
+        system = "x86_64-linux";
+        specialArgs = { inherit inputs; };
+        modules = [ 
+          ./modules/default.nix
+          inputs.disko.nixosModules.disko
+          inputs.hjem.nixosModules.default
+          inputs.impermanence.nixosModules.impermanence
+        ];
       };
-      systems = [
-        "x86_64-linux"
-      ];
-   });
+    };
+  };
 }

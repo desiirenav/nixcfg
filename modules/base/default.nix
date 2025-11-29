@@ -1,9 +1,7 @@
-{ ... }:
-
-{
+{...}:{
   imports = [
+    ./config
     ./hardware
-    ./system
   ];
 }
 

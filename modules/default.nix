@@ -1,8 +1,8 @@
 {pkgs, ...}: {
   imports = [
     ./base
-    ./dots
-    ./features
+    ./core
+    ./pkgs
   ];
 }
 
