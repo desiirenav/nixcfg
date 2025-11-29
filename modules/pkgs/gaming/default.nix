@@ -29,16 +29,4 @@
       extraCompatPackages = with pkgs; [proton-ge-bin];
     };
   };
-
-  environment.persistence."/persist/system" = {
-    users.narayan = {
-      directories = [
-        ".local/share/Steam"
-        ".local/share/anime-game-launcher"
-        ".local/share/sleepy-launcher"
-        ".steam"
-        "Games"
-      ];
-    };
-  };
 }

@@ -33,14 +33,11 @@ This configuration is an attempt to create something simple since i'm a beginner
 
 #### Matugen templates
 - [InioX/matugen-themes]
-- [Soliprem/nix-config]
-- [Abhra00/Matuprland]
-- [mylinuxforwork/dotfiles]
 
 ### Main programs
 - **Compositor:** [Niri]
 - **Launcher:** [Fuzzel]
-- **Theming:** [Matugen]
+- **Theme:** [Base2tone-lavender-dark]
 - **Terminal:** [Kitty]
 - **Bar (soon):** [Ignis]
 - **Editor:** [Neovim]
@@ -75,3 +72,4 @@ sudo sh ./install.sh
 [Neovim]: https://neovim.io
 [Yazi]: https://github.com/sxyazi/yazi
 [Ignis]: https://github.com/ignis-sh/ignis
+[Base2tone-lavender-dark]:https://github.com/atelierbram

@@ -100,24 +100,6 @@
         "type": "github"
       }
     },
-    "flake-parts": {
-      "inputs": {
-        "nixpkgs-lib": "nixpkgs-lib"
-      },
-      "locked": {
-        "lastModified": 1763759067,
-        "narHash": "sha256-LlLt2Jo/gMNYAwOgdRQBrsRoOz7BPRkzvNaI/fzXi2Q=",
-        "owner": "hercules-ci",
-        "repo": "flake-parts",
-        "rev": "2cccadc7357c0ba201788ae99c4dfa90728ef5e0",
-        "type": "github"
-      },
-      "original": {
-        "owner": "hercules-ci",
-        "repo": "flake-parts",
-        "type": "github"
-      }
-    },
     "hjem": {
       "inputs": {
         "ndg": "ndg",
@@ -250,21 +232,6 @@
         "type": "github"
       }
     },
-    "nixpkgs-lib": {
-      "locked": {
-        "lastModified": 1761765539,
-        "narHash": "sha256-b0yj6kfvO8ApcSE+QmA6mUfu8IYG6/uU28OFn4PaC8M=",
-        "owner": "nix-community",
-        "repo": "nixpkgs.lib",
-        "rev": "719359f4562934ae99f5443f20aa06c2ffff91fc",
-        "type": "github"
-      },
-      "original": {
-        "owner": "nix-community",
-        "repo": "nixpkgs.lib",
-        "type": "github"
-      }
-    },
     "nixpkgs_2": {
       "locked": {
         "lastModified": 1757745802,
@@ -330,15 +297,13 @@
         "aagl": "aagl",
         "apple-fonts": "apple-fonts",
         "disko": "disko",
-        "flake-parts": "flake-parts",
         "hjem": "hjem",
         "ignis": "ignis",
         "impermanence": "impermanence",
         "mnw": "mnw",
         "nixpkgs": "nixpkgs_3",
         "plugin-base2tone": "plugin-base2tone",
-        "sf-mono-liga-src": "sf-mono-liga-src",
-        "wrappers": "wrappers"
+        "sf-mono-liga-src": "sf-mono-liga-src"
       }
     },
     "rust-overlay": {
@@ -516,26 +481,6 @@
       "original": {
         "owner": "nix-systems",
         "repo": "default",
-        "type": "github"
-      }
-    },
-    "wrappers": {
-      "inputs": {
-        "nixpkgs": [
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1764326721,
-        "narHash": "sha256-JT6Nz/I4IpJNIbY5Oy+NpHTe4fqEsIuxIpIZAfEZWEc=",
-        "owner": "Lassulus",
-        "repo": "wrappers",
-        "rev": "94d1131dd8c8a310f3e23c82ee75919cb401e716",
-        "type": "github"
-      },
-      "original": {
-        "owner": "Lassulus",
-        "repo": "wrappers",
         "type": "github"
       }
     }
