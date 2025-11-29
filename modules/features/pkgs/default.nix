@@ -8,6 +8,7 @@
     gtk3
     gtk4
     alacritty
+    kitty
     fuzzel
     starship
     qbittorrent

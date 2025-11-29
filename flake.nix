@@ -39,9 +39,6 @@
       url = "github:Gerg-L/mnw";
     };
 
-    wrappers.url = "github:Lassulus/wrappers";
-    wrappers.inputs.nixpkgs.follows = "nixpkgs";
-
     plugin-base2tone ={ 
       url = "github:atelierbram/Base2Tone-nvim";
       flake = false;
@@ -52,30 +49,33 @@
       flake = false;
     };
 
+    wrappers = { 
+      url = "github:Lassulus/wrappers";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
-  outputs = inputs@{ self, nixpkgs, flake-parts, ... }: 
-
-    flake-parts.lib.mkFlake {inherit inputs;} {
-      systems = ["x86_64-linux"];
-
+  outputs = inputs@{ self, nixpkgs, flake-parts,... }: 
+    flake-parts.lib.mkFlake {inherit inputs; } (top@{ config, withSystem, moduleWithSystem, ... }: {
       imports = [
-        ./modules/dots/kitty
+        ./packages
       ];
-
       flake = {
         nixosConfigurations = {
           nixos = nixpkgs.lib.nixosSystem {
-            system = "x86_64-linux";
-            specialArgs = { inherit inputs self; };
-            modules = [ 
-              ./modules/default.nix
-              inputs.disko.nixosModules.disko
-              inputs.hjem.nixosModules.default
+	    system = "x86_64-linux";
+	    specialArgs = { inherit inputs; };
+	    modules = [
+	      ./modules/default.nix
+	      inputs.disko.nixosModules.disko
+	      inputs.hjem.nixosModules.default
               inputs.impermanence.nixosModules.impermanence
-            ];
-          };
+	    ];
+	  };
         };
       };
-    };
+      systems = [
+        "x86_64-linux"
+      ];
+   });
 }

@@ -1,5 +1,5 @@
 {self, ...}: {
-  flake.modules.wrapped = {
+  flake.modules.wrapped.wrapped = {
     pkgs,
     lib,
     ...
