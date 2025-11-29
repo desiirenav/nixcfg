@@ -3,7 +3,7 @@
     ./firefox
     ./fish
     ./fuzzel
-    ./gtk
+#    ./gtk
     ./kitty
     ./niri
     ./vesktop

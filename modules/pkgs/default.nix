@@ -18,6 +18,7 @@
     vesktop
     pywalfox-native
     capitaine-cursors
+    (callPackage ./phocus {})
     adwaita-icon-theme
     xwayland-satellite
     brightnessctl

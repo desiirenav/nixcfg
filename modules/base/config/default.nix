@@ -1,4 +1,4 @@
-{...}:{
+{pkgs,...}:{
   boot = {
     initrd.supportedFilesystems = [ "zfs" ];
     supportedFilesystems = ["ntfs"];
