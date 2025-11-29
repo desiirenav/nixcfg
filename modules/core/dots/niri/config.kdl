@@ -40,7 +40,7 @@ layout {
         proportion 1.0
     }
     default-column-width { proportion 0.5; }
-    gaps 9
+    gaps 16
     struts {
     }
     background-color "transparent"

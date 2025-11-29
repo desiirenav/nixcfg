@@ -1,16 +1,11 @@
-{inputs, pkgs,... }: {
+{pkgs,... }: {
   imports = [
     ./fonts
     ./gaming
     ./neovim
+    ./tmux
   ];
   environment.systemPackages = with pkgs; [
-    (inputs.ignis.packages.${pkgs.system}.default.override {
-      enableAudioService = true;
-      useDartSass = true;
-      extraPackages = [
-      ];
-    })
     yazi
     nautilus
     swaybg
