@@ -6,6 +6,7 @@
     ./gtk
     ./kitty
     ./niri
+    ./qt
     ./vesktop
   ];
 }
