@@ -19,7 +19,6 @@
     pywalfox-native
     capitaine-cursors
     adwaita-icon-theme
-    (callPackage ./adwaita {})
     xwayland-satellite
     brightnessctl
     ani-cli

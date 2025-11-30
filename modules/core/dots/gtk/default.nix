@@ -1,7 +1,7 @@
 { pkgs, lib, config, ...}: let
   inherit (lib) mkDefault;
   theme-name = "adw-gtk3";
-  icon-theme-name = "adwaita-icon-theme";
+  icon-theme-name = "Adwaita";
   gtk-css = ''
 	@define-color accent_color #${config.theme.base0D};
 	@define-color accent_bg_color #${config.theme.base0D};
@@ -110,4 +110,27 @@ in {
       ${gtk-css}
     '';
   };
+
+    programs = {
+      dconf = {
+        enable = mkDefault true;
+        profiles = {
+          user = {
+            databases = [
+              {
+                lockAll = false;
+                settings = {
+                  "org/gnome/desktop/interface" = {
+                    gtk-theme = theme-name;
+                    icon-theme = icon-theme-name;
+                    color-scheme = "prefer-dark";
+                  };
+                };
+              }
+            ];
+          };
+        };
+      };
+    };
+
 } 
