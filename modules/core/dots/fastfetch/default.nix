@@ -1,6 +1,6 @@
 {...}:{
-  hjem.user.narayan.files = {
-    ".config/fastfetch/config.jsonc" = ''
+  hjem.users.narayan.files = {
+    ".config/fastfetch/config.jsonc".text = ''
 	{
 	    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
 	    "display": {
@@ -15,6 +15,7 @@
 			"host": "white"
 		    },
 		},
+		"break",
 		"break",
 		{
 		    "type": "os",
@@ -70,7 +71,13 @@
 		    "key": " ",
 		    "keyColor": "cyan"
 		},
+		{
+		    "type": "battery",
+		    "key": "󰂅 ",
+		    "keyColor": "cyan"
+		},
 	      "break",
+	      "colors"
 	    ]
 	}
     '';
