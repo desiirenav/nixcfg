@@ -1,4 +1,4 @@
-{pkgs,... }: {
+{pkgs,config,... }: {
   imports = [
     ./fonts
     ./gaming
@@ -18,8 +18,8 @@
     vesktop
     pywalfox-native
     capitaine-cursors
-    (callPackage ./phocus {})
     adwaita-icon-theme
+    (callPackage ./adwaita {})
     xwayland-satellite
     brightnessctl
     ani-cli

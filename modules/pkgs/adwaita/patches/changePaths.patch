@@ -1,0 +1,50 @@
+diff --git a/gtk-3.0/gtk-dark.css b/gtk-3.0/gtk-dark.css
+index f73d883..30ede24 100644
+--- a/gtk-3.0/gtk-dark.css
++++ b/gtk-3.0/gtk-dark.css
+@@ -88,7 +88,7 @@
+ @define-color incognito_bg_color #1c2438;
+ @define-color new_title_bg_color #303030;
+ 
+-@import "./colors.css";
++@import "@CONFIG@/gtk-3.0/colors.css";
+ 
+ * {
+   padding: 0;
+diff --git a/gtk-3.0/gtk.css b/gtk-3.0/gtk.css
+index f73d883..30ede24 100644
+--- a/gtk-3.0/gtk.css
++++ b/gtk-3.0/gtk.css
+@@ -88,7 +88,7 @@
+ @define-color incognito_bg_color #1c2438;
+ @define-color new_title_bg_color #303030;
+ 
+-@import "./colors.css";
++@import "@CONFIG@/gtk-3.0/colors.css";
+ 
+ * {
+   padding: 0;
+diff --git a/gtk-4.0/gtk-dark.css b/gtk-4.0/gtk-dark.css
+index 1c75581..7a79fe1 100644
+--- a/gtk-4.0/gtk-dark.css
++++ b/gtk-4.0/gtk-dark.css
+@@ -7,4 +7,4 @@
+     --error-color: oklab(from var(--error-bg-color) var(--standalone-color-oklab));
+ }
+ 
+-@import "./colors.css";
+\ No newline at end of file
++@import "@CONFIG@/gtk-4.0/colors.css";
+\ No newline at end of file
+diff --git a/gtk-4.0/gtk.css b/gtk-4.0/gtk.css
+index 1c75581..7a79fe1 100644
+--- a/gtk-4.0/gtk.css
++++ b/gtk-4.0/gtk.css
+@@ -7,4 +7,4 @@
+     --error-color: oklab(from var(--error-bg-color) var(--standalone-color-oklab));
+ }
+ 
+-@import "./colors.css";
+\ No newline at end of file
++@import "@CONFIG@/gtk-4.0/colors.css";
+\ No newline at end of file
