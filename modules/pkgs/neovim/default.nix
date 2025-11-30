@@ -1,8 +1,5 @@
-{ inputs, pkgs, lib,...}:
-
-{
+{inputs,pkgs,...}:{
   imports = [ inputs.mnw.nixosModules.default ];
-
 
   nixpkgs = {
     overlays = [
@@ -26,6 +23,7 @@
     initLua = ''
       vim.opt.number = true
       vim.opt.relativenumber = true
+      vim.opt.smartindent = true
       vim.opt.swapfile = false
       vim.lsp.enable({"lua_ls", "nixd", "tinymist"})
       vim.cmd("colorscheme base2tone_lavender_dark")

@@ -28,7 +28,8 @@ overview {
 
 layout {
      focus-ring {
-        off
+        active-color "${config.theme.base0D}"
+        inactive-color "${config.theme.base07}"
     }
      border {
         off
@@ -40,15 +41,13 @@ layout {
         proportion 1.0
     }
     default-column-width { proportion 0.5; }
-    gaps 16
+    gaps 9
     struts {
     }
     background-color "transparent"
     center-focused-column "never"
     shadow {
-        on
-        softness 10
-        spread 10
+        off
     }
 }
 
@@ -83,7 +82,7 @@ layer-rule {
 
 
 window-rule {
-    geometry-corner-radius 12
+    geometry-corner-radius 9
     clip-to-geometry true
 }
 

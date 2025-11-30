@@ -1,4 +1,4 @@
-{pkgs,config,... }: {
+{pkgs,... }: {
   imports = [
     ./fonts
     ./gaming
@@ -14,11 +14,11 @@
     kitty
     fuzzel
     starship
-    qbittorrent
     vesktop
     pywalfox-native
     capitaine-cursors
     adwaita-icon-theme
+    transmission_4-gtk
     xwayland-satellite
     brightnessctl
     ani-cli
