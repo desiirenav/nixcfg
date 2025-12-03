@@ -1,5 +1,5 @@
 {...}: {
-  hjem.users.narayan.files.".config/ghostty/ghostty".text = ''
+  hjem.users.narayan.files.".config/ghostty/config".text = ''
     font-family = "Maple Mono"
     background = #201d2a
     foreground = #efebff

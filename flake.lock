@@ -83,6 +83,23 @@
         "type": "github"
       }
     },
+    "maple-mono": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1762705593,
+        "narHash": "sha256-SU4OyFpg87MiWIhIytm6cM9aqQ7j+AI006ddjeBai7w=",
+        "owner": "subframe7536",
+        "repo": "maple-font",
+        "rev": "3c8a6b0faac19ab29276fd2fd1bed6ee620245f0",
+        "type": "github"
+      },
+      "original": {
+        "owner": "subframe7536",
+        "ref": "variable",
+        "repo": "maple-font",
+        "type": "github"
+      }
+    },
     "mnw": {
       "locked": {
         "lastModified": 1764066817,
@@ -164,6 +181,7 @@
         "disko": "disko",
         "hjem": "hjem",
         "impermanence": "impermanence",
+        "maple-mono": "maple-mono",
         "mnw": "mnw",
         "nixpkgs": "nixpkgs_2",
         "plugin-base2tone": "plugin-base2tone",
