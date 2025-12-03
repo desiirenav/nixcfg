@@ -7,7 +7,7 @@
     '')
   ];
 
-  hjem.users.narayan.files.".config/walker/themes/theme.css".text = ''
+  hjem.users.narayan.files.".config/walker/themes/default/style.css".text = ''
 
 	@define-color foreground #${config.theme.base0F};
 

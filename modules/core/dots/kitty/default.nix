@@ -6,7 +6,6 @@
 	## upstream: https://github.com/atelierbram/Base2Tone-kitty/blob/main/themes/base2tone-lavender-dark.conf
 	## blurb: duotone theme | blue lavender violet - magenta
 
-
 	#: The basic colors
 
 	foreground #efebff

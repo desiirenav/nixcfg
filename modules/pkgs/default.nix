@@ -4,10 +4,7 @@
     ./gaming
     ./neovim
     ./tmux
-    inputs.walker.nixosModules.default
   ];
-
-  programs.walker.enable = true;
 
   environment.systemPackages = with pkgs; [
     yazi
@@ -16,11 +13,14 @@
     gtk3
     gtk4
     kitty
+    fuzzel
     starship
     vesktop
+    ghostty
     pywalfox-native
     capitaine-cursors
     adwaita-icon-theme
+    callPackage ./maple-mono { inherit inputs; }
     transmission_4-gtk
     xwayland-satellite
     brightnessctl

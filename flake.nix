@@ -8,12 +8,6 @@
     apple-fonts = {
       url = "github:Lyndeno/apple-fonts.nix";
     };
-	elephant.url = "github:abenz1267/elephant";
-
-	walker = {
-	  url = "github:abenz1267/walker";
-	  inputs.elephant.follows = "elephant";
-	};
 
     disko = {
       url = "github:nix-community/disko/latest";
@@ -27,6 +21,11 @@
 
     impermanence = {
       url = "github:nix-community/impermanence";
+    };
+
+    maple-mono = {
+      url = "github:subframe7536/maple-font/variable";
+      flake = false;
     };
 
     mnw = { 

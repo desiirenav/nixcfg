@@ -101,20 +101,10 @@
 	    open-floating true
 	}
 
-	/-window-rule {
-	    match app-id=r#"^org\.keepassxc\.KeePassXC$"#
-	    match app-id=r#"^org\.gnome\.World\.Secrets$"#
-
-	    block-out-from "screen-capture"
-
-	}
-
-
-
 	binds {
 	    Mod+Shift+Slash { show-hotkey-overlay; }
 	    Mod+Return { spawn "kitty"; }
-	    Mod+X { spawn-sh "elephant & walker"; }
+	    Mod+X { spawn "fuzzel"; }
 
 	    XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1+"; }
 	    XF86AudioLowerVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1-"; }
