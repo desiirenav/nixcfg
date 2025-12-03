@@ -20,7 +20,6 @@
     pywalfox-native
     capitaine-cursors
     adwaita-icon-theme
-    (callPackage ./maple-mono { inherit inputs; })
     transmission_4-gtk
     xwayland-satellite
     brightnessctl

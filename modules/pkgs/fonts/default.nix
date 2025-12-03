@@ -19,6 +19,7 @@
     packages = with pkgs; [
       inputs.apple-fonts.packages.${pkgs.stdenv.hostPlatform.system}.sf-pro-nerd
       sf-mono-liga-bin
+      (callPackage ./maple-mono { inherit inputs; })
     ];
     fontconfig = {
       defaultFonts = {
