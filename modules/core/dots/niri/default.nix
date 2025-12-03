@@ -114,7 +114,7 @@
 	binds {
 	    Mod+Shift+Slash { show-hotkey-overlay; }
 	    Mod+Return { spawn "kitty"; }
-	    Mod+X { spawn "fuzzel"; }
+	    Mod+X { spawn-sh "elephant & walker"; }
 
 	    XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1+"; }
 	    XF86AudioLowerVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1-"; }

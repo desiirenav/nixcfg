@@ -1,4 +1,5 @@
 {pkgs, ...}: {
+
   programs.fuse.userAllowOther = true;
 
   boot.initrd.systemd = {
@@ -29,8 +30,6 @@
     users.narayan = {
       directories = [
         ".local/share/Steam"
-        ".local/share/anime-game-launcher"
-        ".local/share/sleepy-launcher"
         ".local/share/fish"
         ".steam"
         "Games"

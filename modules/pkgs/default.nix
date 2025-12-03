@@ -1,10 +1,14 @@
-{pkgs,... }: {
+{inputs,pkgs,... }: {
   imports = [
     ./fonts
     ./gaming
     ./neovim
     ./tmux
+    inputs.walker.nixosModules.default
   ];
+
+  programs.walker.enable = true;
+
   environment.systemPackages = with pkgs; [
     yazi
     nautilus
@@ -12,7 +16,6 @@
     gtk3
     gtk4
     kitty
-    fuzzel
     starship
     vesktop
     pywalfox-native

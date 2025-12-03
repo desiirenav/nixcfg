@@ -17,7 +17,7 @@
 
   fonts = {
     packages = with pkgs; [
-      inputs.apple-fonts.packages.${pkgs.system}.sf-pro-nerd
+      inputs.apple-fonts.packages.${pkgs.stdenv.hostPlatform.system}.sf-pro-nerd
       sf-mono-liga-bin
     ];
     fontconfig = {

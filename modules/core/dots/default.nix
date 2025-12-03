@@ -8,6 +8,7 @@
     ./kitty
     ./niri
     ./vesktop
+    ./walker
   ];
 }
 

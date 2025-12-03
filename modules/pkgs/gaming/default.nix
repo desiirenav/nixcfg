@@ -1,9 +1,8 @@
-{pkgs, inputs,...}: {
-  imports = [ inputs.aagl.nixosModules.default ];
-  nix.settings = inputs.aagl.nixConfig;
+{pkgs,...}: {
 
   environment.systemPackages = with pkgs; [
     mangohud
+    protonplus
   ];
 
   environment.sessionVariables = {
@@ -11,8 +10,6 @@
   };
 
   programs = {
-    anime-game-launcher.enable = true;
-    sleepy-launcher.enable = true;
     gamemode.enable = true;
     steam = {
       enable = true;
