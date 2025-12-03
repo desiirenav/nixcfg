@@ -25,7 +25,7 @@
       defaultFonts = {
         serif = [ "SFProDisplay Nerd Font"];
         sansSerif = ["SFProDisplay Nerd Font"];
-        monospace = [ "Liga SFMono Nerd Font" ];
+        monospace = [ "Maple Mono" ];
       };
     };
   };

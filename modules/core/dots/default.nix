@@ -4,7 +4,7 @@
     ./firefox
     ./fish
     ./fuzzel
-    ./ghostty
+#    ./ghostty
     ./gtk
     ./kitty
     ./niri

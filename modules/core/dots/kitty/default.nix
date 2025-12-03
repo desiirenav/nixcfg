@@ -7,6 +7,7 @@
 	## blurb: duotone theme | blue lavender violet - magenta
 
 	#: The basic colors
+        font_size 12.0
 
 	foreground #efebff
 	background #201d2a

@@ -16,7 +16,6 @@
     fuzzel
     starship
     vesktop
-    ghostty
     pywalfox-native
     capitaine-cursors
     adwaita-icon-theme
