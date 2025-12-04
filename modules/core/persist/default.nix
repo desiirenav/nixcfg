@@ -40,7 +40,7 @@
         "Videos"
         "Projects"
         ".ssh"
-	".mozilla"
+	".zen"
 	"nixcfg"
         ".config/discord"
 	".config/vesktop"
