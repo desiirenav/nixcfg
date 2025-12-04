@@ -18,7 +18,7 @@
 
     [colors]
     background=${config.theme.base00}ff
-    text=${config.theme.base0F}ff
+    text=${config.theme.base07}ff
     placeholder=${config.theme.base03}ff
     prompt=${config.theme.base05}ff
     input=${config.theme.base05}ff
