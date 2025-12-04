@@ -1,7 +1,6 @@
 {...}: {
   imports = [
     ./fastfetch
-    ./firefox
     ./fish
     ./fuzzel
     ./gtk

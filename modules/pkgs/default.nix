@@ -16,8 +16,6 @@
     fuzzel
     starship
     vesktop
-    firefox-gnome-theme
-    pywalfox-native
     capitaine-cursors
     inputs.zen-browser.packages."${pkgs.stdenv.hostPlatform.system}".default
     adwaita-icon-theme

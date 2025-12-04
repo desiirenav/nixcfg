@@ -11,8 +11,8 @@
 	StartWithLastProfile=1
 	Version=2
     '';
-    ".zen/narayan.default/userChrome.css".text = import ./userchome.nix {inherit config;};
-    ".zen/narayan.default/userContent.css".text = import ./userContent.nix {inherit config;};
+    ".zen/narayan.default/chrome/userChrome.css".text = import ./userChrome.nix {inherit config;};
+    ".zen/narayan.default/chrome/userContent.css".text = import ./userContent.nix {inherit config;};
   };
-
+}
 
