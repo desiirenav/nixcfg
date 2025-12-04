@@ -31,16 +31,22 @@ This configuration is an attempt to create something simple since i'm a beginner
 - [Rexcrazy804/Zaphkiel]
 - [Soliprem/nix-config]
 
-#### Matugen templates
+### Fuzzel config
+- [VISHALKANNAN070/fuzzel]
+
+#### Theming templates
 - [InioX/matugen-themes]
+- [Stylix]
+- [Base2tone Lavender Dark]
+- [Discord css]
 
 #### Fastfetch config
 - [pfetch]
 
-### Main programs
+### Main programs/tools
 - **Compositor:** [Niri]
 - **Launcher:** [Fuzzel]
-- **Theme:** [Base2tone-lavender-dark]
+- **Theme:** [Base2tone Lavender Dark]
 - **Terminal:** [Kitty]
 - **Bar (soon):** [Ignis]
 - **Editor:** [Neovim]
@@ -76,6 +82,9 @@ sudo sh ./install.sh
 [Neovim]: https://neovim.io
 [Yazi]: https://github.com/sxyazi/yazi
 [Ignis]: https://github.com/ignis-sh/ignis
-[Base2tone-lavender-dark]:https://github.com/atelierbram
+[Base2tone Lavender Dark]:https://github.com/atelierbram
 [Fastfetch]:https://github.com/fastfetch-cli/fastfetch
 [pfetch]:https://github.com/dylanaraps/pfetch
+[Stylix]:https://github.com/nix-community/stylix
+[Discord css]:https://github.com/MrTipson/DiscordCSS/tree/master
+[VISHALKANNAN070/fuzzel]:https://github.com/VISHALKANNAN070/dotfiles/blob/main/fuzzel/fuzzel.ini

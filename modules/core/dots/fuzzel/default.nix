@@ -1,16 +1,32 @@
-{ config, lib, ...}: {
+{ config, ...}: {
+
   hjem.users.narayan.files.".config/fuzzel/fuzzel.ini".text = ''
+    width=30
+    lines=6
+    anchor=top
+    horizontal-pad=10
+    vertical-pad=8
+    inner-pad=2
+
+    icons-enabled=no
+    y-margin=20
+
+    [border]
+    # Thinner border
+    width=1
+    radius=0
+
     [colors]
-    background=${lib.toLower config.theme.base00}ff
-    text=${lib.toLower config.theme.base0F}ff
-    placeholder=${lib.toLower config.theme.base03}ff
-    prompt=${lib.toLower config.theme.base05}ff
-    input=${lib.toLower config.theme.base05}ff
-    match=${lib.toLower config.theme.base0A}ff
-    selection=${lib.toLower config.theme.base03}ff
-    selection-text=${lib.toLower config.theme.base05}ff
-    selection-match=${lib.toLower config.theme.base0A}ff
-    counter=${lib.toLower config.theme.base06}ff
-    border=${lib.toLower config.theme.base0D}ff
+    background=${config.theme.base00}ff
+    text=${config.theme.base0F}ff
+    placeholder=${config.theme.base03}ff
+    prompt=${config.theme.base05}ff
+    input=${config.theme.base05}ff
+    match=${config.theme.base0A}ff
+    selection=${config.theme.base03}ff
+    selection-text=${config.theme.base05}ff
+    selection-match=${config.theme.base0A}ff
+    counter=${config.theme.base06}ff
+    border=${config.theme.base0D}ff
   '';
 }

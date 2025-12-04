@@ -7,7 +7,7 @@
 	    },
 	    "logo": {
 		"source": "~/.config/fastfetch/logo.txt",
-		"type": "file"
+		"type": "file",
 	    },
 	    "modules": [
 		{

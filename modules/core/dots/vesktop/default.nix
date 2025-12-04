@@ -1,104 +1,77 @@
-{config, ... }:{
+{config, ...}: {
   hjem.users.narayan.files = {
-    ".config/vesktop/themes/midnight-discord.css".text = ''
-	/**
-	 * @name midnight
-	 * @description A dark, rounded discord theme.
-	 * @author refact0r
-	 * @version 1.6.2
-	 * @invite nz87hXyvcy
-	 * @website https://github.com/refact0r/midnight-discord
-	 * @source https://github.com/refact0r/midnight-discord/blob/master/midnight.theme.css
-	 * @authorId 508863359777505290
-	 * @authorLink https://www.refact0r.dev
-	*/
+    ".config/vesktop/themes/base16.css".text = ''
+      @import url("https://mrtipson.github.io/DiscordCSS/css/base.css");
 
-	/* IMPORTANT: make sure to enable dark mode in discord settings for the theme to apply properly!!! */
+      .theme-light, .theme-dark {
+        --base00: #${config.theme.base00};
+        --base01: #${config.theme.base01};
+        --base02: #${config.theme.base02};
+        --base03: #${config.theme.base03};
+        --base04: #${config.theme.base04};
+        --base05: #${config.theme.base05};
+        --base06: #${config.theme.base06};
+        --base07: #${config.theme.base07};
+        --base08: #${config.theme.base08};
+        --base09: #${config.theme.base09};
+        --base0A: #${config.theme.base0A};
+        --base0B: #${config.theme.base0B};
+        --base0C: #${config.theme.base0C};
+        --base0D: #${config.theme.base0D};
+        --base0E: #${config.theme.base0E};
+        --base0F: #${config.theme.base0F};
 
-	@import url('https://refact0r.github.io/midnight-discord/build/midnight.css');
-
-	/* customize things here */
-	:root {
-		/* font, change to 'gg sans' for default discord font*/
-		--font: 'figtree';
-
-		/* top left corner text */
-		--corner-text: 'Midnight';
-
-		/* color of status indicators and window controls */
-	    --online-indicator: #625690;     /* change to #23a55a for default green */
-		--dnd-indicator: #${config.theme.base01};                  /* change to #f13f43 for default red */
-		--idle-indicator: #623b4b;    /* change to #f0b232 for default yellow */
-		--streaming-indicator: #33275e;       /* change to #593695 for default purple */
-
-		/* accent colors */
-	    --accent-1: #${config.theme.base06};            /* links */
-		--accent-2: #${config.theme.base02};             /* general unread/mention elements, some icons when active */
-		--accent-3: #${config.theme.base02};             /* accent buttons */
-		--accent-4: #${config.theme.base0D};      /* accent buttons when hovered */
-		--accent-5: #${config.theme.base02};   /* accent buttons when clicked */
-		--mention:  #${config.theme.base00};             /* mentions & mention messages */
-		--mention-hover: #${config.theme.base0D}; /* mentions & mention messages when hovered */
-
-		/* text colors */
-		--text-0: #${config.theme.base00};               /* text on colored elements */
-		--text-1: #${config.theme.base0F};            /* other normally white text */
-		--text-2: #${config.theme.base0F};            /* headings and important text */
-		--text-3: #cac4cf;    /* normal text */
-		--text-4: #cac4cf;    /* icon buttons and channels */
-		--text-5: #938f99;               /* muted channels/chats and timestamps */
-
-		/* background and dark colors */
-	    --bg-1: #${config.theme.base02};                             /* dark buttons when clicked */
-		--bg-2: #2b292f;              /* dark buttons */
-		--bg-3: #1c1b20;               /* spacing, secondary elements */
-		--bg-4: #${config.theme.base00};                             /* main background color */
-		--hover: #${config.theme.base0D};                     /* channels and buttons when hovered */--active: #${config.theme.base0D};                    /* channels and buttons when clicked or selected */
-		--message-hover: #${config.theme.base0D};             /* messages when hovered */
-
-		/* amount of spacing and padding */
-		--spacing: 12px;
-
-		/* animations */
-		/* ALL ANIMATIONS CAN BE DISABLED WITH REDUCED MOTION IN DISCORD SETTINGS */
-		--list-item-transition: 0.2s ease;  /* channels/members/settings hover transition */
-		--unread-bar-transition: 0.2s ease; /* unread bar moving into view transition */
-		--moon-spin-transition: 0.4s ease;  /* moon icon spin */
-		--icon-spin-transition: 1s ease;    /* round icon button spin (settings, emoji, etc.) */
-
-		/* corner roundness (border-radius) */
-		--roundness-xl: 22px; /* roundness of big panel outer corners */
-		--roundness-l: 20px; /* popout panels */
-		--roundness-m: 16px; /* smaller panels, images, embeds */
-		--roundness-s: 12px; /* members, settings inputs */
-		--roundness-xs: 10px; /* channels, buttons */
-		--roundness-xxs: 8px; /* searchbar, small elements */
-
-		/* direct messages moon icon */
-		/* change to block to show, none to hide */
-		--discord-icon: none; /* discord icon */
-		--moon-icon: block; /* moon icon */
-		--moon-icon-url: url('https://upload.wikimedia.org/wikipedia/commons/c/c4/Font_Awesome_5_solid_moon.svg'); /* custom icon url */
-		--moon-icon-size: auto;
-
-		/* filter uncolorable elements to fit theme */
-		/* (just set to none, they're too much work to configure) */
-		--login-bg-filter: saturate(0.3) hue-rotate(-15deg) brightness(0.4); /* login background artwork */
-		--green-to-accent-3-filter: hue-rotate(56deg) saturate(1.43); /* add friend page explore icon */
-		--blurple-to-accent-3-filter: hue-rotate(304deg) saturate(0.84) brightness(1.2); /* add friend page school icon */
-	}
-
-	/* Selected chat/friend text */
-	.selected_f5eb4b,
-	.selected_f6f816 .link_d8bfb3 {
-	  color: var(--text-0) !important;
-	  background: var(--accent-3) !important;
-	}
-
-	.selected_f6f816 .link_d8bfb3 * {
-	  color: var(--text-0) !important;
-	  fill: var(--text-0) !important;
-	}
+        --window-opacity: 1;
+      }
+      .theme-light.theme-light, .theme-dark.theme-dark {
+        --header-primary: var(--text-normal);
+        --header-secondary: var(--text-normal);
+        --text-normal: var(--base0F);
+        --background-primary: var(--base00);
+        --background-secondary: var(--base0B);
+        --background-secondary-alt: transparent;
+        --background-tertiary: var(--base0B) !important;
+        --background-floating: var(--base00);
+        --modal-footer-background: var(--base0B);
+        --chat-background-default: var(--background-tertiary);
+        --deprecated-store-bg: var(--background-primary);
+        --deprecated-quickswitcher-input-background: transparent;
+        --deprecated-card-editable-bg: var(--deprecated-card-bg);
+        --autocomplete-bg: var(--background-floating);
+        --interactive-normal: var(--base0E);
+        --interactive-muted: var(--base0C);
+        --interactive-hover: var(--interactive-active);
+        --text-link: var(--base09);
+        --interactive-active: var(--color-main);
+        --text-muted: var(--base0C);
+        --info-warning-foreground: var(--base0C);
+        --channels-default: var(--text-normal);
+        --background-accent: var(--background-secondary);
+        --background-message-hover: var(--base0B);
+        --background-modifier-accent: var(--base0B);
+        --background-modifier-hover: var(--base0B);
+        --background-modifier-active: var(--base0B);
+        --background-modifier-selected: var(--base0B);
+        --deprecated-card-bg: var(--background-secondary);
+        --scrollbar-thin-thumb: var(--base0B);
+        --scrollbar-thin-track: transparent;
+        --scrollbar-auto-thumb: var(--base0B);
+        --scrollbar-auto-track: var(--base0B);
+        --bg-base-primary: var(--background-primary);
+        --user-profile-overlay-background: var(--base0B);
+        --color-main: var(--base08);
+        --background-image: none;
+        --background-filter: none;
+        --background-markup: var(--background-tertiary);
+        --background-embed: var(--background-tertiary);
+        --background-modal: var(--base0B);
+        --background-dropdown: var(--background-floating);
+        --background-color: var(--base0B);
+        --progress-thumb: var(--text-muted);
+        --progress-track-full: var(--base0B);
+        --progress-track-empty: var(--base0B);
+        --folder-shadow: -1px 0px 3px 0px var(--base0C);
+      }
     '';
   };
 }

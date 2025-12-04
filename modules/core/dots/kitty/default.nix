@@ -1,97 +1,69 @@
-{...}: {
+{config, ...}: {
   hjem.users.narayan.files.".config/kitty/kitty.conf".text = ''
-	## name: Base2Tone Lavender Dark
-	## author: Bram de Haan (https://github.com/atelierbram)
-	## license: MIT
-	## upstream: https://github.com/atelierbram/Base2Tone-kitty/blob/main/themes/base2tone-lavender-dark.conf
-	## blurb: duotone theme | blue lavender violet - magenta
+    font_size 13.0
 
-	#: The basic colors
-        font_size 12.0
+    foreground #${config.theme.base0F}
+    background #${config.theme.base00}
+    selection_foreground #${config.theme.base07}
+    selection_background #${config.theme.base0A}
 
-	foreground #efebff
-	background #201d2a
-	selection_foreground #9992b0
-	selection_background #2c2839
+    cursor #b042ff
+    cursor_text_color #${config.theme.base00}
 
+    url_color #${config.theme.base0D}
 
-	#: Cursor colors
+    active_border_color #${config.theme.base0B}
+    inactive_border_color #${config.theme.base00}
+    bell_border_color #7451e6
+    visual_bell_color none
 
-	cursor #b042ff
-	cursor_text_color #201d2a
+    wayland_titlebar_color #${config.theme.base0A}
+    macos_titlebar_color #${config.theme.base0A}
 
+    active_tab_foreground #faf8fc
+    active_tab_background #${config.theme.base00}
+    inactive_tab_foreground #b2a4bc
+    inactive_tab_background #${config.theme.base0A}
+    tab_bar_background #${config.theme.base0A}
+    tab_bar_margin_color none
 
-	#: URL underline color when hovering with mouse
+    mark1_foreground #${config.theme.base00}
+    mark1_background #8363ee
+    mark2_foreground #${config.theme.base00}
+    mark2_background #8e8198
+    mark3_foreground #${config.theme.base00}
+    mark3_background #b957ff
 
-	url_color #dcd2fe
+    #: black
+    color0 #${config.theme.base00}
+    color8 #${config.theme.base08}
 
+    #: red
+    color1 #${config.theme.base01}
+    color9 #${config.theme.base09}
 
-	#: kitty window border colors and terminal bell colors
+    #: green
+    color2 #${config.theme.base02}
+    color10 #${config.theme.base0A}
 
-	active_border_color #4b455f
-	inactive_border_color #201d2a
-	bell_border_color #7451e6
-	visual_bell_color none
+    #: yellow
+    color3 #${config.theme.base03}
+    color11 #${config.theme.base0B}
 
+    #: blue
+    color4 #${config.theme.base04}
+    color12 #${config.theme.base0C}
 
-	#: OS Window titlebar colors
+    #: magenta
+    color5 #${config.theme.base05}
+    color13 #${config.theme.base0D}
 
-	wayland_titlebar_color #2c2839
-	macos_titlebar_color #2c2839
+    #: cyan
+    color6 #${config.theme.base06}
+    color14 #${config.theme.base0E}
 
-
-	#: Tab bar colors
-
-	active_tab_foreground #faf8fc
-	active_tab_background #201d2a
-	inactive_tab_foreground #b2a4bc
-	inactive_tab_background #2c2839
-	tab_bar_background #2c2839
-	tab_bar_margin_color none
-
-
-	#: Colors for marks (marked text in the terminal)
-
-	mark1_foreground #201d2a
-	mark1_background #8363ee
-	mark2_foreground #201d2a
-	mark2_background #8e8198
-	mark3_foreground #201d2a
-	mark3_background #b957ff
-
-
-	#: The basic 16 colors
-
-	#: black
-	color0 #201d2a
-	color8 #625a7c
-
-	#: red
-	color1 #9375f5
-	color9 #dba8ff
-
-	#: green
-	color2 #d294ff
-	color10 #2c2839
-
-	#: yellow
-	color3 #ecd1ff
-	color11 #4b455f
-
-	#: blue
-	color4 #a286fd
-	color12 #6e658b
-
-	#: magenta
-	color5 #d294ff
-	color13 #dcd2fe
-
-	#: cyan
-	color6 #b5a0fe
-	color14 #ca80ff
-
-	#: white
-	color7 #9992b0
-	color15 #efebff
+    #: white
+    color7 #${config.theme.base07}
+    color15 #${config.theme.base0F}
   '';
 }
