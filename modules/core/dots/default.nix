@@ -7,6 +7,7 @@
     ./kitty
     ./niri
     ./vesktop
+    ./yazi
     ./zen-browser
   ];
 }

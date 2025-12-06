@@ -125,22 +125,6 @@
         "type": "github"
       }
     },
-    "plugin-base2tone": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1670424467,
-        "narHash": "sha256-XcPZBL4QeiQVCtIoZF63vHdQjl7aCf408MhiFvlrwvI=",
-        "owner": "atelierbram",
-        "repo": "Base2Tone-nvim",
-        "rev": "c32c1d3dfdc8fb6e91cbf6078c078d6c3eaaa673",
-        "type": "github"
-      },
-      "original": {
-        "owner": "atelierbram",
-        "repo": "Base2Tone-nvim",
-        "type": "github"
-      }
-    },
     "root": {
       "inputs": {
         "disko": "disko",
@@ -148,7 +132,6 @@
         "impermanence": "impermanence",
         "mnw": "mnw",
         "nixpkgs": "nixpkgs",
-        "plugin-base2tone": "plugin-base2tone",
         "zen-browser": "zen-browser"
       }
     },

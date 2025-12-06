@@ -15,6 +15,7 @@
     kitty
     fuzzel
     starship
+    gpu-screen-recorder-gtk
     vesktop
     capitaine-cursors
     inputs.zen-browser.packages."${pkgs.stdenv.hostPlatform.system}".default

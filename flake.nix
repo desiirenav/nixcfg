@@ -23,11 +23,6 @@
       url = "github:Gerg-L/mnw";
     };
 
-    plugin-base2tone ={ 
-      url = "github:atelierbram/Base2Tone-nvim";
-      flake = false;
-    };
-
     zen-browser.url = "github:0xc000022070/zen-browser-flake";
 
   };

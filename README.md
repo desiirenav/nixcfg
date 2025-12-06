@@ -8,10 +8,6 @@ This configuration is an attempt to create something simple since i'm a beginner
 #### Readme
 - [Rexcrazy804/Zaphkiel]
 
-#### Fonts
-- [shaunsingh/SFMono-Nerd-Font-Ligaturized]
-- [Lyndeno/apple-fonts.nix]
-
 #### Knowledge on Nix/NixOS
 - [vimjoyer]
 
