@@ -17,6 +17,7 @@
     starship
     firefox
     gpu-screen-recorder-gtk
+    inputs.zen-browser.packages."${pkgs.stdenv.hostPlatform.system}".default
     vesktop
     capitaine-cursors
     adwaita-icon-theme
