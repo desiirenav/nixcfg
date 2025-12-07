@@ -1,14 +1,13 @@
 {...}: {
   imports = [
     ./fastfetch
+    ./firefox
     ./fish
     ./fuzzel
     ./gtk
     ./kitty
     ./niri
     ./vesktop
-    ./yazi
-    ./zen-browser
   ];
 }
 

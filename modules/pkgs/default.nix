@@ -15,10 +15,10 @@
     kitty
     fuzzel
     starship
+    firefox
     gpu-screen-recorder-gtk
     vesktop
     capitaine-cursors
-    inputs.zen-browser.packages."${pkgs.stdenv.hostPlatform.system}".default
     adwaita-icon-theme
     transmission_4-gtk
     xwayland-satellite
