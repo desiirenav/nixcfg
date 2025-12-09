@@ -2,7 +2,6 @@
   imports = [
     ./fonts
     ./gaming
-    ./tmux
   ];
 
   environment.systemPackages = with pkgs; [
@@ -12,10 +11,10 @@
     gtk3
     gtk4
     fuzzel
-    (callPackage ./neovim.nix {})
+    (callPackage ./neovim {})
     kitty
     starship
-    inputs.zen-browser.packages."${system}".beta
+    inputs.zen-browser.packages."${pkgs.stdenv.hostPlatform.system}".default
     vesktop
     capitaine-cursors
     adwaita-icon-theme

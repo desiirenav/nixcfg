@@ -23,11 +23,6 @@
       url = "github:nix-community/impermanence";
     };
 
-    sf-mono-liga-src = {
-      url = "github:shaunsingh/SFMono-Nerd-Font-Ligaturized";
-      flake = false;
-    };
-
     zen-browser.url = "github:0xc000022070/zen-browser-flake";
   };
 

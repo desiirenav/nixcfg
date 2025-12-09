@@ -44,7 +44,7 @@
 		proportion 1.0
 	    }
 	    default-column-width { proportion 0.5; }
-	    gaps 16
+	    gaps 9
 	    struts {
 	    }
 	    background-color "transparent"
@@ -87,7 +87,7 @@
 
 
 	window-rule {
-	    geometry-corner-radius 4
+	    geometry-corner-radius 9
 	    clip-to-geometry true
 	}
 
