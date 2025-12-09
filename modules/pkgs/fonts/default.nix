@@ -2,6 +2,7 @@
 
   fonts = {
     packages = with pkgs; [
+	   inputs.apple-fonts.packages.${pkgs.stdenv.hostPlatform.system}.sf-pro-nerd
       nerd-fonts.mononoki
     ];
     fontconfig = {

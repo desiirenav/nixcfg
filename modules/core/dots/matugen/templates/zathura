@@ -46,8 +46,6 @@ set search-hadjust true
 " Autoadjust
 set adjust-open width
 
-" Typography
-set font "FiraCode Nerd Font 12"
 
 " -----------------------------------------------------------------------------
 " Zathura mappings

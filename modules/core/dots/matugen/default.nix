@@ -3,10 +3,10 @@
 
   environment.systemPackages = [
     (pkgs.writeShellScriptBin "matugen-autostart" ''
-       matugen image /home/narayan/nixcfg/modules/dots/matugen/wallpapers/lavender.png
+       matugen image /home/narayan/nixcfg/modules/core/dots/matugen/wallpapers/lavender.png
     '')
     (pkgs.writeShellScriptBin "matugen-vivian" ''
-       matugen image /home/narayan/nixcfg/modules/dots/matugen/wallpapers/vivian.png
+       matugen image /home/narayan/nixcfg/modules/core/dots/matugen/wallpapers/vivian.png
     '')
   ];
 
@@ -41,14 +41,14 @@
           input_path = ./templates/kitty-colors.conf;
           output_path = "~/.config/kitty/kitty.conf";
         };
-	neovim = {
-	  input_path = ./templates/nvim.lua;
-	  output_path = "~/.config/nvim/init.lua";
+        neovim = {
+	       input_path = ./templates/nvim.lua;
+	       output_path = "~/.config/nvim/init.lua";
           post_hook = "pkill -SIGUSR1 nvim";
-	};
+	     };
         vencord = {
           input_path = ./templates/midnight-discord.css;
-          output_path = "~/.config/Vencord/themes/midnight-discord.css";
+          output_path = "~/.config/vesktop/themes/midnight-discord.css";
         };
         zathura = {
           input_path = ./templates/zathura;
@@ -56,15 +56,19 @@
         };
         zen1 = {
           input_path = ./templates/userChrome.css;
-          output_path = "~/.zen/narayan.default Profile/chrome/userChrome.css";
+          output_path = "~/.zen/narayan.default/chrome/userChrome.css";
         };
         zen2 = {
           input_path = ./templates/userContent.css;
-          output_path = "~/.zen/narayan.default Profile/chrome/userContent.css";
+          output_path = "~/.zen/narayan.default/chrome/userContent.css";
+        };
+        yazi = {
+          input_path = ./templates/yazi.toml;
+          output_path = "~/.config/yazi/theme.toml";
         };
         zen3 = {
           input_path = ./templates/zen-logo.svg;
-          output_path = "~/.zen/narayan.default Profile/chrome/zen-logo.svg";
+          output_path = "~/.zen/narayan.default/chrome/zen-logo.svg";
         };
       };
     };

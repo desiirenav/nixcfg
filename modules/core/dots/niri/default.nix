@@ -65,6 +65,7 @@
 
 	spawn-at-startup "xwayland-satellite"
 	spawn-sh-at-startup "matugen-vivian"
+	spawn-sh-at-startup "swww-daemon"
 
 	environment {
 	    DISPLAY ":0"
@@ -81,7 +82,7 @@
 	}
 
 	layer-rule {
-	    match namespace="^wallpaper$"
+	    match namespace="^swww-daemon$"
 	    place-within-backdrop true
 	}
 
