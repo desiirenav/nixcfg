@@ -15,13 +15,14 @@
     kitty
     fuzzel
     starship
-    firefox
-    gpu-screen-recorder-gtk
     inputs.zen-browser.packages."${pkgs.stdenv.hostPlatform.system}".default
+    (callPackage ./neovim {})
     vesktop
     capitaine-cursors
     adwaita-icon-theme
     transmission_4-gtk
+    matugen
+    swww-daemon
     xwayland-satellite
     brightnessctl
     ani-cli

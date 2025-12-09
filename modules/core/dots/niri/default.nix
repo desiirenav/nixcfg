@@ -64,7 +64,7 @@
 	prefer-no-csd
 
 	spawn-at-startup "xwayland-satellite"
-//	spawn-sh-at-startup "swaybg -m fill -i /home/narayan/nixcfg/modules/core/dots/niri/lavender.png"
+	spawn-sh-at-startup "matugen-vivian"
 
 	environment {
 	    DISPLAY ":0"

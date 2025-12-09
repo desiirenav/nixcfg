@@ -3,7 +3,6 @@
     ./dots
     ./hjem
     ./persist
-    ./theme
   ];
 }
 

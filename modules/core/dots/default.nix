@@ -1,12 +1,10 @@
 {...}: {
   imports = [
-    ./fastfetch
     ./fish
     ./fuzzel
     ./gtk
-    ./kitty
+    ./matugen
     ./niri
-    ./vesktop
     ./zen-browser
   ];
 }

@@ -19,10 +19,6 @@
       url = "github:nix-community/impermanence";
     };
 
-    mnw = { 
-      url = "github:Gerg-L/mnw";
-    };
-
     zen-browser.url = "github:0xc000022070/zen-browser-flake";
   };
 

@@ -40,10 +40,10 @@
         "Videos"
         "Projects"
         ".ssh"
+	".zen"
 	"nixcfg"
         ".config/discord"
 	".config/vesktop"
-	".config/mozilla"
       ];
       files = [
         ".bash_history"
