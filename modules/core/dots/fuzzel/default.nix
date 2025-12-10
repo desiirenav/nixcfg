@@ -15,8 +15,5 @@
     # Thinner border
     width=1
     radius=0
-
-    [main]
-    include = "~/.config/fuzzel/colors.ini"
   '';
 }

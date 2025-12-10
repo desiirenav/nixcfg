@@ -1,57 +1,34 @@
-{
-  symlinkJoin,
-  neovim-unwrapped,
-  makeWrapper,
-  runCommandLocal,
-  vimPlugins,
-  lib,
-}: let
-  packageName = "mypackage";
+{inputs,pkgs,...}:{
+  imports = [ inputs.mnw.nixosModules.default ];
 
-  startPlugins = [
-    vimPlugins.base16-nvim
-    #vimPlugins.nvim-treesitter.withAllGrammars
-    vimPlugins.lualine-nvim
-  ];
-
-  foldPlugins = builtins.foldl' (
-    acc: next:
-      acc
-      ++ [
-        next
-      ]
-      ++ (foldPlugins (next.dependencies or []))
-  ) [];
-
-  startPluginsWithDeps = lib.unique (foldPlugins startPlugins);
-
-  packpath = runCommandLocal "packpath" {} ''
-    mkdir -p $out/pack/${packageName}/start
-
-    ${
-      lib.concatMapStringsSep
-      "\n"
-      (plugin: "ln -vsfT ${plugin} $out/pack/${packageName}/start/${lib.getName plugin}")
-      startPluginsWithDeps
-    }
-  '';
-in
-  symlinkJoin {
-    name = "neovim-custom";
-    paths = [neovim-unwrapped];
-    nativeBuildInputs = [makeWrapper];
-    postBuild = ''
-      wrapProgram $out/bin/nvim \
-        --add-flags "--cmd 'set packpath^=${packpath}'" \
-        --add-flags "--cmd 'set runtimepath^=${packpath}'"
+  programs.mnw = {
+    enable = true;
+    aliases = [
+      "vi"
+      "vim"
+    ];
+    initLua = ''
+      vim.opt.number = true
+      vim.opt.relativenumber = true
+      vim.opt.smartindent = true
+      vim.opt.swapfile = false
+      vim.lsp.enable({"lua_ls", "nixd", "tinymist"})
     '';
 
-    passthru = {
-      inherit packpath;
+    plugins = {
+      start = with pkgs.vimPlugins;[
+	lualine-nvim
+	nvim-lspconfig
+	which-key-nvim
+      ];
     };
-  } 
-
-  
+    extraBinPath = with pkgs; [
+      lua-language-server
+      nixd
+      tinymist
+    ];
+  };
+} 
   
 
   

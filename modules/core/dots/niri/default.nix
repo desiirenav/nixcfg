@@ -64,8 +64,6 @@
 	prefer-no-csd
 
 	spawn-at-startup "xwayland-satellite"
-	spawn-sh-at-startup "matugen-vivian"
-	spawn-sh-at-startup "swww-daemon"
 
 	environment {
 	    DISPLAY ":0"

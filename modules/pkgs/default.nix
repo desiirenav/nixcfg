@@ -2,30 +2,29 @@
   imports = [
     ./fonts
     ./gaming
+    ./neovim
+    ./tmux
   ];
 
   environment.systemPackages = with pkgs; [
     yazi
     nautilus
-    swww
+    swaybg
     gtk3
     gtk4
-    fuzzel
-    (callPackage ./neovim {})
     kitty
+    fuzzel
     starship
     inputs.zen-browser.packages."${pkgs.stdenv.hostPlatform.system}".default
     vesktop
     capitaine-cursors
     adwaita-icon-theme
-    matugen
-    xwayland-satellite
     transmission_4-gtk
+    xwayland-satellite
     brightnessctl
     ani-cli
     adw-gtk3
     unzip
-    pfetch
     fastfetch
     zathura
     git
