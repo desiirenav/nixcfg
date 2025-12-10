@@ -1,8 +1,10 @@
-{inputs,pkgs,... }: {
+{ config, inputs, pkgs, ... }: {
   imports = [
+    ./fish
     ./fonts
     ./gaming
     ./neovim
+    ./niri
   ];
 
   environment.systemPackages = with pkgs; [
@@ -11,8 +13,6 @@
     swaybg
     gtk3
     gtk4
-    kitty
-    fuzzel
     starship
     inputs.zen-browser.packages."${pkgs.stdenv.hostPlatform.system}".default
     vesktop
@@ -26,5 +26,10 @@
     unzip
     fastfetch
     zathura
+  ] ++ 
+  [
+    (callPackage ./kitty { inherit config inputs; })
+    (callPackage ./fuzzel { inherit config inputs; })
+    (callPackage ./git { inherit inputs; })
   ];
 }

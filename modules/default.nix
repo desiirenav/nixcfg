@@ -2,9 +2,8 @@
   imports = [
     ./base
     ./core
-    ./pkgs
+    ./packages
     ./theme
-    ./wrapped
   ];
 }
 
