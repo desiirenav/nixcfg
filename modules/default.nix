@@ -3,7 +3,8 @@
     ./base
     ./core
     ./pkgs
-    ./wrappers
+    ./theme
+    ./wrapped
   ];
 }
 
