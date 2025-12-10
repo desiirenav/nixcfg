@@ -104,6 +104,21 @@
         "type": "github"
       }
     },
+    "mnw": {
+      "locked": {
+        "lastModified": 1764066817,
+        "narHash": "sha256-iQ45IBZXKgMpV9x6RxZfGm6hzRzfVpKo7gWV0VHLmlE=",
+        "owner": "Gerg-L",
+        "repo": "mnw",
+        "rev": "68a22f62ca7623fcb700d4ebf225bd91125c773e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Gerg-L",
+        "repo": "mnw",
+        "type": "github"
+      }
+    },
     "nixpkgs": {
       "locked": {
         "lastModified": 1757745802,
@@ -170,7 +185,9 @@
         "disko": "disko",
         "hjem": "hjem",
         "impermanence": "impermanence",
+        "mnw": "mnw",
         "nixpkgs": "nixpkgs_2",
+        "sf-mono-liga-src": "sf-mono-liga-src",
         "zen-browser": "zen-browser"
       }
     },
@@ -266,6 +283,22 @@
       "original": {
         "type": "file",
         "url": "https://devimages-cdn.apple.com/design/resources/download/SF-Mono.dmg"
+      }
+    },
+    "sf-mono-liga-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1688258025,
+        "narHash": "sha256-AYjKrVLISsJWXN6Cj74wXmbJtREkFDYOCRw1t2nVH2w=",
+        "owner": "shaunsingh",
+        "repo": "SFMono-Nerd-Font-Ligaturized",
+        "rev": "dc5a3e6fcc2e16ad476b7be3c3c17c2273b260ea",
+        "type": "github"
+      },
+      "original": {
+        "owner": "shaunsingh",
+        "repo": "SFMono-Nerd-Font-Ligaturized",
+        "type": "github"
       }
     },
     "sf-pro": {

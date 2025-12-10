@@ -3,7 +3,6 @@
     ./fonts
     ./gaming
     ./neovim
-    ./tmux
   ];
 
   environment.systemPackages = with pkgs; [

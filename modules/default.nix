@@ -3,6 +3,7 @@
     ./base
     ./core
     ./pkgs
+    ./wrappers
   ];
 }
 
