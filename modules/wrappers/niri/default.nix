@@ -1,6 +1,7 @@
 {inputs,pkgs,... }: {
-  environment.systemPackages = [
-    (inputs.wrappers.wrapperModules.niri.apply {
+  programs.niri = {
+    enable = true;
+    package = (inputs.wrappers.wrapperModules.niri.apply {
       inherit pkgs;
       "config.kdl".content = ''
 	input {
@@ -242,6 +243,6 @@
 	    Mod+Shift+P { power-off-monitors; }
 	}
       '';
-    }).wrapper
-  ];
+    }).wrapper;
+  };
 }
