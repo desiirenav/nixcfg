@@ -2,6 +2,7 @@
   imports = [
     ./git
     ./kitty
+    ./niri
   ];
 }
 

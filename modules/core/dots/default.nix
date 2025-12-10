@@ -1,9 +1,9 @@
 {...}: {
   imports = [
-    ./fish
-    ./fuzzel
-    ./gtk
-    ./niri
+#    ./fish
+#    ./fuzzel
+#    ./gtk
+#    ./niri
     ./zen-browser
   ];
 }

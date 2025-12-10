@@ -26,6 +26,5 @@
     unzip
     fastfetch
     zathura
-    git
   ];
 }

@@ -1,6 +1,6 @@
 {inputs,pkgs,... }: {
   environment.systemPackages = [
-    (inputs.wrapperModules.git.apply {
+    (inputs.wrappers.wrapperModules.git.apply {
       inherit pkgs;
       env = rec {
 	GIT_AUTHOR_NAME = "desiirenav";
