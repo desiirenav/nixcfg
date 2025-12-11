@@ -1,8 +1,8 @@
 {...}: {
   imports = [
-    ./dots
+#    ./dots
     ./hjem
-    ./persist
+#    ./persist
   ];
 }
 

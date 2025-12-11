@@ -1,0 +1,7 @@
+{pkgs, ...}: {
+  imports = [
+    ./firefox
+    ./theme
+  ];
+}
+
