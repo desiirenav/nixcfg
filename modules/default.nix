@@ -2,8 +2,8 @@
   imports = [
     ./base
     ./core
+    ./features
     ./packages
-    ./theme
   ];
 }
 

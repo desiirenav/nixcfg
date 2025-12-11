@@ -7,6 +7,7 @@
     gtk3
     gtk4
     starship
+    firefox
     inputs.zen-browser.packages."${pkgs.stdenv.hostPlatform.system}".default
     vesktop
     capitaine-cursors

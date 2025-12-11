@@ -41,6 +41,7 @@
         "Projects"
         ".ssh"
 	".zen"
+	".mozilla"
 	"nixcfg"
         ".config/discord"
 	".config/vesktop"
