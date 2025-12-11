@@ -40,7 +40,7 @@
         "Videos"
         "Projects"
         ".ssh"
-	".zen"
+	".cache/wal"
 	".mozilla"
 	"nixcfg"
         ".config/discord"

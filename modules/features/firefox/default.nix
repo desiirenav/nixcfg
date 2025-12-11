@@ -60,18 +60,13 @@ let
 in
 {
   system.activationScripts.firefoxProfile.text = ''
-    mkdir -p /home/narayan/.mozilla/firefox
-    mkdir -p /home/narayan/.mozilla/firefox/narayan.default
-    mkdir -p /home/narayan/.mozilla/native-messaging-hosts
-    mkdir -p /home/narayan/.cache/wal
-
     ln -sf ${firefoxProfiles}/.mozilla/firefox/profiles.ini /home/narayan/.mozilla/firefox/profiles.ini
     ln -sf ${pywalfoxJson} /home/narayan/.mozilla/native-messaging-hosts/pywalfox.json
     ln -sf ${walColorsJson} /home/narayan/.cache/wal/colors.json
     ln -sf ${firefoxUserJs} /home/narayan/.mozilla/firefox/narayan.default/user.js
 
     chown -R narayan:users /home/narayan/.mozilla
-    chown -R narayan:users /home/narayan/.cache/wal
+    chown -R narayan:users /home/narayan/.cache
   '';
 
   programs.firefox = {
