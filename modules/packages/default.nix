@@ -6,8 +6,9 @@
     ./gaming
     ./git
     ./kitty
-    ./neovim
+#    ./neovim
     ./niri
+    ./nvim
     ./others
   ];
 }
