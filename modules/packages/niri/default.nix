@@ -66,6 +66,7 @@
 	prefer-no-csd
 
 	spawn-at-startup "xwayland-satellite"
+	spawn-sh-at-startup "swaybg -i /home/narayan/nixcfg/modules/packages/niri/bird.png"
 
 	environment {
 	    DISPLAY ":0"
