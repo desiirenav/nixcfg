@@ -9,7 +9,8 @@
 }: let
   packageName = "mypackage";
   
-  startPlugins = [
+  startPlugins = with vimPlugins; [
+    rose-pine
   ];
 
   foldPlugins = builtins.foldl' (
@@ -33,7 +34,7 @@
       startPluginsWithDeps
     }
   '';
-  luaConfig = pkgs.writeText "init.lua" (import ./lua-config.nix)
+  luaConfig = pkgs.writeText "init.lua" (pkgs.callPackage ./lua-config.nix {});
 in
   symlinkJoin {
     name = "neovim-custom";
@@ -45,7 +46,6 @@ in
         --add-flags '${luaConfig}' \
         --add-flags '--cmd' \
         --add-flags "'set packpath^=${packpath} | set runtimepath^=${packpath}'" \
-        --set-default NVIM_APPNAME nvim-custom
     '';
 
     passthru = {

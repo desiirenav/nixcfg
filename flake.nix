@@ -13,9 +13,6 @@
     impermanence = {
       url = "github:nix-community/impermanence";
     };
-    mnw = { 
-      url = "github:Gerg-L/mnw";
-    };
     sf-mono-liga-src = {
       url = "github:shaunsingh/SFMono-Nerd-Font-Ligaturized";
       flake = false;
