@@ -1,40 +1,29 @@
 {
-  description = "nixos config with flake, hjem and impermanence";
+  description = "nixos config with flake, wrappers and impermanence";
 
   inputs = {
-
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
-
     apple-fonts = {
       url = "github:Lyndeno/apple-fonts.nix";
     };
-
     disko = {
       url = "github:nix-community/disko/latest";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-
-    hjem = {
-      url = "github:feel-co/hjem";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
     impermanence = {
       url = "github:nix-community/impermanence";
     };
-
     mnw = { 
       url = "github:Gerg-L/mnw";
     };
-
     sf-mono-liga-src = {
       url = "github:shaunsingh/SFMono-Nerd-Font-Ligaturized";
       flake = false;
     };
-
-    wrappers.url = "github:lassulus/wrappers";
-
-    zen-browser.url = "github:0xc000022070/zen-browser-flake";
+    wrappers = {
+      url = "github:lassulus/wrappers";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = inputs@{ nixpkgs, ... }: {
@@ -45,7 +34,6 @@
         modules = [ 
           ./modules/default.nix
           inputs.disko.nixosModules.disko
-          inputs.hjem.nixosModules.default
           inputs.impermanence.nixosModules.impermanence
         ];
       };
