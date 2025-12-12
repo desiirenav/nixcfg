@@ -1,8 +1,8 @@
 {pkgs, ...}: {
   imports = [
-    ./firefox
     ./gtk
     ./theme
+    ./zen-browser
   ];
 }
 

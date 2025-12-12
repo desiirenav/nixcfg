@@ -45,6 +45,7 @@
 	"nixcfg"
         ".config/discord"
 	".config/Vencord"
+	".config/Vencord/themes"
       ];
       files = [
         ".bash_history"
