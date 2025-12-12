@@ -46,15 +46,15 @@
 		proportion 1.0
 	    }
 	    default-column-width { proportion 0.5; }
-	    gaps 9
+	    gaps 18
 	    struts {
 	    }
 	    background-color "transparent"
 	    center-focused-column "never"
 	    shadow {
 		on
-		softness 15
-		spread 15
+		softness 10
+		spread 10
 	    }
 	}
 
@@ -83,13 +83,13 @@
 	}
 
 	layer-rule {
-	    match namespace="^swww-daemon$"
+	    match namespace="^wallpaper$"
 	    place-within-backdrop true
 	}
 
 
 	window-rule {
-	    geometry-corner-radius 9
+	    geometry-corner-radius 3
 	    clip-to-geometry true
 	}
 

@@ -8,8 +8,8 @@
     gtk4
     starship
     pywalfox-native
-    vesktop
     capitaine-cursors
+    (discord.override {withVencord = true;})
     adwaita-icon-theme
     transmission_4-gtk
     xwayland-satellite

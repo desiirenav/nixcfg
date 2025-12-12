@@ -44,7 +44,7 @@
 	".mozilla"
 	"nixcfg"
         ".config/discord"
-	".config/vesktop"
+	".config/Vencord"
       ];
       files = [
         ".bash_history"
