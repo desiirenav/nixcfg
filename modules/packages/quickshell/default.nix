@@ -1,6 +1,6 @@
-{ config, inputs, pkgs, ... }: {
+{ inputs, pkgs, ... }: {
   environment.systemPackages = [
-    (inputs.wrappers.lib.makeWrapper {
+    (inputs.wrappers.lib.wrapPackage {
       inherit pkgs;
       package = pkgs.quickshell;
       flags = {
