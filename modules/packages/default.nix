@@ -9,5 +9,6 @@
     ./neovim
     ./niri
     ./others
+    ./quickshell
   ];
 }

@@ -6,12 +6,15 @@
   vimPlugins,
   callPackage,
   writeText,
+  lua-language-server,
+  nixd,
   lib,
 }: let
   packageName = "mypackage";
   
   startPlugins = with vimPlugins; [
-    rose-pine
+    base16-nvim
+    nvim-lspconfig
   ];
 
   foldPlugins = builtins.foldl' (
@@ -39,7 +42,7 @@
 in
   symlinkJoin {
     name = "neovim-custom";
-    paths = [neovim-unwrapped];
+    paths = [neovim-unwrapped nixd];
     nativeBuildInputs = [makeWrapper];
     postBuild = ''
       wrapProgram $out/bin/nvim \
@@ -47,6 +50,7 @@ in
         --add-flags '${luaConfig}' \
         --add-flags '--cmd' \
         --add-flags "'set packpath^=${packpath} | set runtimepath^=${packpath}'" \
+	--prefix PATH : ${lib.makeBinPath [ nixd lua-language-server ]} \
     '';
 
     passthru = {
