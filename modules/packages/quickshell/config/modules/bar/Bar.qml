@@ -4,6 +4,25 @@ import Quickshell
 
 PanelWindow {
     id: bar
+
+    property color theme00: "#faf4ed"
+    property color theme01: "#fffaf3"
+    property color theme02: "#f2e9de"
+    property color theme03: "#9893a5"
+    property color theme04: "#797593"
+    property color theme05: "#575279"
+    property color theme06: "#575279"
+    property color theme07: "#cecacd"
+    property color theme08: "#b4637a"
+    property color theme09: "#ea9d34"
+    property color theme0A: "#d7827e"
+    property color theme0B: "#286983"
+    property color theme0C: "#56949f"
+    property color theme0D: "#907aa9"
+    property color theme0E: "#ea9d34"
+    property color theme0F: "#cecacd"
+
+
     anchors {
         top: true
         left: true
@@ -14,14 +33,14 @@ PanelWindow {
 
     Rectangle {
         anchors.fill: parent
-        color: "#theme00"
+        color: theme00
         bottomLeftRadius: 20
         bottomRightRadius: 20
         // left
         RowLayout {
             anchors {
                 left: parent.left
-                leftMargin: 25
+                leftMargin: 50
             }
             Loader { active: true; sourceComponent: Workspaces {} }
         }
@@ -34,9 +53,8 @@ PanelWindow {
 
             Text {
                 text: niri.focusedWindow?.title ?? ""
-                font.family: "Barlow Medium"
                 font.pixelSize: 16
-                color: "#999999"
+                color: theme05
             }
         }
         // right

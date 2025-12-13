@@ -4,7 +4,7 @@ import Quickshell
 
 Rectangle {
     anchors.left: parent.left
-    color: "#666666"
+    color: theme00
     height: 25
     width: 215
     bottomLeftRadius: 10
@@ -34,7 +34,7 @@ Rectangle {
                     width: 15
                     height: 15
                     radius: 10
-                    color: model.isActive ? "#000000" : "#333333"
+                    color: model.isActive ? theme03 : theme04
                     MouseArea {
                         anchors.fill: parent
                         cursorShape: Qt.PointingHandCursor

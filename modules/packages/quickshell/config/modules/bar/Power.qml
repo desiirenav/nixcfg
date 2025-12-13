@@ -10,8 +10,7 @@ Rectangle {
             verticalCenter: parent.verticalCenter
         }
         text: Number(UPower.displayDevice.percentage * 100).toFixed(2) + "%"
-        color: "#999999"
-        font.family: "Barlow Medium"
+        color: theme05
         font.pixelSize: 16
         Component.onCompleted: {
             parent.width = powerDisplay.contentWidth
