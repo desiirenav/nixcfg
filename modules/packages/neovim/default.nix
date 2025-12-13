@@ -2,7 +2,7 @@
 
 {  
   environment.systemPackages = with pkgs; [
-    (callPackage ./config {inherit pkgs;})
+    (callPackage ./config {})
   ];
 }
 

@@ -12,11 +12,7 @@
     transmission_4-gtk
     xwayland-satellite
     brightnessctl
-	inputs.zen-browser.packages."${system}".default.override {
-	  policies = {
-	      DisableAppUpdate = true;
-	      DisableTelemetry = true;
-	  };
+    inputs.zen-browser.packages."${pkgs.stdenv.hostPlatform.system}".default
     ani-cli
     adw-gtk3
     unzip

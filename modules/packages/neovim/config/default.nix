@@ -4,8 +4,9 @@
   makeWrapper,
   runCommandLocal,
   vimPlugins,
+  callPackage,
+  writeText,
   lib,
-  pkgs,
 }: let
   packageName = "mypackage";
   
@@ -34,7 +35,7 @@
       startPluginsWithDeps
     }
   '';
-  luaConfig = pkgs.writeText "init.lua" (pkgs.callPackage ./lua-config.nix {});
+  luaConfig = writeText "init.lua" (callPackage ./lua-config.nix {});
 in
   symlinkJoin {
     name = "neovim-custom";
