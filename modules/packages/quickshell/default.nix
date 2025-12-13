@@ -4,7 +4,7 @@
       inherit pkgs;
       package = pkgs.quickshell;
       flags = {
-        "-c"= "./";
+        "-c"= ./;
       };
     })
   ];
