@@ -1,0 +1,162 @@
+{
+  "nodes": {
+    "apple-fonts": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1764341330,
+        "narHash": "sha256-cEWXJhborzoWd6OLpTz5tqkIxXl5IZX61zEqfpHnGUg=",
+        "owner": "raxxuy",
+        "repo": "apple-fonts.nix",
+        "rev": "e5096589ff76ff33a1e3f6e16d3039f459470843",
+        "type": "github"
+      },
+      "original": {
+        "owner": "raxxuy",
+        "repo": "apple-fonts.nix",
+        "type": "github"
+      }
+    },
+    "base2tone-nvim": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1670424467,
+        "narHash": "sha256-XcPZBL4QeiQVCtIoZF63vHdQjl7aCf408MhiFvlrwvI=",
+        "owner": "atelierbram",
+        "repo": "Base2Tone-nvim",
+        "rev": "c32c1d3dfdc8fb6e91cbf6078c078d6c3eaaa673",
+        "type": "github"
+      },
+      "original": {
+        "owner": "atelierbram",
+        "repo": "Base2Tone-nvim",
+        "type": "github"
+      }
+    },
+    "home-manager": {
+      "inputs": {
+        "nixpkgs": [
+          "zen-browser",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1762964643,
+        "narHash": "sha256-RYHN8O/Aja59XDji6WSJZPkJpYVUfpSkyH+PEupBJqM=",
+        "owner": "nix-community",
+        "repo": "home-manager",
+        "rev": "827f2a23373a774a8805f84ca5344654c31f354b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-community",
+        "repo": "home-manager",
+        "type": "github"
+      }
+    },
+    "impermanence": {
+      "locked": {
+        "lastModified": 1737831083,
+        "narHash": "sha256-LJggUHbpyeDvNagTUrdhe/pRVp4pnS6wVKALS782gRI=",
+        "owner": "nix-community",
+        "repo": "impermanence",
+        "rev": "4b3e914cdf97a5b536a889e939fb2fd2b043a170",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-community",
+        "repo": "impermanence",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1764517877,
+        "narHash": "sha256-pp3uT4hHijIC8JUK5MEqeAWmParJrgBVzHLNfJDZxg4=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "2d293cbfa5a793b4c50d17c05ef9e385b90edf6c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "apple-fonts": "apple-fonts",
+        "base2tone-nvim": "base2tone-nvim",
+        "impermanence": "impermanence",
+        "nixpkgs": "nixpkgs",
+        "sf-mono-liga-src": "sf-mono-liga-src",
+        "wrappers": "wrappers",
+        "zen-browser": "zen-browser"
+      }
+    },
+    "sf-mono-liga-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1688258025,
+        "narHash": "sha256-AYjKrVLISsJWXN6Cj74wXmbJtREkFDYOCRw1t2nVH2w=",
+        "owner": "shaunsingh",
+        "repo": "SFMono-Nerd-Font-Ligaturized",
+        "rev": "dc5a3e6fcc2e16ad476b7be3c3c17c2273b260ea",
+        "type": "github"
+      },
+      "original": {
+        "owner": "shaunsingh",
+        "repo": "SFMono-Nerd-Font-Ligaturized",
+        "type": "github"
+      }
+    },
+    "wrappers": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1764326721,
+        "narHash": "sha256-JT6Nz/I4IpJNIbY5Oy+NpHTe4fqEsIuxIpIZAfEZWEc=",
+        "owner": "lassulus",
+        "repo": "wrappers",
+        "rev": "94d1131dd8c8a310f3e23c82ee75919cb401e716",
+        "type": "github"
+      },
+      "original": {
+        "owner": "lassulus",
+        "repo": "wrappers",
+        "type": "github"
+      }
+    },
+    "zen-browser": {
+      "inputs": {
+        "home-manager": "home-manager",
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1765514052,
+        "narHash": "sha256-YdwI+u4exAo0nRZsC9arapchD4Urt5Oeo+wZIrvlMa4=",
+        "owner": "0xc000022070",
+        "repo": "zen-browser-flake",
+        "rev": "3f55518bd994195cfdd835e86c41e984ac1241e8",
+        "type": "github"
+      },
+      "original": {
+        "owner": "0xc000022070",
+        "repo": "zen-browser-flake",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
