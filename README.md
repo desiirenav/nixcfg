@@ -5,7 +5,7 @@ Here is my NixOS configuration. I am still learning how to use Linux especially 
 **Highlights**
 - Impermanence
 - Flakes
-- ZFS partitionning using disko
+- ZFS partitionning
 - Declarative theming inspired by stylix
 - Wrappers for some packages
 
