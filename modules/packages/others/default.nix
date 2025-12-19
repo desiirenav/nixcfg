@@ -8,6 +8,7 @@
     gtk4
     starship
     capitaine-cursors
+    (discord.override { withVencord = true;})
     adwaita-icon-theme
     transmission_4-gtk
     xwayland-satellite
