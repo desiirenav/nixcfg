@@ -3,7 +3,7 @@
 in
 {
   system.activationScripts.gtk.text = ''
-    ln -sf ${ignisconf} "/home/narayan/.config/ignis"
+    ln -sf ${ignisconf} "/home/narayan/.config"
   '';
 }
  
