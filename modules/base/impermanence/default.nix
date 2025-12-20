@@ -28,7 +28,7 @@
     ];
     users.narayan = {
       directories = [
-	    ".zen"
+	".zen"
         ".ssh"
         "Games"
         "Music"
@@ -39,6 +39,7 @@
         "Pictures"
         "Downloads"
         "Documents"
+	".config/heroic"
         ".config/discord"
 	".config/Vencord"
         ".local/share/fish"
