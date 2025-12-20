@@ -3,24 +3,23 @@ import QtQuick // for Text
 import qs.Bar
 
 PanelWindow {
-  property color bg: "#201d2a"
-  property color txt: "#efebff"
+  color: "transparent"
   anchors {
     top: true
     left: false
     right: false
   }
-  color: bg
-
-  margins {
-    top: 10
-  }
 
   implicitHeight: 30
 
-  Text {
-    anchors.centerIn: parent
-    color: txt
-    text: "hello world"
+  Rectangle {    // match the size of the window
+    anchors.fill: parent
+    radius: 5
+    color: Colors.bg // your actual color
+    Text {
+      anchors.centerIn: parent
+      color: Colors.txt
+      text: "hello world"
+    }
   }
 }
