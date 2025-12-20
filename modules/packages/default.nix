@@ -5,10 +5,10 @@
     ./fuzzel
     ./gaming
     ./git
-    ./ignis
     ./kitty
     ./neovim
     ./niri
+    ./quickshell
     ./others
   ];
 }
