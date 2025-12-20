@@ -4,8 +4,8 @@ let
   inherit (lib) mkDefault;
   theme-name     = "adw-gtk3";
   icon-theme-name = "Adwaita";
-  gtkfont = "SFProDisplay Nerd Font 12";
-  gtkmonofont = "Liga SFMono Nerd Font 12";
+  gtkfont = "SFProDisplay Nerd Font 11";
+  gtkmonofont = "Liga SFMono Nerd Font 11";
   gtksettings = pkgs.writeText "gtk-settings.ini" ''
     [Settings]
     gtk-icon-theme-name=${icon-theme-name}

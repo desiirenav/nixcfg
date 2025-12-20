@@ -40,10 +40,10 @@
         "Downloads"
         "Documents"
         ".config/discord"
-	    ".config/Vencord"
+	".config/Vencord"
         ".local/share/fish"
         ".local/share/Steam"
-	    ".config/Vencord/themes"
+	".config/Vencord/themes"
         ".zen/narayan.default/chrome"
       ];
       files = [

@@ -10,13 +10,18 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    base2tone-nvim = {
+      url = "github:atelierbram/Base2Tone-nvim";
+      flake = false;
+    };
+
     impermanence = {
       url = "github:nix-community/impermanence";
     };
 
-    base2tone-nvim = {
-      url = "github:atelierbram/Base2Tone-nvim";
-      flake = false;
+    ignis = {
+      url = "github:ignis-sh/ignis";
+      inputs.nixpkgs.follows = "nixpkgs";
     };
 
     sf-mono-liga-src = {

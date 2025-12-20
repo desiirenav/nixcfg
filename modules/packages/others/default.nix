@@ -7,6 +7,7 @@
     gtk3
     gtk4
     starship
+    heroic
     capitaine-cursors
     (discord.override { withVencord = true;})
     adwaita-icon-theme
@@ -14,6 +15,12 @@
     xwayland-satellite
     brightnessctl
     inputs.zen-browser.packages."${pkgs.stdenv.hostPlatform.system}".default
+    (inputs.ignis.packages.${pkgs.system}.default.override {
+      enableAudioService = true;
+      useDartSass = true;
+      extraPackages = [
+      ];
+    })
     ani-cli
     adw-gtk3
     unzip

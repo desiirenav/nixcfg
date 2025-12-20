@@ -6,8 +6,8 @@ let
 in
 {
 
-  system.activationScripts.gtk.text = ''
-    ln -sf ${discord-css} "/home/narayan/.config/Vencord/theme/discord.css"
+  system.activationScripts.discord.text = ''
+    ln -sf ${discord-css} "/home/narayan/.config/Vencord/themes/discord.css"
   '';
 }
  
