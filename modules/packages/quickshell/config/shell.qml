@@ -1,5 +1,6 @@
 import Quickshell // for PanelWindow
 import QtQuick // for Text
+import qs.Bar
 
 PanelWindow {
   property color bg: "#201d2a"
