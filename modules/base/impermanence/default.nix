@@ -39,7 +39,6 @@
         "Pictures"
         "Downloads"
         "Documents"
-	".config/heroic"
         ".config/discord"
 	".config/Vencord"
         ".local/share/fish"

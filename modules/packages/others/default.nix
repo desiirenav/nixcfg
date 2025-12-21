@@ -7,7 +7,6 @@
     gtk3
     gtk4
     starship
-    heroic
     capitaine-cursors
     (discord.override { withVencord = true;})
     adwaita-icon-theme

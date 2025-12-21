@@ -1,6 +1,7 @@
 import Quickshell // for PanelWindow
 import QtQuick // for Text
 import qs.Bar
+import qs.Clock
 
 PanelWindow {
   color: "transparent"
@@ -16,10 +17,9 @@ PanelWindow {
     anchors.fill: parent
     radius: 5
     color: Colors.bg // your actual color
-    Text {
+    clockWidget {
       anchors.centerIn: parent
-      color: Colors.txt
-      text: "hello world"
+      time: Clock.time	
     }
   }
 }
