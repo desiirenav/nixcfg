@@ -15,7 +15,9 @@ PanelWindow {
 
   Rectangle {    // match the size of the window
     anchors.fill: parent
-    radius: 5
+    radius: 15
+    topLeftRadius: 0
+    topRightRadius: 0
     color: Colors.bg // your actual color
     ClockWidget {
       anchors.centerIn: parent
