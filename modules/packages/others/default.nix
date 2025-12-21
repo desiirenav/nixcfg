@@ -7,6 +7,7 @@
     gtk3
     gtk4
     starship
+    vlc
     capitaine-cursors
     (discord.override { withVencord = true;})
     adwaita-icon-theme
