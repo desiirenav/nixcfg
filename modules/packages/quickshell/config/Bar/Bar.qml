@@ -1,8 +1,8 @@
 import QtQuick
 import Quickshell
+import qs.Bar
 
 PanelWindow {
-  id: panel
   color: "transparent"
 
   anchors {
@@ -13,9 +13,15 @@ PanelWindow {
 
   implicitHeight: 40
 
-  margins {
-    top: 0
-    left: 8
-    right: 8
+  Rectangle {
+    anchors.fill: parent
+    radius: 15
+    topRightRadius: 0
+    topLeftRadius: 0
+    color: Colors.bg
+    border { 
+      color: Color.brd
+      width: 3
+    }
   }
 }

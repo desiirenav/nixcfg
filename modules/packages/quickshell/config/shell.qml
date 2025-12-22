@@ -1,10 +1,9 @@
-import qs.Bar
-import qs.Widgets
 import QtQuick
 import Quickshell
+import qs.Bar
+import qs.Widgets
 
-shellRoot {
-  id: root
+ShellRoot {
   Loader {
     active: true
     sourceComponent: Bar{}
