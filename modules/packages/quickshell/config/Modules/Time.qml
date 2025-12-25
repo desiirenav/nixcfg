@@ -7,7 +7,7 @@ RowLayout {
   anchors.centerIn: parent
 
   Rectangle {
-    Layout.preferredWidth: 100
+    Layout.preferredWidth: 160
     Layout.preferredHeight: 30
     radius: 25
     color: Colors.brd
@@ -15,16 +15,17 @@ RowLayout {
       id: clock
       anchors.centerIn: parent
       color: Colors.txt
+      opacity: 1
       font {
         pointSize: 12
 	bold: true
       }
-      text: Qt.formatDateTime(new Date(), "HH:mm:ss")
+      text: Qt.formatDateTime(new Date(), "ddd, MMM dd  HH:mm")
       Timer {
 	interval: 1000
         running: true
 	repeat: true
-        onTriggered: clock.text = Qt.formatDateTime(new Date(), "HH:mm:ss")
+        onTriggered: clock.text = Qt.formatDateTime(new Date(), "ddd, MMM dd  HH:mm")
       }
     }
   }
