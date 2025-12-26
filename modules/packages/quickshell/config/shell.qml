@@ -25,6 +25,7 @@ ShellRoot {
 	color: Colors.bg
         
 	Time {}
+	Battery {}
       }
     }
   }

@@ -5,6 +5,11 @@
 
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
 
+    aagl = {
+      url = "github:ezKEa/aagl-gtk-on-nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     apple-fonts = {
       url = "github:raxxuy/apple-fonts.nix";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -42,6 +47,7 @@
       specialArgs = { inherit inputs; };
       modules = [ 
         ./modules
+	inputs.aagl.nixosModules.default
 	inputs.impermanence.nixosModules.impermanence
       ];
     };

@@ -63,6 +63,10 @@
   # GVFS
   services.gvfs.enable = true;
 
+
+  # Upower
+  services.upower.enable = true;
+
   # Unfree software
   nixpkgs.config.allowUnfree = true;
 

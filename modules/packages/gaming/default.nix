@@ -1,4 +1,6 @@
-{pkgs,...}: {
+{inputs, pkgs,...}: {
+
+  nix.settings = inputs.aagl.nixConfig;
 
   environment.systemPackages = with pkgs; [
     mangohud
@@ -11,6 +13,8 @@
 
   programs = {
     gamemode.enable = true;
+    anime-game-launcher.enable = true;
+    sleepy-launcher.enable = true;
     steam = {
       enable = true;
       remotePlay.openFirewall = true;
@@ -20,4 +24,5 @@
       extraCompatPackages = with pkgs; [proton-ge-bin];
     };
   };
+
 }
