@@ -9,7 +9,7 @@ RowLayout {
   Rectangle {
     Layout.preferredWidth: 160
     Layout.preferredHeight: 30
-    radius: 25
+    radius: 13
     color: Colors.brd
     Text {
       id: clock
@@ -17,8 +17,8 @@ RowLayout {
       color: Colors.txt
       opacity: 1
       font {
-        pointSize: 12
-	bold: true
+	pointSize: 12
+        weight: 600
       }
       text: Qt.formatDateTime(new Date(), "ddd, MMM dd  HH:mm")
       Timer {
