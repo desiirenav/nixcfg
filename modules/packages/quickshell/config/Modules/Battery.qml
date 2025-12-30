@@ -8,26 +8,26 @@ RowLayout {
   anchors.verticalCenter: parent.verticalCenter 
   anchors.rightMargin: 10
   Rectangle {
-    Layout.preferredWidth: 75
-    Layout.preferredHeight: 30
+    implicitWidth: 75
+    implicitHeight: 30
+    Layout.fillWidth: true
     radius: 13
     color: Colors.brd
+    Rectangle { 
+      color: white
+      implicitWidth: ((parent.width) * (Math.round(UPower.displayDevice.percentage * 100)))/100
+      implicitHeight: parent.height
+      radius: parent.radius
+    }
     Text {
       id: battery
       anchors.centerIn: parent
-      color: Colors.txt
       opacity: 1
       font {
         pointSize: 12
 	weight: 600
       }
       text: Math.round(UPower.displayDevice.percentage * 100) + " %"
-    }
-    Rectangle {
-      Layout.preferredWidth: (parent.width)/(Math.round(UPower.displayDevice.percentage))
-      Layout.preferredHeight: parent.height
-      radius: parent.radius
-      color: white
     }
   }
 }
