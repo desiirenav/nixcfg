@@ -21,7 +21,13 @@ RowLayout {
         pointSize: 12
 	weight: 600
       }
-      text: Math.round( UPower.displayDevice.percentage * 100) + " %"
+      text: Math.round(UPower.displayDevice.percentage * 100) + " %"
+    }
+    Rectangle {
+      Layout.preferredWidth: (parent.width)/(Math.round(UPower.displayDevice.percentage))
+      Layout.preferredHeight: parent.height
+      radius: parent.radius
+      color: white
     }
   }
 }

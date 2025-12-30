@@ -9,21 +9,19 @@ ShellRoot {
     delegate: PanelWindow {
       color: "transparent"
       implicitHeight: 40
-      implicitWidth: 600
+      implicitWidth: 500
 
       anchors {
-        top: true
+        top: true  
 	left: false
 	right: false
       }
-     
       Rectangle {
 	anchors.fill: parent
-        radius: 15
+        radius: 60
 	topRightRadius: 0
 	topLeftRadius: 0
 	color: Colors.bg
-        
 	Time {}
 	Battery {}
       }
