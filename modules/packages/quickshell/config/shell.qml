@@ -9,7 +9,7 @@ ShellRoot {
     delegate: PanelWindow {
       color: "transparent"
       implicitHeight: 40
-      implicitWidth: 500
+      implicitWidth: 600
 
       anchors {
         top: true  
@@ -23,6 +23,7 @@ ShellRoot {
 	topLeftRadius: 0
 	color: Colors.bg
 	Time {}
+	Sound {}
 	Battery {}
       }
     }
