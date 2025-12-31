@@ -21,7 +21,7 @@ ShellRoot {
         radius: 60
 	topRightRadius: 0
 	topLeftRadius: 0
-	color: Colors.bg
+	color: Colors.bg1
 	Time {}
 	Sound {}
 	Battery {}

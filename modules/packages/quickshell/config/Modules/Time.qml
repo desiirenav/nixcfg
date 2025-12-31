@@ -10,7 +10,7 @@ RowLayout {
     Layout.preferredWidth: 160
     Layout.preferredHeight: 30
     radius: 13
-    color: Colors.brd
+    color: Colors.bg2
     Text {
       id: clock
       anchors.centerIn: parent
@@ -27,6 +27,6 @@ RowLayout {
 	repeat: true
         onTriggered: clock.text = Qt.formatDateTime(new Date(), "ddd, MMM dd  HH:mm")
       }
-    }
+    } 
   }
 }

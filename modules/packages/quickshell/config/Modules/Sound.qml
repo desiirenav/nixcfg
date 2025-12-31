@@ -19,9 +19,9 @@ RowLayout {
     implicitHeight: 30
     Layout.fillWidth: true
     radius: 13
-    color: Colors.brd
+    color: Colors.bg2
     Rectangle { 
-      color: white
+      color: Colors.bg7
       implicitWidth: parent.width * (Pipewire.defaultAudioSink.audio.volume)
       implicitHeight: parent.height
       radius: parent.radius
@@ -30,6 +30,7 @@ RowLayout {
       id: sound
       anchors.centerIn: parent
       opacity: 1
+      color: Colors.txt
       font {
         pointSize: 12
 	weight: 600
