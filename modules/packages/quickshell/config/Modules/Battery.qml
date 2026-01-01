@@ -4,11 +4,6 @@ import QtQuick.Layouts
 import Quickshell.Services.UPower
 
 RowLayout {
-  property string batper : { 
-    if (UPowerDeviceState.Charging) 
-	  return " " + Math.round(UPower.displayDevice.percentage * 100) + " %"
-    else return Math.round(UPower.displayDevice.percentage * 100) + " %"
-  }
   anchors.right: parent.right
   anchors.verticalCenter: parent.verticalCenter 
   anchors.rightMargin: 10
@@ -33,7 +28,7 @@ RowLayout {
         pointSize: 12
 	weight: 600
       }
-      text: batper
+      text: Math.round(UPower.displayDevice.percentage * 100) + " %"
     }
   }
 }

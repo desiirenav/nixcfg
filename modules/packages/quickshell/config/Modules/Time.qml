@@ -3,30 +3,37 @@ import Quickshell
 import qs.Modules
 import QtQuick.Layouts
 
-RowLayout {
-  anchors.centerIn: parent
+RowLayout { 
+  property alias enabled: clock.enabled
+  readonly property date date: clock.date
 
-  Rectangle {
-    Layout.preferredWidth: 160
-    Layout.preferredHeight: 30
-    radius: 13
-    color: Colors.bg2
-    Text {
-      id: clock
-      anchors.centerIn: parent
-      color: Colors.txt
-      opacity: 1
-      font {
-	pointSize: 12
-        weight: 600
-      }
-      text: Qt.formatDateTime(new Date(), "ddd, MMM dd  HH:mm")
-      Timer {
-	interval: 1000
-        running: true
-	repeat: true
-        onTriggered: clock.text = Qt.formatDateTime(new Date(), "ddd, MMM dd  HH:mm")
-      }
-    } 
+  function format(fmt: string): string {
+    return Qt.formatDateTime(clock.date, fmt);
   }
+
+  SystemClock {
+    id: clock
+    precision: SystemClock.Seconds
+  }
+
+  anchors.left: parent.left
+  anchors.verticalCenter: parent.verticalCenter
+  anchors.leftMargin: 20
+   Column { 
+     Text { 
+       color: Colors.txt
+       text:  Qt.formatDateTime(clock.date, "HH:mm")
+       font {
+	 bold: true       
+ 	 pixelSize: 18
+       }
+     } 
+     Text { 
+       color: Colors.txt
+       text:  Qt.formatDateTime(clock.date, "ddd, dd/MM")
+       font { 
+	 pixelSize: 12
+       }
+     }
+   } 
 }
