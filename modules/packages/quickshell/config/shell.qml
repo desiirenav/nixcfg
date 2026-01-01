@@ -8,8 +8,8 @@ ShellRoot {
     model: Quickshell.screens
     delegate: PanelWindow {
       color: "transparent"
-      implicitHeight: 50
-      implicitWidth: 750
+      implicitHeight: 45
+      implicitWidth: 700
       anchors {
         top: true  
 	left: false
@@ -17,7 +17,7 @@ ShellRoot {
       }
       Rectangle {
 	anchors.fill: parent
-        radius: 30
+        radius: 15
 	topRightRadius: 0
 	topLeftRadius: 0
 	color: Colors.bg1

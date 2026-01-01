@@ -17,23 +17,23 @@ RowLayout {
   }
 
   anchors.left: parent.left
-  anchors.verticalCenter: parent.verticalCenter
-  anchors.leftMargin: 20
-   Column { 
-     Text { 
-       color: Colors.txt
-       text:  Qt.formatDateTime(clock.date, "HH:mm")
-       font {
-	 bold: true       
- 	 pixelSize: 18
-       }
-     } 
-     Text { 
-       color: Colors.txt
-       text:  Qt.formatDateTime(clock.date, "ddd, dd/MM")
-       font { 
-	 pixelSize: 12
-       }
-     }
-   } 
+  anchors.verticalCenter: parent.verticalCenter 
+  anchors.leftMargin: 15
+  Column { 
+    Text { 
+      text: Qt.formatDateTime(clock.date, "HH:mm") 
+      color: Colors.txt 
+      font { 
+	pointSize: 11
+        bold: true
+      }
+    }
+    Text { 
+      text: Qt.formatDateTime(clock.date, "ddd MMM dd") 
+      color: Colors.txt
+      font { 
+        weight: 500
+      }
+    }
+  }
 }
