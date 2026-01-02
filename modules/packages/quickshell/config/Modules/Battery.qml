@@ -4,14 +4,16 @@ import QtQuick.Layouts
 import Quickshell.Services.UPower
 
 RowLayout {
+  id: root
   anchors.right: parent.right
   anchors.verticalCenter: parent.verticalCenter 
   anchors.rightMargin: 10
+
   Rectangle {
-    implicitWidth: 75
-    implicitHeight: 30
+    implicitWidth: 60
+    implicitHeight: 25
     Layout.fillWidth: true
-    radius: 13
+    radius: 15
     color: Colors.bg2
     Rectangle { 
       color: Colors.bg7
@@ -19,16 +21,20 @@ RowLayout {
       implicitHeight: parent.height
       radius: parent.radius
     }
-    Text {
-      id: battery
+    Row { 
       anchors.centerIn: parent
-      opacity: 1
-      color: Colors.txt
-      font {
-        pointSize: 12
-	weight: 600
+      Text {
+        id: battery
+        opacity: 1
+        color: Colors.txt
+        font {
+          pointSize: 12
+	  weight: 600
+        }
+        text: Math.round(UPower.displayDevice.percentage * 100)
       }
-      text: Math.round(UPower.displayDevice.percentage * 100) + " %"
+      Text {
+      }
     }
   }
 }

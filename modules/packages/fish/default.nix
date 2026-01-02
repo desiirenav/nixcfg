@@ -5,11 +5,6 @@ let
     set -gx EDITOR nvim
     command -qv nvim && alias vim nvim
     starship init fish | source
-    if status is-interactive
-      if test -z "$WAYLAND_DISPLAY" -a "$XDG_VTNR" = 1
-        exec niri-session -l
-      end
-    end
   '';
 
   fish-wrapper = inputs.wrappers.lib.wrapPackage {

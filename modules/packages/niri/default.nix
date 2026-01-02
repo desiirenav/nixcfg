@@ -66,7 +66,7 @@
 	prefer-no-csd
 
 	spawn-at-startup "xwayland-satellite"
-	spawn-sh-at-startup "swaybg -i /home/narayan/nixcfg/modules/packages/niri/night.png"
+	spawn-sh-at-startup "swaybg -i /home/narayan/nixcfg/modules/packages/niri/vivian.png"
 	spawn-at-startup "quickshell"
 
 	environment {

@@ -4,7 +4,7 @@ import QtQuick
 
 Singleton {
   id: root
-  readonly property string bg1: Qt.alpha("#201d2a", 0.5) 
+  readonly property string bg1: Qt.alpha("#201d2a", 0.75) 
   readonly property string bg2: "#2c2839"
   readonly property string bg3: "#4b455f"
   readonly property string bg4: "#625a7c"

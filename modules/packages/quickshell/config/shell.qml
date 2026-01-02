@@ -9,7 +9,7 @@ ShellRoot {
     delegate: PanelWindow {
       color: "transparent"
       implicitHeight: 45
-      implicitWidth: 700
+      implicitWidth: 750
       anchors {
         top: true  
 	left: false
