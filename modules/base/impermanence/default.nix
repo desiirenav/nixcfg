@@ -46,6 +46,7 @@
 	".config/Vencord/themes"
         ".zen/narayan.default/chrome"
         ".local/share/sleepy-launcher"
+	".local/share/anime-game-launcher"
       ];
       files = [
         ".bash_history"

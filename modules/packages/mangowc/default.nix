@@ -6,7 +6,7 @@ let
     flags."-c" = "/home/narayan/nixcfg/modules/packages/mangowc/config.conf";
   };
 in {
-   programs.mangowc = {
+   programs.mango = {
     enable = true;
     package = mangowc-wrapper;
   };

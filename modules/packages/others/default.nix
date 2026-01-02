@@ -7,7 +7,6 @@
     gtk3
     gtk4
     starship
-    gpu-screen-recorder-gtk
     capitaine-cursors
     (discord.override { withVencord = true;})
     adwaita-icon-theme

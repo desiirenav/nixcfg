@@ -24,6 +24,11 @@
       url = "github:nix-community/impermanence";
     };
 
+    mango = {
+      url = "github:DreamMaoMao/mango";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     sf-mono-liga-src = {
       url = "github:shaunsingh/SFMono-Nerd-Font-Ligaturized";
       flake = false;
@@ -47,6 +52,7 @@
       specialArgs = { inherit inputs; };
       modules = [ 
         ./modules
+	inputs.mango.nixosModules.mango
 	inputs.aagl.nixosModules.default
 	inputs.impermanence.nixosModules.impermanence
       ];
