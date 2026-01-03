@@ -1,9 +1,8 @@
 import QtQuick
 import Quickshell
-import qs.Modules
 import QtQuick.Layouts
 
-RowLayout { 
+Item {
   property alias enabled: clock.enabled
   readonly property date date: clock.date
 
@@ -15,11 +14,8 @@ RowLayout {
     id: clock
     precision: SystemClock.Seconds
   }
-
-  anchors.left: parent.left
-  anchors.verticalCenter: parent.verticalCenter 
-  anchors.leftMargin: 15
   Column { 
+    anchors.verticalCenter: parent.verticalCenter
     Text { 
       text: Qt.formatDateTime(clock.date, "HH:mm") 
       color: Colors.txt 

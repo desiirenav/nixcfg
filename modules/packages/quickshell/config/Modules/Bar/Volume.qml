@@ -4,22 +4,19 @@ import Quickshell
 import Quickshell.Services.Pipewire
 import Quickshell.Widgets
 
-RowLayout {
+Item {
   id: root
   PwObjectTracker {
     objects: [ Pipewire.defaultAudioSink ]
-  }
-
-
-  anchors.right: parent.right
-  anchors.verticalCenter: parent.verticalCenter 
-  anchors.rightMargin: 95
+  } 
+  implicitWidth: 45
+  implicitHeight: 25
 
   Rectangle {
-    implicitWidth: 60
-    implicitHeight: 25
+    implicitWidth: parent.implicitWidth
+    implicitHeight: parent.implicitHeight
     Layout.fillWidth: true
-    radius: 10
+    radius: 20
     color: Colors.bg2
     Rectangle { 
       color: Colors.bg7
@@ -34,10 +31,10 @@ RowLayout {
         opacity: 1
         color: Colors.txt
         font {
-          pointSize: 12
+          pointSize: 11
 	  weight: 600
         }
-        text: Math.round( Pipewire.defaultAudioSink.audio.volume * 100) + " %"
+        text: Math.round( Pipewire.defaultAudioSink.audio.volume * 100)
       }
 
     }

@@ -15,7 +15,6 @@
   startPlugins = with vimPlugins; [
     nvim-lspconfig
     base2tone-nvim
-    lualine-nvim
   ];
 
   foldPlugins = builtins.foldl' (

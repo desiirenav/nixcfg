@@ -4,8 +4,12 @@
     yazi
     nautilus
     swaybg
+    swappy
     gtk3
     gtk4
+    grim
+    slurp
+    wl-clipboard
     starship
     capitaine-cursors
     (discord.override { withVencord = true;})
