@@ -10,7 +10,7 @@ Item {
   property bool isCharging: UPower.displayDevice.state === UPowerDeviceState.Charging
   function getBatteryIcon() { 
     if (isCharging) {
-      return "battery_android_frame_bolt";
+      return "";
     }
     else return ""
   }
@@ -29,7 +29,6 @@ Item {
       anchors.centerIn: parent
       Text {
         id: battery
-        opacity: 1
         color: Colors.txt
         font {
           pointSize: 11
@@ -38,7 +37,6 @@ Item {
         text: Math.round(UPower.displayDevice.percentage * 100)
       }
       Text {
-	property real fill
 	text: root.getBatteryIcon()
 	color: Colors.txt
 	font: { 

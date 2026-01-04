@@ -1,13 +1,16 @@
 import QtQuick
 import Quickshell
 import QtQuick.Layouts
+import Quickshell.Wayland
 
 PanelWindow { 
   id: root
   required property var modelData
+  WlrLayershell.layer: WlrLayer.Background
   color: "transparent"
   implicitHeight: 45
   implicitWidth: 750
+
   anchors { 
     top: true
     left: false
@@ -31,6 +34,7 @@ PanelWindow {
     RowLayout { 
       id: centerLayout
       anchors.centerIn: parent
+      Workspaces {}
     }
 
     RowLayout { 
