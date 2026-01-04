@@ -6,7 +6,6 @@ Item {
   id: root
   implicitWidth: 90
   implicitHeight: 30
-  readonly property Toplevel activeWindow: ToplevelManager.activeToplevel
 
   Rectangle {
     implicitWidth: parent.implicitWidth
@@ -15,32 +14,25 @@ Item {
     anchors.verticalCenter: parent.verticalCenter 
     radius: 20
     color: Colors.bg2
-    Rectangle {
-      anchors.left: parent.left
-      anchors.verticalCenter: parent.verticalCenter 
-      color: Colors.bg7
-      implicitWidth: 30
-      implicitHeight: 30
-      radius: 30
-      Text {
-	anchors.centerIn: parent
-        color: Colors.txt
-        font {
-          pointSize: 11
-	  weight: 600
+    Repeater { 
+      id: wsRepeater
+      anchors.centerIn: parent
+      Rectangle { 
+	id: workspaceNumber
+	width: 20
+	height: 20
+	radius: 20
+        
+	color: MangoWC.currentWorkspace ? Colors.bg1: "transparent"
+
+	Text { 
+	  color: Colors.txt
+	  font { 
+	    bold: true
+	    pixelSize: 12
+          }
+          text: MangoWC.currentWorkspace
         }
-        text: MangoService.currentWorkspace
-      }
-    }
-    Text {
-      anchors.left: parent.left
-      anchors.leftMargin: 40
-      anchors.verticalCenter: parent.verticalCenter
-      color: Colors.txt
-      text: activeWindow?.activated?activeWindow?.appId : "desktop"
-      font { 
-	pointSize: 11
-        weight: 600
       }
     }
   }

@@ -9,8 +9,24 @@ Item {
   PwObjectTracker {
     objects: [ Pipewire.defaultAudioSink ]
   } 
-  implicitWidth: 45
-  implicitHeight: 25
+  implicitWidth: 50
+  implicitHeight: 30
+  MouseArea {
+    anchors.fill: parent
+    onClicked: mouse => {
+      switch (mouse.button) {
+        case Qt.LeftButton:
+          popup.visible = !popup.visible
+          break;
+        case Qt.MiddleButton:
+          Audio.sink.audio.muted = !Audio.muted
+          break;
+        case Qt.RightButton:
+          Audio.source.audio.muted = !Audio.source.audio.muted
+          break;
+      }
+    }
+  }
 
   Rectangle {
     implicitWidth: parent.implicitWidth
@@ -19,7 +35,7 @@ Item {
     radius: 20
     color: Colors.bg2
     Rectangle { 
-      color: Colors.bg7
+      color: Colors.txt
       implicitWidth: parent.width * (Pipewire.defaultAudioSink.audio.volume)
       implicitHeight: parent.height
       radius: parent.radius
@@ -29,14 +45,13 @@ Item {
       Text {
         id: sound
         opacity: 1
-        color: Colors.txt
+        color: Colors.bg0
         font {
           pointSize: 11
-	  weight: 600
+	  bold: true
         }
         text: Math.round( Pipewire.defaultAudioSink.audio.volume * 100)
       }
-
     }
   }
 }

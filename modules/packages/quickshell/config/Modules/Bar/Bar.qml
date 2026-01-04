@@ -42,7 +42,7 @@ PanelWindow {
       anchors.right: parent.right
       anchors.verticalCenter: parent.verticalCenter
       anchors.rightMargin: 10
-      spacing: 20
+      spacing: 10
       Loader {
 	sourceComponent: Volume {}
       }

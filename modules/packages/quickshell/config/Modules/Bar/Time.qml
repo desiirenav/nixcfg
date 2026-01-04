@@ -15,19 +15,25 @@ Item {
     precision: SystemClock.Seconds
   }
   Column { 
+    anchors.left: parent.left
     anchors.verticalCenter: parent.verticalCenter
     Text { 
-      text: Qt.formatDateTime(clock.date, "HH:mm") 
-      color: Colors.txt 
-      font { 
-	pointSize: 11
+      anchors.left: parent.left
+      anchors.leftMargin: 10
+      color: Colors.txt
+      text: Qt.formatDateTime(clock.date, "HH:mm")
+      font {
+	pointSize: 13
         bold: true
       }
     }
     Text { 
-      text: Qt.formatDateTime(clock.date, "ddd MMM dd") 
+      anchors.left: parent.left
+      anchors.leftMargin: 2
+      text: Qt.formatDateTime(clock.date, "ddd,  MMM dd") 
       color: Colors.txt
-      font { 
+      font {
+	pointSize: 9
         weight: 500
       }
     }
