@@ -2,7 +2,7 @@ import QtQuick
 import Quickshell
 import QtQuick.Layouts
 
-Item {
+RowLayout { 
   property alias enabled: clock.enabled
   readonly property date date: clock.date
 
@@ -14,26 +14,24 @@ Item {
     id: clock
     precision: SystemClock.Seconds
   }
+
+  anchors.left: parent.left
+  anchors.verticalCenter: parent.verticalCenter 
+  anchors.leftMargin: 15
   Column { 
-    anchors.left: parent.left
-    anchors.verticalCenter: parent.verticalCenter
     Text { 
-      anchors.left: parent.left
-      anchors.leftMargin: 10
-      color: Colors.txt
-      text: Qt.formatDateTime(clock.date, "HH:mm")
-      font {
-	pointSize: 13
+      text: Qt.formatDateTime(clock.date, "HH:mm") 
+      color: Colors.txt 
+      font { 
+	pointSize: 11
         bold: true
       }
     }
     Text { 
-      anchors.left: parent.left
-      anchors.leftMargin: 2
-      text: Qt.formatDateTime(clock.date, "ddd,  MMM dd") 
+      text: Qt.formatDateTime(clock.date, "ddd, MMM dd") 
       color: Colors.txt
-      font {
-	pointSize: 9
+      font { 
+	pixelSize: 12
         weight: 500
       }
     }

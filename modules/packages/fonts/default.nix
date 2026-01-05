@@ -19,6 +19,7 @@
     packages = with pkgs; [
       (callPackage ./apple-fonts.nix {})
       sf-mono-liga-bin
+      material-symbols
     ];
     fontconfig = {
       defaultFonts = {

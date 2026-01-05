@@ -5,15 +5,15 @@ import QtQuick.Layouts
 
 Item { 
   id: root
-  implicitWidth: 50
-  implicitHeight: 30
+  implicitWidth: 45
+  implicitHeight: 25
   property bool isCharging: UPower.displayDevice.state === UPowerDeviceState.Charging
-  function getBatteryIcon() { 
+  function getBatteryIcon() {
     if (isCharging) {
-      return "";
+      return "bolt";
     }
-    else return ""
   }
+
   Rectangle {
     implicitWidth: parent.implicitWidth
     implicitHeight: parent.implicitHeight
@@ -28,17 +28,15 @@ Item {
    Row { 
       anchors.centerIn: parent
       Text {
-        id: battery
         color: Colors.txt
         font {
-	  pointSize: 12
+	  pointSize: 11
           bold: true
         }
         text: Math.round(UPower.displayDevice.percentage * 100)
       }
-      Text {
+      Icons { 
 	text: root.getBatteryIcon()
-	color: Colors.txt
       }
     }
   }

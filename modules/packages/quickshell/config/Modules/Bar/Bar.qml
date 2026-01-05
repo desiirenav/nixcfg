@@ -5,11 +5,9 @@ import Quickshell.Wayland
 
 PanelWindow { 
   id: root
-  required property var modelData
-  WlrLayershell.layer: WlrLayer.Background
   color: "transparent"
   implicitHeight: 45
-  implicitWidth: 750
+  implicitWidth: 500
 
   anchors { 
     top: true
@@ -27,14 +25,13 @@ PanelWindow {
       id: leftLayout
       anchors.left: parent.left
       anchors.verticalCenter: parent.verticalCenter 
-      anchors.leftMargin: 10
       Time {}
     }
 
     RowLayout { 
       id: centerLayout
       anchors.centerIn: parent
-      Workspaces {}
+//      AppLauncher {}
     }
 
     RowLayout { 
@@ -43,12 +40,8 @@ PanelWindow {
       anchors.verticalCenter: parent.verticalCenter
       anchors.rightMargin: 10
       spacing: 10
-      Loader {
-	sourceComponent: Volume {}
-      }
-      Loader {
-	sourceComponent: Battery {}
-      }
+      Volume {}
+      Battery {}
     }
   }
 }
