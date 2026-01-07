@@ -31,7 +31,7 @@ PanelWindow {
     RowLayout { 
       id: centerLayout
       anchors.centerIn: parent
-//      AppLauncher {}
+      Workspaces {}
     }
 
     RowLayout { 
