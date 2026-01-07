@@ -64,3 +64,4 @@ sudo sh ./install.sh
 - The quickshell discord server
 - https://github.com/Rexcrazy804/Zaphkiel/tree/master
 - http://188.245.241.250:3000/lucy/quickshell
+- https://github.com/imshinyu

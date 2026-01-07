@@ -6,7 +6,7 @@ import Quickshell.Wayland
 PanelWindow { 
   id: root
   color: "transparent"
-  implicitHeight: 45
+  implicitHeight: 50
   implicitWidth: 500
 
   anchors { 

@@ -7,7 +7,7 @@ pragma ComponentBehavior: Bound
 Item {
   id: root
   implicitWidth: 125
-  implicitHeight: 20
+  implicitHeight: 30
   Rectangle {
     property var workspaces: Mango.workspaces
     color: Colors.bg1
@@ -26,7 +26,7 @@ Item {
 	 id: pill
 	 color: "transparent"
 	 implicitWidth: 20
-	 implicitHeight: 20
+	 implicitHeight: 30
 	 radius: 20
 	 MouseArea { 
 	   anchors.fill: parent
