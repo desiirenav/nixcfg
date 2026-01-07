@@ -58,4 +58,9 @@ sudo sh ./install.sh
 - https://github.com/VISHALKANNAN070/dotfiles/blob/main/fuzzel/fuzzel.ini
 
 #### Wrappers
-- https://github.com/Lassulus/wrappers
+- https://github.com/Lassulus/wrappers 
+
+#### Quickshell config
+- The quickshell discord server
+- https://github.com/Rexcrazy804/Zaphkiel/tree/master
+- http://188.245.241.250:3000/lucy/quickshell

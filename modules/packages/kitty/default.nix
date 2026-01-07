@@ -5,7 +5,7 @@
       inherit pkgs;
       "kitty.conf".content = ''
         font_size 11.0
-
+        
         # The basic colors
         foreground #${config.theme.base07}
         background #${config.theme.base00}

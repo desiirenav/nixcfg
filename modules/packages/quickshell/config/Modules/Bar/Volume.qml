@@ -57,8 +57,13 @@ Item {
         }
         text: Math.round( Pipewire.defaultAudioSink.audio.volume * 100)
       }
-      Icons { 
+      Text { 
+	color: Colors.txt
 	text: root.getVolumeIcon()
+        font {
+          family: "Material Symbols Rounded"
+          pointSize: 11
+        }
       }
     }
   }

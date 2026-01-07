@@ -4,5 +4,5 @@ import qs.Modules.Bar
 import QtQuick.Layouts
 
 ShellRoot {
-  Bar {}
+  Bar {} 
 }

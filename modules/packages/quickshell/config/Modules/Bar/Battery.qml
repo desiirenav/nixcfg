@@ -35,8 +35,13 @@ Item {
         }
         text: Math.round(UPower.displayDevice.percentage * 100)
       }
-      Icons { 
+      Text { 
+	color: Colors.txt
 	text: root.getBatteryIcon()
+        font {
+          family: "Material Symbols Rounded"
+          pointSize: 11
+        }
       }
     }
   }
