@@ -5,29 +5,31 @@ import QtQuick.Layouts
 pragma ComponentBehavior: Bound
 
 Item {
+  id: root
+  implicitWidth: 125
+  implicitHeight: 20
   Rectangle {
-    id: root
     property var workspaces: Mango.workspaces
-    color: Colors.bg2
-    implicitHeight: 25
-    width: 25
-    radius: 25
-    Row {
+    color: Colors.bg1
+    implicitWidth: parent.implicitWidth
+    implicitHeight: parent.implicitHeight
+    radius: 20
+    RowLayout {
      id: workRow
      anchors.fill: parent
-     spacing: 2
+     spacing: 0
      Repeater { 
        id: workspacePill
        model: 5
        delegate: Rectangle { 
 	 required property int modelData
 	 id: pill
-	 color: Colors.bg2
-	 implicitWidth: 25
-	 implicitHeight: 25
-	 radius: 25
+	 color: "transparent"
+	 implicitWidth: 20
+	 implicitHeight: 20
+	 radius: 20
 	 MouseArea { 
-	   anchors.fill: pill
+	   anchors.fill: parent
 	   hoverEnabled: true
 	   cursorShape: Qt.PointingHandCursor
 	   acceptedButtons: Qt.LeftButton
@@ -39,11 +41,11 @@ Item {
         }
 	Text { 
 	  id: workNum
-	  anchors.centerIn: pill
-	  color: modelData==Mango.currentWorkspace-1 ? Colors.bg2 : Colors.bg7
+	  anchors.centerIn: parent
+	  color: Colors.txt
 	  font { 
 	    pixelSize: 12
-	    weight: 600
+	    bold: true
           } 
           text: modelData + 1
 	}
