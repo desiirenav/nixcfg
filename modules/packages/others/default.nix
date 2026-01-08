@@ -4,6 +4,7 @@
     yazi
     nautilus
     swaybg
+    swww
     swappy
     gtk3
     gtk4
@@ -14,6 +15,7 @@
     capitaine-cursors
     (discord.override { withVencord = true;})
     adwaita-icon-theme
+    kdePackages.qt5compat
     transmission_4-gtk
     xwayland-satellite
     brightnessctl
