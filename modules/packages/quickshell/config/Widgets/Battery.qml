@@ -1,12 +1,12 @@
-pragma ComponentBehavior: Bound
-import Quickshell.Services.UPower
 import QtQuick
 import QtQuick.Layouts
+pragma ComponentBehavior: Bound
+import Quickshell.Services.UPower
 
 Item { 
   id: root
-  implicitWidth: 45
-  implicitHeight: 25
+  implicitWidth: 50
+  implicitHeight: 30
   property bool isCharging: UPower.displayDevice.state === UPowerDeviceState.Charging
   function getBatteryIcon() {
     if (isCharging) {
@@ -17,7 +17,7 @@ Item {
   Rectangle {
     implicitWidth: parent.implicitWidth
     implicitHeight: parent.implicitHeight
-    radius: 20
+    radius: 30
     color: Colors.bg2
     Rectangle { 
       color: Colors.bg7

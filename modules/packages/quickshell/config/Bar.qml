@@ -1,4 +1,5 @@
 import QtQuick
+import qs.Widgets
 import Quickshell
 import QtQuick.Layouts
 import Quickshell.Wayland
@@ -38,9 +39,7 @@ PanelWindow {
       anchors.verticalCenter: parent.verticalCenter
       anchors.rightMargin: 10
       spacing: 10
-      Volume {}
       Battery {}
-      Power {}
     }
   }
 }
