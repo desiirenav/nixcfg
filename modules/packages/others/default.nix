@@ -18,8 +18,8 @@
     adwaita-icon-theme
     kdePackages.qt5compat
     transmission_4-gtk
-    xwayland-satellite
     brightnessctl
+    xwayland-satellite
     inputs.zen-browser.packages."${pkgs.stdenv.hostPlatform.system}".default
     ani-cli
     adw-gtk3

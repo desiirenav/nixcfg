@@ -1,5 +1,5 @@
 { inputs, pkgs, ... }:
-let 
+let
   fish-config = pkgs.writeText "config.fish" ''
     set -g fish_greeting
     set -gx EDITOR nvim
@@ -7,10 +7,11 @@ let
     starship init fish | source
     if status is-interactive
       if test -z "$WAYLAND_DISPLAY" -a "$XDG_VTNR" = 1
-        exec mango
+        exec niri-session -l
       end
     end
   '';
+
   fish-wrapper = inputs.wrappers.lib.wrapPackage {
     inherit pkgs;
     package = pkgs.fish;

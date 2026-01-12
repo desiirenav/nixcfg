@@ -65,13 +65,9 @@
 
 	prefer-no-csd
 
-	spawn-at-startup "xwayland-satellite"
+//	spawn-at-startup "xwayland-satellite"
 	spawn-sh-at-startup "swaybg -i /home/narayan/nixcfg/modules/packages/niri/vivian.png"
 	spawn-at-startup "quickshell"
-
-	environment {
-	    DISPLAY ":0"
-	}
 
 	screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
 
