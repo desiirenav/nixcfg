@@ -16,9 +16,8 @@ PanelWindow {
   }
   Rectangle {
     anchors.fill: parent
+    anchors.topMargin: 5
     radius: 20
-    topLeftRadius: 0
-    topRightRadius: 0
     color: Colors.bg1
 
     RowLayout {
@@ -31,7 +30,6 @@ PanelWindow {
     RowLayout { 
       id: centerLayout
       anchors.centerIn: parent
-      Workspaces {}
     }
 
     RowLayout { 
@@ -42,6 +40,7 @@ PanelWindow {
       spacing: 10
       Volume {}
       Battery {}
+      Power {}
     }
   }
 }

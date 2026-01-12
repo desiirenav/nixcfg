@@ -9,7 +9,8 @@
     gtk3
     gtk4
     grim
-    slurp
+    slurp 
+    vlc
     wl-clipboard
     starship
     capitaine-cursors

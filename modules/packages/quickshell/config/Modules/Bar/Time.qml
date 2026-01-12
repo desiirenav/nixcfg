@@ -23,7 +23,7 @@ RowLayout {
       text: Qt.formatDateTime(clock.date, "HH:mm") 
       color: Colors.txt 
       font { 
-	pointSize: 11
+	pointSize: 10
         bold: true
       }
     }
@@ -31,7 +31,7 @@ RowLayout {
       text: Qt.formatDateTime(clock.date, "ddd, MMM dd") 
       color: Colors.txt
       font { 
-	pixelSize: 12
+	pixelSize: 11
         weight: 500
       }
     }
