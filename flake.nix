@@ -20,6 +20,11 @@
       flake = false;
     };
 
+    mango = {
+      url = "github:DreamMaoMao/mango";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     impermanence = {
       url = "github:nix-community/impermanence";
     };
@@ -47,6 +52,7 @@
       specialArgs = { inherit inputs; };
       modules = [ 
         ./modules
+	inputs.mango.nixosModules.mango
 	inputs.aagl.nixosModules.default
 	inputs.impermanence.nixosModules.impermanence
       ];

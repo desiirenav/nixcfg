@@ -51,7 +51,6 @@ Variants {
       // Center
       RowLayout { 
 	anchors.centerIn: parent 
-        Workspaces {}
       }
 
       // Right
