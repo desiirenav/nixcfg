@@ -1,65 +1,55 @@
 import QtQuick
 import qs.common
 import Quickshell
-import QtQuick.Effects
 import QtQuick.Layouts
 import Quickshell.Wayland
-import qs.modules.bar.workspaces
+import qs.modules.bar.widgets
 
 Variants {
   model: Quickshell.screens
-  
-  PanelWindow { 
-    screen: modelData
-    implicitWidth: 400
-    implicitHeight: 50
+  delegate: PanelWindow { 
     color: "transparent"
-    required property var modelData
+    implicitHeight: 50
+    implicitWidth: 500
 
     anchors {
       top: true
       left: false
       right: false
-    }
+    } 
 
-
-    RectangularShadow {
-      anchors.fill: bar
-      radius: bar.radius
-      blur: 10
-    }
-
-    Rectangle {
-      id: bar
-      radius: 20
+    Rectangle { 
+      radius: 50
       color: Theme.base00
 
       anchors {
-	topMargin: 10
 	fill: parent
-      }
+        topMargin: 5
+      } 
 
-      // Left
-      RowLayout {
-	anchors {
+      RowLayout { 
+	anchors { 
 	  left: parent.left
 	  verticalCenter: parent.verticalCenter
-        }
-        Time {}
-      }
+        } 
 
-      // Center
+	Time {}
+      } 
+
       RowLayout { 
-	anchors.centerIn: parent 
+	anchors.centerIn: parent	      
       }
 
-      // Right
       RowLayout { 
 	anchors { 
 	  right: parent.right
-          verticalCenter: parent.verticalCenter
-	}
-      }
+	  verticalCenter: parent.verticalCenter 
+          rightMargin: 10
+        } 
+
+	Battery {}
+      } 
+
     }
   }
 }

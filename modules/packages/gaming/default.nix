@@ -4,6 +4,7 @@
 
   environment.systemPackages = with pkgs; [
     mangohud
+    prismlauncher
   ];
 
   environment.sessionVariables = {

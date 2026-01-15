@@ -6,7 +6,7 @@
     ./gaming
     ./git
     ./kitty
-    ./mangowc
+#    ./mangowc
     ./neovim
     ./niri
     ./quickshell

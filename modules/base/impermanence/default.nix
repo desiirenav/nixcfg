@@ -44,6 +44,7 @@
         ".local/share/fish"
         ".local/share/Steam"
 	".config/Vencord/themes"
+	".local/share/PrismLauncher"
         ".zen/narayan.default/chrome"
         ".local/share/sleepy-launcher"
 	".local/share/anime-game-launcher"
