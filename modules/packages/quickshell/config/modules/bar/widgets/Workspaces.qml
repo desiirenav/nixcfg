@@ -1,10 +1,14 @@
 import QtQuick
-import QtQuick.Layouts
+import qs.common
 import Quickshell
 import Quickshell.Io
+import QtQuick.Layouts
 
 Item {
   id: root
+
+  implicitWidth: 300
+  implicitHeight: 35
 
   property var workspaceData: []
   property int focusedWorkspaceIdx: 1
@@ -81,4 +85,40 @@ Item {
     id: switchProc
   }
 
+
+  Rectangle { 
+    color: "transparent"
+    anchors.fill: parent
+    radius: 30
+
+    RowLayout { 
+      anchors.fill: parent
+      Repeater { 
+	model: [1, 2, 3, 4]
+	delegate: Rectangle { 
+	  implicitWidth: 60
+	  implicitHeight: parent.implicitHeight
+	  color: modelData === root.focusedWorkspaceIdx ? Theme.base08 : Theme.base00
+	  Text { 
+	    anchors.centerIn: parent
+            color: Theme.base07
+	    text: modelData
+	    font: { 
+	      bold: true
+	      pointSize: 40
+            } 
+
+	    MouseArea { 
+	      anchors.fill: parent
+	      cursorShape: Qt.PointingHandCursor
+	      onClicked: { 
+		switchProc.command = ["niri", "msg", "action", "focus-workspace", modelData.toString()];
+		switchProc.running = true;
+	      }
+	    }
+	  }
+	}
+      }
+    }
+  }
 }
