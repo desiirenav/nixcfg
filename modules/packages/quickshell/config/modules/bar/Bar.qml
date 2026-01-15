@@ -30,14 +30,16 @@ Variants {
       RowLayout { 
 	anchors { 
 	  left: parent.left
-	  verticalCenter: parent.verticalCenter
+          verticalCenter: parent.verticalCenter
         } 
 
 	Time {}
+        
       } 
 
       RowLayout { 
-	anchors.centerIn: parent	      
+	anchors.centerIn: parent
+        Workspaces {}
       }
 
       RowLayout { 

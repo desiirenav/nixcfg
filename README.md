@@ -65,3 +65,4 @@ sudo sh ./install.sh
 - https://github.com/Rexcrazy804/Zaphkiel/tree/master
 - http://188.245.241.250:3000/lucy/quickshell
 - https://github.com/imshinyu
+- https://github.com/TobiasBak/dotfiles/tree/f95c94d0059062e7ecd85d2eff2b8dfce400c075
