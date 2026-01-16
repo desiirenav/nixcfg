@@ -8,12 +8,6 @@ Item {
   implicitWidth: 50
   implicitHeight: 30
   property bool isCharging: UPower.displayDevice.state === UPowerDeviceState.Charging
-  function getBatteryIcon() {
-    if (isCharging) {
-      return "bolt";
-    }
-  }
-
   Rectangle {
     implicitWidth: parent.implicitWidth
     implicitHeight: parent.implicitHeight

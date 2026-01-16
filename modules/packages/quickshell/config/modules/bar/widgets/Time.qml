@@ -22,7 +22,6 @@ Item {
     anchors {
       left: parent.left
       verticalCenter: parent.verticalCenter
-      leftMargin: 15
     }
     spacing: 0
     Text {
@@ -35,7 +34,7 @@ Item {
     } 
     Text { 
       color: Theme.base07	    
-      text: Qt.formatDateTime(clock.date, "ddd, MMM dd") 
+      text:  Qt.formatDateTime(clock.date, "ddd, MMM dd") 
       font { 
 	pixelSize: 10
         bold: true

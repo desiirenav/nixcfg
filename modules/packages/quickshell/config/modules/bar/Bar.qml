@@ -10,7 +10,7 @@ Variants {
   delegate: PanelWindow { 
     color: "transparent"
     implicitHeight: 50
-    implicitWidth: 500
+    implicitWidth: 450
 
     anchors {
       top: true
@@ -24,15 +24,18 @@ Variants {
 
       anchors {
 	fill: parent
-        topMargin: 5
+        topMargin: 10
       } 
 
-      RowLayout { 
-	anchors { 
+      RowLayout {
+	spacing: 15
+	anchors {	      
 	  left: parent.left
-          verticalCenter: parent.verticalCenter
+	  verticalCenter: parent.verticalCenter
+	  leftMargin: 15
         } 
 
+	Nix {}
 	Time {}
         
       } 

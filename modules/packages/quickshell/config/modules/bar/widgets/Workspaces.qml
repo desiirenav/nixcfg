@@ -7,8 +7,8 @@ import QtQuick.Layouts
 Item {
   id: root
 
-  implicitWidth: 300
-  implicitHeight: 35
+  width: 200
+  height: 30
 
   property var workspaceData: []
   property int focusedWorkspaceIdx: 1
@@ -97,16 +97,18 @@ Item {
 	model: [1, 2, 3, 4]
 	delegate: Rectangle { 
 	  implicitWidth: 60
-	  implicitHeight: parent.implicitHeight
+	  implicitHeight: parent.height
+	  radius: 30
 	  color: modelData === root.focusedWorkspaceIdx ? Theme.base08 : Theme.base00
 	  Text { 
 	    anchors.centerIn: parent
             color: Theme.base07
 	    text: modelData
-	    font: { 
+            
+	    font { 
 	      bold: true
-	      pointSize: 40
-            } 
+              pointSize: 10
+	    }
 
 	    MouseArea { 
 	      anchors.fill: parent
