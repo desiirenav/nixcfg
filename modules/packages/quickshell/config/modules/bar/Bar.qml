@@ -10,7 +10,7 @@ Variants {
   delegate: PanelWindow { 
     color: "transparent"
     implicitHeight: 50
-    implicitWidth: 450
+    implicitWidth: 550
 
     anchors {
       top: true
@@ -40,18 +40,20 @@ Variants {
         
       } 
 
-      RowLayout { 
+      RowLayout {
 	anchors.centerIn: parent
         Workspaces {}
       }
 
-      RowLayout { 
+      RowLayout {
+	spacing: 50
 	anchors { 
 	  right: parent.right
 	  verticalCenter: parent.verticalCenter 
           rightMargin: 10
         } 
-
+        
+	Audio {}
 	Battery {}
       } 
 

@@ -7,7 +7,7 @@ import QtQuick.Layouts
 Item {
   id: root
 
-  width: 200
+  width: 250
   height: 30
 
   property var workspaceData: []
