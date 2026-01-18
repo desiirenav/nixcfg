@@ -52,11 +52,16 @@ layout {
     }
 }
 
-
+cursor {
+    xcursor-theme "WhiteSur-cursors"
+    xcursor-size 22
+}
 
 prefer-no-csd
 
 spawn-sh-at-startup "swaybg -i /home/narayan/nixcfg/modules/packages/niri/lavender.png"
+spawn-sh-at-startup "awww img /home/narayan/nixcfg/modules/packages/niri/lavender.png"
+spawn-sh-at-startup "awww-daemon"
 spawn-sh-at-startup "quickshell"
 
 screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
@@ -70,7 +75,7 @@ animations {
 }
 
 layer-rule {
-    match namespace="swww-daemon"
+    match namespace="awww-daemon"
     place-within-backdrop true
 }
 

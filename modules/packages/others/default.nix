@@ -4,10 +4,11 @@
     yazi
     nautilus
     swaybg
-    swww
+    inputs.awww.packages.${pkgs.stdenv.hostPlatform.system}.awww
     gtk3
     gtk4
     vlc
+    whitesur-cursors
     wl-clipboard
     telegram-desktop
     xwayland-satellite

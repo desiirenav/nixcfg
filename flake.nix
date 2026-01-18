@@ -10,6 +10,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    awww = { 
+      url = "git+https://codeberg.org/LGFae/awww";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     apple-fonts = {
       url = "github:raxxuy/apple-fonts.nix";
       inputs.nixpkgs.follows = "nixpkgs";

@@ -58,7 +58,7 @@ Variants {
           rightMargin: 150
         } 
 
-         SysTray {}
+         Audio {}
       } 
 
 
@@ -70,7 +70,7 @@ Variants {
           rightMargin: 100
         } 
 
-	Audio {}
+	SysTray {}
       } 
 
 
