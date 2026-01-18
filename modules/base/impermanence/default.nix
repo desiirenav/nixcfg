@@ -46,6 +46,7 @@
 	".config/Vencord/themes"
 	".local/share/PrismLauncher"
         ".zen/narayan.default/chrome"
+	".local/share/TelegramDesktop"
         ".local/share/sleepy-launcher"
 	".local/share/anime-game-launcher"
       ];

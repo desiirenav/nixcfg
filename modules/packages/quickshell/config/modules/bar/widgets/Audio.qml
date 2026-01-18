@@ -33,7 +33,7 @@ Item {
     }
     font { 
       family: "Material Symbols Rounded"
-      pointSize: 11
+      pointSize: 16
     }
   }
 }

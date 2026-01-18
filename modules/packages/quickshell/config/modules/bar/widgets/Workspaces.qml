@@ -7,7 +7,7 @@ import QtQuick.Layouts
 Item {
   id: root
 
-  width: 250
+  width: 200
   height: 30
 
   property var workspaceData: []
@@ -94,7 +94,7 @@ Item {
     RowLayout { 
       anchors.fill: parent
       Repeater { 
-	model: [1, 2, 3, 4]
+	model: [1, 2, 3]
 	delegate: Rectangle { 
 	  implicitWidth: 60
 	  implicitHeight: parent.height

@@ -5,27 +5,22 @@
     nautilus
     swaybg
     swww
-    swappy
     gtk3
     gtk4
-    grim
-    slurp 
     vlc
     wl-clipboard
+    telegram-desktop
+    xwayland-satellite
     starship
-    capitaine-cursors
     (discord.override { withVencord = true;})
     adwaita-icon-theme
-    kdePackages.qt5compat
     transmission_4-gtk
     brightnessctl
-    xwayland-satellite
     inputs.zen-browser.packages."${pkgs.stdenv.hostPlatform.system}".default
     ani-cli
     adw-gtk3
     unzip
     fastfetch
     zathura
-  ];
-
+  ]; 
 }

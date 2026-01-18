@@ -10,7 +10,7 @@ Variants {
   delegate: PanelWindow { 
     color: "transparent"
     implicitHeight: 50
-    implicitWidth: 550
+    implicitWidth: 500
 
     anchors {
       top: true
@@ -28,32 +28,59 @@ Variants {
       } 
 
       RowLayout {
-	spacing: 15
+	spacing: 10
 	anchors {	      
 	  left: parent.left
 	  verticalCenter: parent.verticalCenter
-	  leftMargin: 15
+	  leftMargin: 20
         } 
 
 	Nix {}
 	Time {}
-        
+     }
+
+
+      RowLayout {
+ 	anchors {	      
+	  left: parent.left
+	  verticalCenter: parent.verticalCenter
+	  leftMargin: 130
+        } 
+	Workspaces {}
       } 
 
-      RowLayout {
-	anchors.centerIn: parent
-        Workspaces {}
-      }
+
 
       RowLayout {
-	spacing: 50
 	anchors { 
 	  right: parent.right
-	  verticalCenter: parent.verticalCenter 
+	  verticalCenter: parent.verticalCenter
+          rightMargin: 150
+        } 
+
+         SysTray {}
+      } 
+
+
+
+      RowLayout {
+	anchors { 
+	  right: parent.right
+	  verticalCenter: parent.verticalCenter
+          rightMargin: 100
+        } 
+
+	Audio {}
+      } 
+
+
+      RowLayout {
+	anchors { 
+	  right: parent.right
+	  verticalCenter: parent.verticalCenter
           rightMargin: 10
         } 
-        
-	Audio {}
+
 	Battery {}
       } 
 
