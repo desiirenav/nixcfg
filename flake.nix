@@ -10,6 +10,10 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    apple-fonts = {
+      url = "github:Lyndeno/apple-fonts.nix";
+    };
+
     awww = { 
       url = "git+https://codeberg.org/LGFae/awww";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -22,6 +26,11 @@
 
     impermanence = {
       url = "github:nix-community/impermanence";
+    };
+
+    sf-mono-liga-src = {
+      url = "github:shaunsingh/SFMono-Nerd-Font-Ligaturized";
+      flake = false;
     };
 
     wrappers = {
@@ -42,8 +51,8 @@
       specialArgs = { inherit inputs; };
       modules = [ 
         ./modules
-	inputs.aagl.nixosModules.default
-	inputs.impermanence.nixosModules.impermanence
+	    inputs.aagl.nixosModules.default
+	    inputs.impermanence.nixosModules.impermanence
       ];
     };
   };
