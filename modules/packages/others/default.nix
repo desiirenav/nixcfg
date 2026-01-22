@@ -12,7 +12,6 @@
     wl-clipboard
     telegram-desktop
     xwayland-satellite
-    protonplus
     starship
     (discord.override { withVencord = true;})
     adwaita-icon-theme
