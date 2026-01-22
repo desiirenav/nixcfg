@@ -16,8 +16,7 @@
     };
 
     apple-fonts = {
-      url = "github:raxxuy/apple-fonts.nix";
-      inputs.nixpkgs.follows = "nixpkgs";
+      url = "github:Lyndeno/apple-fonts.nix";
     };
 
     base2tone-nvim = {
