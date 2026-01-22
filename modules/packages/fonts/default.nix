@@ -17,14 +17,13 @@
 
   fonts = {
     packages = with pkgs; [
-      (callPackage ./apple-fonts.nix {})
+      inputs.apple-fonts.packages.${pkgs.stdenv.hostPlatform.system}.sf-pro-nerd
       sf-mono-liga-bin
-      material-symbols
     ];
     fontconfig = {
       defaultFonts = {
-        serif = [ "SF Pro Display"];
-        sansSerif = ["SF Pro Display"];
+        serif = [ "SFProDisplay Nerd Font"];
+        sansSerif = ["SFProDisplay Nerd Font"];
         monospace = [ "Liga SFMono Nerd Font" ];
       };
     };
