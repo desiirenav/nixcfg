@@ -1,7 +1,7 @@
 { ... }: {
   imports = [
     ./fish
-    ./fonts
+ #   ./fonts
     ./fuzzel
     ./gaming
     ./git
