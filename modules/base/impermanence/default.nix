@@ -28,7 +28,7 @@
     ];
     users.narayan = {
       directories = [
-	".zen"
+	    ".zen"
         ".ssh"
         "Games"
         "Music"
@@ -40,15 +40,13 @@
         "Downloads"
         "Documents"
         ".config/discord"
-	".config/Vencord"
+	    ".config/Vencord"
         ".local/share/fish"
         ".local/share/Steam"
-	".config/Vencord/themes"
-	".local/share/PrismLauncher"
+	    ".config/Vencord/themes"
         ".zen/narayan.default/chrome"
-	".local/share/TelegramDesktop"
         ".local/share/sleepy-launcher"
-	".local/share/anime-game-launcher"
+#	    ".local/share/anime-game-launcher"
       ];
       files = [
         ".bash_history"
