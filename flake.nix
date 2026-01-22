@@ -15,10 +15,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    apple-fonts = {
-      url = "github:Lyndeno/apple-fonts.nix";
-    };
-
     base2tone-nvim = {
       url = "github:atelierbram/Base2Tone-nvim";
       flake = false;
@@ -26,11 +22,6 @@
 
     impermanence = {
       url = "github:nix-community/impermanence";
-    };
-
-    sf-mono-liga-src = {
-      url = "github:shaunsingh/SFMono-Nerd-Font-Ligaturized";
-      flake = false;
     };
 
     wrappers = {
