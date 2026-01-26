@@ -4,7 +4,6 @@
     yazi
     nautilus
     swaybg
-    inputs.awww.packages.${pkgs.stdenv.hostPlatform.system}.awww
     gtk3
     gtk4
     vlc
