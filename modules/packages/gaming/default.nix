@@ -13,8 +13,6 @@
 
   programs = {
     gamemode.enable = true;
- #   anime-game-launcher.enable = true;
-    sleepy-launcher.enable = true;
     steam = {
       enable = true;
       remotePlay.openFirewall = true;
