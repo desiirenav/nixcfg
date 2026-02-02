@@ -56,7 +56,5 @@ sudo rm -rf .git && \
 NIX_CONFIG="experimental-features = nix-command flakes" \
   nix flake update && \
   sudo nixos-install --flake .#nixos --no-root-passwd && \
-cd -
-sudo cp -r nixcfg/ /mnt/persist
-reboot
+
 
