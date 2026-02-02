@@ -1,7 +1,5 @@
 {inputs, pkgs,...}: {
 
-  nix.settings = inputs.aagl.nixConfig;
-
   environment.systemPackages = with pkgs; [
     mangohud
     protonplus
