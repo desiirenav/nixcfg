@@ -2,9 +2,11 @@ import QtQuick
 import Quickshell
 import QtQuick.Layouts
 
-Item {
-  id: root
-
+Rectangle {
+  radius: 5
+  color: "transparent"
+  implicitHeight: 30
+  implicitWidth: 60
   property alias enabled: clock.enabled
   readonly property date date: clock.date
 
@@ -17,24 +19,23 @@ Item {
     precision: SystemClock.Seconds
   }
 
-  ColumnLayout {
+  Column {
     anchors {
       left: parent.left
       verticalCenter: parent.verticalCenter
-      leftMargin: 15
     }
     spacing: 0
     Text {
       color: "#efebff"		  
       text: Qt.formatDateTime(clock.date, "HH:mm")
       font { 
-	pointSize: 10
+	pixelSize: 11
         bold: true
       }
     } 
     Text { 
       color: "#efebff"	    
-      text: Qt.formatDateTime(clock.date, "ddd, MMM dd") 
+      text:  Qt.formatDateTime(clock.date, "ddd, MMM dd") 
       font { 
 	pixelSize: 10
         bold: true

@@ -10,13 +10,13 @@ Item {
   required property SystemTrayItem modelData
   required property int index
 
-  implicitWidth: 16
-  implicitHeight: 16
+  implicitWidth: 12
+  implicitHeight: 12
 
   Popup {
   id: trayMenuPopup
         y: root.y + root.height + 8
-        contentWidth: 304
+        contentWidth: 300
         contentHeight: idMenu.contentHeight - 8
         modal: true
         focus: true

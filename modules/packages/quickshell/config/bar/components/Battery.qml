@@ -2,15 +2,30 @@ import QtQuick
 import QtQuick.Layouts
 import Quickshell.Services.UPower
 
-Item {
-  root
+Rectangle {
+  radius: 15
+  property bool isCharging: UPower.displayDevice.state === UPowerDeviceState.Charging
+  color: "#4b455f"
   implicitWidth: 50
   implicitHeight: 30
-  property bool isCharging: UPower.displayDevice.state === UPowerDeviceState.Charging
-
-  Rectangle {
+  
+  Rectangle { 
     color: "#7451e6"
-    implicitWidth: parent.width
+    radius: parent.radius
     implicitHeight: parent.height
+    implicitWidth: ((parent.width) * (Math.round(UPower.displayDevice.percentage * 100)))/100
   }
+
+  RowLayout { 
+    anchors.centerIn: parent
+    Text { 
+      color: "#efebff"
+      text: Math.round(UPower.displayDevice.percentage * 100)
+      font { 
+	bold: true
+	pointSize: 11
+      }
+    }
+  }
+
 }

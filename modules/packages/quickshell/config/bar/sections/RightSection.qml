@@ -5,8 +5,13 @@ import qs.bar.components
 import qs.bar.components.tray
 
 RowLayout {
-  Layout.alignment: Qt.AlignVCenter
   spacing: 40
-//  Battery {}
+  anchors {
+    rightMargin: 5
+    leftMargin: 5
+    right: parent.right
+    verticalCenter: parent.verticalCenter
+  }
+  Battery {}
   Tray {}
 }

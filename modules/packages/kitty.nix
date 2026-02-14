@@ -6,7 +6,7 @@
       inherit pkgs;
       "kitty.conf".content = ''
         font_size 11.0
-        
+
         # The basic colors
         foreground #${theme.base07}
         background #${theme.base00}
@@ -16,7 +16,8 @@
         # Cursor colors
         cursor #${theme.base09}
         cursor_text_color #${theme.base00}
-
+        cursor_trail 3
+       
         url_color #${theme.base06}
 
         # kitty window border colors and terminal bell colors

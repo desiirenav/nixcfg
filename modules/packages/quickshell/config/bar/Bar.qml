@@ -26,12 +26,12 @@ Scope {
 
 
       Rectangle {
-	radius: 15
+	radius: 20
 	color: "#201d2a"
 
 	anchors {
 	  fill: parent
-          topMargin: 10
+	  topMargin: 10
         }
 
 	RowLayout {
