@@ -27,7 +27,6 @@
       self.packages."${pkgs.stdenv.hostPlatform.system}".fuzzel
       self.packages."${pkgs.stdenv.hostPlatform.system}".wallpaper
       yazi
-      weylus
       telegram-desktop
       xwayland-satellite
       starship
