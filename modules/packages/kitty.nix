@@ -49,35 +49,35 @@
         # The basic 16 colors
         # black
         color0  #${theme.base00}
-        color8  #${theme.base03}
+        color8  #${theme.base00}
 
         # red
         color1  #${theme.base0E}
-        color9  #${theme.base0D}
+        color9  #${theme.base0E}
 
         # green
         color2  #${theme.base0A}
-        color10 #${theme.base01}
+        color10 #${theme.base0A}
 
         # yellow
         color3  #${theme.base0C}
-        color11 #${theme.base02}
+        color11 #${theme.base0C}
 
         # blue
         color4  #${theme.base05}
-        color12 #${theme.base04}
+        color12 #${theme.base05}
 
         # magenta
-        color5  #${theme.base0A}
+        color5  #${theme.base06}
         color13 #${theme.base06}
 
         # cyan
         color6  #${theme.base05}
-        color14 #${theme.base09}
+        color14 #${theme.base05}
 
         # white
         color7  #${theme.base04}
-        color15 #${theme.base07}
+        color15 #${theme.base04}
       '';
     }).wrapper;
   };

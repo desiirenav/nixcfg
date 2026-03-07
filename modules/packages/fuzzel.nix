@@ -17,8 +17,8 @@
 
         [border]
         # Thinner border
-        width=3
-        radius=12
+        width=0
+        radius=3
 
         [colors]
         background=${theme.base00}ff

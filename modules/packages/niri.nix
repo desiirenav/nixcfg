@@ -48,7 +48,7 @@
             { proportion = 1.0; }
           ];
           default-column-width = { proportion = 0.5; };
-          gaps = 32;
+          gaps = 24;
           struts = { };
           background-color = "transparent";
           center-focused-column = "never";
@@ -66,7 +66,7 @@
 
         spawn-at-startup = [
           [ "wallpaper" ]
-	  "quickshell"
+#	  "quickshell"
         ];
 
         screenshot-path = "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png";
@@ -86,7 +86,7 @@
 
         window-rules = [
           {
-            geometry-corner-radius = 12;
+            geometry-corner-radius = 3;
             clip-to-geometry = true;
           }
         ];
