@@ -49,11 +49,11 @@
         # The basic 16 colors
         # black
         color0  #${theme.base00}
-        color8  #${theme.base00}
+        color8  #${theme.base01}
 
         # red
-        color1  #${theme.base0E}
-        color9  #${theme.base0E}
+        color1  #${theme.base0A}
+        color9  #${theme.base0A}
 
         # green
         color2  #${theme.base0A}
