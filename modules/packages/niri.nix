@@ -48,7 +48,7 @@
             { proportion = 1.0; }
           ];
           default-column-width = { proportion = 0.5; };
-          gaps = 24;
+          gaps = 32;
           struts = { };
           background-color = "transparent";
           center-focused-column = "never";

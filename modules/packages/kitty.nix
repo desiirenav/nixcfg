@@ -45,18 +45,17 @@
         mark2_background #${theme.base0B}
         mark3_foreground #${theme.base00}
         mark3_background #${theme.base09}
-
         # The basic 16 colors
         # black
         color0  #${theme.base00}
         color8  #${theme.base01}
 
         # red
-        color1  #${theme.base0A}
-        color9  #${theme.base0A}
+        color1  #${theme.base07}
+        color9  #${theme.base08}
 
         # green
-        color2  #${theme.base0A}
+        color2  #${theme.base09}
         color10 #${theme.base0A}
 
         # yellow
@@ -64,8 +63,8 @@
         color11 #${theme.base0C}
 
         # blue
-        color4  #${theme.base05}
-        color12 #${theme.base05}
+        color4  #${theme.base0F}
+        color12 #${theme.base0F}
 
         # magenta
         color5  #${theme.base06}
@@ -77,7 +76,7 @@
 
         # white
         color7  #${theme.base04}
-        color15 #${theme.base04}
+        color15 #${theme.base07}
       '';
     }).wrapper;
   };
