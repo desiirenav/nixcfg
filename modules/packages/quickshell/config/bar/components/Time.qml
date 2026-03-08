@@ -1,12 +1,12 @@
 import QtQuick
+pragma Singleton
 import Quickshell
 import QtQuick.Layouts
 
 Rectangle {
-  radius: 5
-  color: "transparent"
-  implicitHeight: 30
+  color: "red"
   implicitWidth: 60
+  implicitHeight: 30
   property alias enabled: clock.enabled
   readonly property date date: clock.date
 
@@ -17,29 +17,5 @@ Rectangle {
   SystemClock {
     id: clock
     precision: SystemClock.Seconds
-  }
-
-  Column {
-    anchors {
-      left: parent.left
-      verticalCenter: parent.verticalCenter
-    }
-    spacing: 0
-    Text {
-      color: "#efebff"		  
-      text: Qt.formatDateTime(clock.date, "HH:mm")
-      font { 
-	pixelSize: 11
-        bold: true
-      }
-    } 
-    Text { 
-      color: "#efebff"	    
-      text:  Qt.formatDateTime(clock.date, "ddd, MMM dd") 
-      font { 
-	pixelSize: 10
-        bold: true
-      }
-    }
   }
 }

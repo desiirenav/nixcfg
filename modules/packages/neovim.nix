@@ -1,11 +1,18 @@
-{ self, inputs, config, ... }: {
-  perSystem = {pkgs, lib, ...}: let
-    inherit (self) theme;
+{ inputs, config, ... }: {
+  perSystem = {pkgs, lib, ...}: let 
     packageName = "mypackage";
 
     startPlugins =  [
-      pkgs.vimPlugins.base16-nvim
       pkgs.vimPlugins.nvim-lspconfig
+      (pkgs.vimUtils.buildVimPlugin {
+        name = "base2tone-nvim";
+        src = pkgs.fetchFromGitHub {
+          owner = "atelierbram";
+          repo = "Base2Tone-nvim";
+          rev = "HEAD";
+          hash = "sha256-XcPZBL4QeiQVCtIoZF63vHdQjl7aCf408MhiFvlrwvI=";
+        };
+      })     
     ];
 
     foldPlugins = builtins.foldl' (
@@ -33,12 +40,7 @@
       vim.opt.number = true
       vim.opt.relativenumber = true
       vim.lsp.enable({"nixd", "lua_ls"})
-      require('base16-colorscheme').setup({
-	base00 = '#${theme.base00}', base01 = '#${theme.base01}', base02 = '#${theme.base02}', base03 = '#${theme.base03}',
-	base04 = '#${theme.base04}', base05 = '#${theme.base07}', base06 = '#${theme.base06}', base07 = '#${theme.base07}',
-	base08 = '#${theme.base06}', base09 = '#${theme.base09}', base0A = '#${theme.base05}', base0B = '#${theme.base05}',
-	base0C = '#${theme.base0C}', base0D = '#${theme.base0D}', base0E = '#${theme.base0E}', base0F = '#${theme.base07}',
-      })
+      vim.cmd("colorscheme base2tone_lavender_dark")
     '';
   in { 
     packages.neovim = pkgs.symlinkJoin {

@@ -12,7 +12,6 @@ RowLayout {
     bottomMargin: 20
     left: parent.left
     verticalCenter: parent.verticalCenter
+    Time {}
   }
-  Nix {}
-  Time {}
 }
