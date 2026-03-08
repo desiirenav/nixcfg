@@ -51,11 +51,11 @@
         color8  #${theme.base01}
 
         # red
-        color1  #${theme.base07}
+        color1  #${theme.base08}
         color9  #${theme.base08}
 
         # green
-        color2  #${theme.base09}
+        color2  #${theme.base0A}
         color10 #${theme.base0A}
 
         # yellow

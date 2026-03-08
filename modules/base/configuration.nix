@@ -6,6 +6,7 @@
       self.nixosModules.driver
       self.nixosModules.fonts
       self.nixosModules.gtk
+      self.nixosModules.yazi
       self.nixosModules.zen-browser
       self.nixosModules.discord
       self.nixosModules.hjem
