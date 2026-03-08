@@ -14,28 +14,34 @@ Scope {
       id: bar
 
       color: "transparent"
-      implicitHeight: 35
+      implicitHeight: 50
+      implicitWidth: 500
 
 
       anchors {
-	top: false
-        left: true
-	right: true
-	bottom: true
+        top: true
+        left: false
+        right: false
       }
 
 
       Rectangle {
+	radius: 20
 	color: "#201d2a"
 
 	anchors {
 	  fill: parent
+	  topMargin: 10
         }
 
 	RowLayout {
 	  anchors.fill: parent
+	  LeftSection {}
+	  CenterSection {}
+	  RightSection {}
 	}
-      } 
+      }
+  
  
     }
   }

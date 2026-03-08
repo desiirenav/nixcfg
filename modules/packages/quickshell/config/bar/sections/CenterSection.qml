@@ -5,4 +5,5 @@ import qs.bar.components
 
 RowLayout {
   anchors.centerIn: parent
+  Niri {}
 }
