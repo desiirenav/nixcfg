@@ -41,12 +41,6 @@ Scope {
 	  RightSection {}
 	}
       }
-      
-      RectangularShadow {
-        blur: 0 
-	color: Qt.darker(bar.color, 1.6)
-      }
- 
     }
   }
 }

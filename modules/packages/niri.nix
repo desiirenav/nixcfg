@@ -36,7 +36,9 @@
 
         layout = {
           focus-ring = {
-            off = null;
+	    on = null;
+            width = 2;
+	    active-color = "#${theme.base04}";
           };
           border = {
             off = null;
@@ -48,15 +50,15 @@
             { proportion = 1.0; }
           ];
           default-column-width = { proportion = 0.5; };
-          gaps = 24;
+          gaps = 9;
           struts = { };
           background-color = "transparent";
           center-focused-column = "never";
-          shadow = {
-            on = null;
-            softness = 10;
-            spread = 10;
-          };
+#          shadow = {
+#            on = null;
+#            softness = 10;
+#            spread = 10;
+#          };
         };
 
         cursor = {
@@ -84,7 +86,7 @@
 
         window-rules = [
           {
-            geometry-corner-radius = 3;
+            geometry-corner-radius = 0;
             clip-to-geometry = true;
           }
         ];
