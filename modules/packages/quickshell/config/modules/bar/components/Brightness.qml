@@ -15,7 +15,7 @@ Widget {
     brightnessPercent = (p / maxBrightness) * 100;
   }
 
-  function setbrightnessIcon() { 
+  function setBrightnessIcon() { 
     if (brightnessPercent <= 33) return "brightness_3"
     if (brightnessPercent <= 66) return "brightness_5"
     return "brightness_7"
@@ -49,7 +49,7 @@ Widget {
   RowLayout {
     anchors.centerIn: parent
     MaterialIcon {
-      text: setBrightnessIcon
+      text: setBrightnessIcon()
     }
     CustomText { 
       text: brightnessPercent
