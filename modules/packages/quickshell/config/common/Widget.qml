@@ -3,5 +3,5 @@ import QtQuick.Layouts
 
 Rectangle {
   Layout.alignment: Qt.AlignCenter | Qt.AlignVCenter
-  implicitHeight: 30
+  implicitHeight: 35
 }

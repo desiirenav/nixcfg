@@ -47,6 +47,7 @@
           ".config/Vencord"
           ".local/share/fish"
           ".local/share/Steam"
+	  ".local/share/TelegramDesktop"
         ];
         files = [
           ".bash_history"

@@ -5,7 +5,7 @@ Text {
   color: Theme.base07
   font { 
     bold: true
-    pointSize: 11
+    pointSize: 12
     family: "Liga SFMono Nerd Font"
   }
 }

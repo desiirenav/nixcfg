@@ -11,15 +11,22 @@
       enable = true;
       package = self.packages."${pkgs.stdenv.hostPlatform.system}".niri;
     };
-
+     
+    windowManager.i3 = { 
+      enable = true;
+      package = self.packages."${pkgs.stdenv.hostPlatform.system}".i3;
+    };
     environment.systemPackages = with pkgs; [
       nautilus
       swaybg
       gtk3
       gtk4
       vlc
+      telegram-desktop
       whitesur-cursors
       wl-clipboard
+      sunshine
+      krita
       self.packages."${pkgs.stdenv.hostPlatform.system}".kitty
       self.packages."${pkgs.stdenv.hostPlatform.system}".quickshell
       self.packages."${pkgs.stdenv.hostPlatform.system}".neovim

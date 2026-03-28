@@ -5,7 +5,7 @@ import QtQuick.Layouts
 import Quickshell.Services.UPower
 
 Widget {
-  implicitWidth: 70
+  implicitWidth: 100
   color: Theme.base08
   SystemClock {
     id: clock
@@ -13,6 +13,6 @@ Widget {
   }
   CustomText { 
     anchors.centerIn: parent
-    text: Qt.formatDateTime(clock.date, "HH:mm")
+    text: Qt.formatDateTime(clock.date, "HH:mm A")
   }
 }

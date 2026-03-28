@@ -5,9 +5,7 @@ import Quickshell.Io
 
 Widget { 
   color: Theme.base01
-  implicitWidth: 270
+  implicitWidth: 355
 
-  Tray { 
-    visible: false
-  }
+
 }

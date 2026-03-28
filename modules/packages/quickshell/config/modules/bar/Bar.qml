@@ -10,19 +10,13 @@ Scope {
   Variants {
     model: Quickshell.screens
     delegate: PanelWindow {
+      margins.top: 5
+      anchors.top: true
       screen: modelData
-      aboveWindows: false
+      implicitHeight: 35
+      implicitWidth: 700
       color: "transparent"
       required property var modelData
-      implicitHeight: 30
-       
-      anchors {
-
-	left: true
-        right: true
-	bottom: true
-      }
-
 
       Rectangle {
 	id: bar

@@ -6,7 +6,7 @@ import Quickshell.Widgets
 import Quickshell.Services.Pipewire
 
 Widget {
-  implicitWidth: 65
+  implicitWidth: 80
 
   PwObjectTracker { objects: [ Pipewire.defaultAudioSink ] }
   color: Theme.base0E

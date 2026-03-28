@@ -5,7 +5,7 @@ import Quickshell.Services.UPower
 
 Widget {
   color: Theme.base0F
-  implicitWidth: 70
+  implicitWidth: 80
 
   property var battery: UPower.displayDevice
 

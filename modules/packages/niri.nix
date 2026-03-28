@@ -30,7 +30,7 @@
         };
 
         layout = {
-          gaps = 0;
+          gaps = 16;
           center-focused-column = "never";
           background-color = "transparent";
           default-column-width = { proportion = 0.5; };
@@ -38,10 +38,16 @@
 	    off = null;
           };
           border = {
+	    off = null;
             width = 3;
 	    active-color = "#${theme.base04}";
 	    inactive-color = "#${theme.base00}";
           };
+	  shadow = {
+	    on = null;
+	    softness = 5;
+	    spread = 5;
+	  };
           preset-column-widths = [
             { proportion = 0.25; }
             { proportion = 0.5; }

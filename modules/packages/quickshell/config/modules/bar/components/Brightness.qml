@@ -6,7 +6,7 @@ import QtQuick.Layouts
 import Quickshell.Widgets
 
 Widget { 
-  implicitWidth: 70
+  implicitWidth: 80
   color: Theme.base05
   property int maxBrightness: 62451
   property int brightnessPercent: 10
