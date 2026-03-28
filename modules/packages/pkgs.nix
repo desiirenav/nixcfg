@@ -11,11 +11,12 @@
       enable = true;
       package = self.packages."${pkgs.stdenv.hostPlatform.system}".niri;
     };
-     
-    windowManager.i3 = { 
+
+    windowManager.i3 = {
       enable = true;
       package = self.packages."${pkgs.stdenv.hostPlatform.system}".i3;
     };
+
     environment.systemPackages = with pkgs; [
       nautilus
       swaybg
