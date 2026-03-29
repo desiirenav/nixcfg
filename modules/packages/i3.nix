@@ -10,13 +10,16 @@
         # Use Mouse+$mod to drag floating windows to their wanted position
         floating_modifier $mod
 
+        # text rendering and scalability on retina/hidpi displays (thanks to pango).
+        font pango:Liga SFMono Nerd Font 10
+
         # start a terminal
         bindsym $mod+Return exec kitty
 
         # kill focused window
         bindsym $mod+q kill
 
-        # start dmenu (a program launcher)
+        # start rofi
         bindsym $mod+x exec rofi -show drun
 
         exec --no-startup-id papersway
@@ -89,7 +92,6 @@
         # reload / restart / exit
         bindsym $mod+Shift+c reload
         bindsym $mod+Shift+r restart
-        bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
         # resize
         mode "resize" {
@@ -106,10 +108,6 @@
         }
         bindsym $mod+r mode "resize"
 
-        # bar
-        bar {
-          status_command i3status
-        }
       '';
     }).wrapper;
   };

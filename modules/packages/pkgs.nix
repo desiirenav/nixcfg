@@ -52,6 +52,7 @@
       self.packages."${pkgs.stdenv.hostPlatform.system}".neovim
       self.packages."${pkgs.stdenv.hostPlatform.system}".git
       self.packages."${pkgs.stdenv.hostPlatform.system}".fuzzel
+      self.packages."${pkgs.stdenv.hostPlatform.system}".rofi
       yazi
       typst
       starship
