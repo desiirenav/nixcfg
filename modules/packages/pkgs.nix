@@ -11,11 +11,23 @@
       enable = true;
       package = self.packages."${pkgs.stdenv.hostPlatform.system}".niri;
     };
-
-    windowManager.i3 = {
+ 
+    environment.pathsToLink = [ "/libexec" ];
+    services.xserver = {
       enable = true;
-      package = self.packages."${pkgs.stdenv.hostPlatform.system}".i3;
+
+      desktopManager = {
+        xterm.enable = false;
+      };
+   
+      windowManager.i3 = {
+        enable = true;
+      };
     };
+
+    services.displayManager.gdm.enable = false;
+    services.xserver.displayManager.lightdm.enable = false;
+
 
     environment.systemPackages = with pkgs; [
       nautilus
@@ -23,11 +35,16 @@
       gtk3
       gtk4
       vlc
+      xhost
+      xinit
       telegram-desktop
       whitesur-cursors
       wl-clipboard
-      sunshine
+      xwayland-satellite
+      rofi
+      perl5Packages.Apppapersway
       krita
+      weylus
       self.packages."${pkgs.stdenv.hostPlatform.system}".kitty
       self.packages."${pkgs.stdenv.hostPlatform.system}".quickshell
       self.packages."${pkgs.stdenv.hostPlatform.system}".neovim
@@ -35,7 +52,6 @@
       self.packages."${pkgs.stdenv.hostPlatform.system}".fuzzel
       yazi
       typst
-      xwayland-satellite
       starship
       (discord.override { withVencord = true;})
       adwaita-icon-theme

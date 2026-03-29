@@ -6,7 +6,7 @@
 
     boot.initrd.availableKernelModules = [ "nvme" "xhci_pci" "usbhid" "usb_storage" "sd_mod" ];
     boot.initrd.kernelModules = [ ];
-    boot.kernelModules = [ "kvm-amd" ];
+    boot.kernelModules = [ "kvm-amd" "uinput" ]; # added uinput for Weylus
     boot.extraModulePackages = [ ];
 
     fileSystems."/" =
@@ -38,4 +38,3 @@
     hardware.cpu.amd.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;
   };
 }
-

@@ -15,6 +15,7 @@
       self.nixosModules.hardware
       self.nixosModules.impermanence
       self.nixosModules.pkgs
+      self.nixosModules.xinitrc
     ];
   };
 
@@ -27,6 +28,11 @@
     # ZFS & NTFS support
     boot.initrd.supportedFilesystems = [ "zfs" ];
     boot.supportedFilesystems = ["ntfs"];
+
+    # Firewall — Weylus ports
+    networking.firewall = {
+      allowedTCPPorts = [ 1701 9001 ];
+    };
 
     # Host settings
     networking.hostName = "nixos";
@@ -61,6 +67,13 @@
       };
     };
 
+    # Weylus — uinput access for tablet input
+    boot.kernelModules = [ "uinput" ];
+    users.groups.uinput = {};
+    services.udev.extraRules = ''
+      KERNEL=="uinput", MODE="0660", GROUP="uinput", OPTIONS+="static_node=uinput"
+    '';
+
     # User account
     users = {
       mutableUsers = false;
@@ -69,7 +82,7 @@
         narayan = {
           isNormalUser = true;
           description = "Narayan";
-          extraGroups = [ "wheel" "networkmanager"];
+          extraGroups = [ "wheel" "networkmanager" "uinput" ]; # added uinput
           hashedPasswordFile = "/persist/passwords/narayan";
           shell = self.packages."${pkgs.stdenv.hostPlatform.system}".fish-wrapper;
           openssh.authorizedKeys.keys = ["ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOQHO6fAxv7YY1W9MsIMiY+bzwz3wJ70doC9s/ndLfv9 narayan@nixos"];
