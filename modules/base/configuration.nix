@@ -15,7 +15,6 @@
       self.nixosModules.hardware
       self.nixosModules.impermanence
       self.nixosModules.pkgs
-      self.nixosModules.xinitrc
     ];
   };
 

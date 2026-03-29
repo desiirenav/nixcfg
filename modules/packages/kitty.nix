@@ -16,7 +16,6 @@
         # Cursor colors
         cursor #${theme.base09}
         cursor_text_color #${theme.base00}
-        cursor_trail 3
        
         url_color #${theme.base06}
 
