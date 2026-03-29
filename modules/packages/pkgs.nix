@@ -7,9 +7,9 @@
       package = self.packages."${pkgs.stdenv.hostPlatform.system}".fish-wrapper;
     };
 
-    programs.sway = {
+    programs.niri = {
       enable = true;
-      package = self.packages."${pkgs.stdenv.hostPlatform.system}".sway;
+      package = self.packages."${pkgs.stdenv.hostPlatform.system}".niri;
     };
  
     environment.systemPackages = with pkgs; [
@@ -21,7 +21,6 @@
       telegram-desktop
       whitesur-cursors
       wl-clipboard
-      perl5Packages.Apppapersway
       krita
       weylus
       self.packages."${pkgs.stdenv.hostPlatform.system}".kitty

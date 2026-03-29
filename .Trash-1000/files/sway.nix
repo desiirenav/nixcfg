@@ -108,6 +108,16 @@
           bindsym Escape mode "default"
         }
         bindsym $mod+r mode "resize"
+
+	# Volume
+	bindsym --locked XF86AudioRaiseVolume exec wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1+
+	bindsym --locked XF86AudioLowerVolume exec wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1-
+	bindsym --locked XF86AudioMute exec wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle
+	bindsym --locked XF86AudioMicMute exec wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle
+
+	# Brightness
+	bindsym --locked XF86MonBrightnessUp exec brightnessctl --class=backlight set +10%
+	bindsym --locked XF86MonBrightnessDown exec brightnessctl --class=backlight set 10%-
       '';
     }).wrapper;
   };
