@@ -2,7 +2,7 @@
   perSystem = { pkgs, ... }: let
     inherit (self) theme;
   in {
-    packages.i3 = (inputs.wrappers.wrapperModules.i3.apply {
+    packages.sway = (inputs.wrappers.wrapperModules.sway.apply {
       inherit pkgs;
       configFile.content = ''
         set $mod Mod4
@@ -10,21 +10,22 @@
         # Use Mouse+$mod to drag floating windows to their wanted position
         floating_modifier $mod
 
-        # text rendering and scalability on retina/hidpi displays (thanks to pango).
+        # Font
         font pango:Liga SFMono Nerd Font 10
 
-        # start a terminal
+        # Terminal
         bindsym $mod+Return exec kitty
 
-        # kill focused window
+        # Kill focused window
         bindsym $mod+q kill
 
-        # start rofi
-        bindsym $mod+x exec rofi -show drun
+        # Launcher
+        bindsym $mod+x exec fuzzel
 
-        exec --no-startup-id papersway
+        # Papersway
+        exec papersway
 
-        # change focus
+        # Change focus
         bindsym $mod+j focus left
         bindsym $mod+k focus down
         bindsym $mod+l focus up
@@ -35,7 +36,7 @@
         bindsym $mod+Up focus up
         bindsym $mod+Right focus right
 
-        # move focused window
+        # Move focused window
         bindsym $mod+Shift+j move left
         bindsym $mod+Shift+k move down
         bindsym $mod+Shift+l move up
@@ -46,26 +47,26 @@
         bindsym $mod+Shift+Up move up
         bindsym $mod+Shift+Right move right
 
-        # split
+        # Split
         bindsym $mod+h split h
         bindsym $mod+v split v
 
-        # fullscreen
+        # Fullscreen
         bindsym $mod+f fullscreen
 
-        # layout
+        # Layout
         bindsym $mod+s layout stacking
         bindsym $mod+w layout tabbed
         bindsym $mod+e layout toggle split
 
-        # floating
+        # Floating
         bindsym $mod+Shift+space floating toggle
         bindsym $mod+space focus mode_toggle
 
-        # parent
+        # Parent
         bindsym $mod+a focus parent
 
-        # workspaces
+        # Workspaces
         bindsym $mod+1 workspace 1
         bindsym $mod+2 workspace 2
         bindsym $mod+3 workspace 3
@@ -77,7 +78,7 @@
         bindsym $mod+9 workspace 9
         bindsym $mod+0 workspace 10
 
-        # move to workspace
+        # Move to workspace
         bindsym $mod+Shift+1 move container to workspace 1
         bindsym $mod+Shift+2 move container to workspace 2
         bindsym $mod+Shift+3 move container to workspace 3
@@ -89,11 +90,11 @@
         bindsym $mod+Shift+9 move container to workspace 9
         bindsym $mod+Shift+0 move container to workspace 10
 
-        # reload / restart / exit
+        # Reload / restart / exit
         bindsym $mod+Shift+c reload
         bindsym $mod+Shift+r restart
 
-        # resize
+        # Resize
         mode "resize" {
           bindsym j resize shrink width 10 px or 10 ppt
           bindsym k resize grow height 10 px or 10 ppt
@@ -107,7 +108,6 @@
           bindsym Escape mode "default"
         }
         bindsym $mod+r mode "resize"
-
       '';
     }).wrapper;
   };

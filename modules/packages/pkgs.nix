@@ -7,32 +7,11 @@
       package = self.packages."${pkgs.stdenv.hostPlatform.system}".fish-wrapper;
     };
 
-#    programs.niri = {
-#      enable = true;
-#      package = self.packages."${pkgs.stdenv.hostPlatform.system}".niri;
-#    };
- 
-    environment.pathsToLink = [ "/libexec" ];
-    services.xserver = {
+    programs.sway = {
       enable = true;
-
-      desktopManager = {
-        xterm.enable = false;
-      };
-  
-      displayManager = {
-        lightdm.enable = true;
-      };
-
-      windowManager.i3 = {
-        enable = true;
-	package = self.packages."${pkgs.stdenv.hostPlatform.system}".i3;
-      };
+      package = self.packages."${pkgs.stdenv.hostPlatform.system}".sway;
     };
-
-
-  services.displayManager.defaultSession = "none+i3";
-
+ 
     environment.systemPackages = with pkgs; [
       nautilus
       swaybg
@@ -42,8 +21,6 @@
       telegram-desktop
       whitesur-cursors
       wl-clipboard
-      xwayland-satellite
-      rofi
       perl5Packages.Apppapersway
       krita
       weylus
@@ -52,7 +29,6 @@
       self.packages."${pkgs.stdenv.hostPlatform.system}".neovim
       self.packages."${pkgs.stdenv.hostPlatform.system}".git
       self.packages."${pkgs.stdenv.hostPlatform.system}".fuzzel
-      self.packages."${pkgs.stdenv.hostPlatform.system}".rofi
       yazi
       typst
       starship
