@@ -44,7 +44,6 @@
           "Downloads"
           "Documents"
           ".config/discord"
-          ".config/i3"
           ".config/Vencord"
           ".local/share/fish"
           ".local/share/Steam"
