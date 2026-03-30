@@ -21,6 +21,6 @@ PanelWindow {
     asynchronous: true
     anchors.fill: parent
     fillMode: Image.PreserveAspectCrop
-    source: Qt.resolvedUrl("./Wallpaper/purplenight.jpg")
+    source: Qt.resolvedUrl("./pictures/night.jpg")
   }
 }
