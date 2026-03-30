@@ -20,6 +20,7 @@
       vlc
       telegram-desktop
       whitesur-cursors
+      xwayland-satellite
       wl-clipboard
       krita
       weylus

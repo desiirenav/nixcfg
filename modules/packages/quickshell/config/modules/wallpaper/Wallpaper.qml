@@ -2,25 +2,31 @@ import QtQuick
 import Quickshell
 import Quickshell.Wayland
 
-PanelWindow {
-  id: root
+Scope {
+  Variants {
+    model: Quickshell.screens
 
-  screen: modelData
-  required property var modelData
-  exclusionMode: ExclusionMode.Ignore
-  WlrLayershell.layer: WlrLayer.Background
+    delegate: PanelWindow {
+      id: root
 
-  anchors {
-    top: true
-    left: true
-    right: true
-    bottom: true
-  }
+      required property var modelData
+      screen: modelData
+      exclusionMode: ExclusionMode.Ignore
+      WlrLayershell.layer: WlrLayer.Background
 
-  Image {
-    asynchronous: true
-    anchors.fill: parent
-    fillMode: Image.PreserveAspectCrop
-    source: Qt.resolvedUrl("./pictures/night.jpg")
+      anchors {
+        top: true
+        left: true
+        right: true
+        bottom: true
+      }
+
+      Image {
+        asynchronous: true
+        anchors.fill: parent
+        fillMode: Image.PreserveAspectCrop
+        source: Qt.resolvedUrl("./pictures/sky.jpg")
+      }
+    }
   }
 }

@@ -30,7 +30,7 @@
         };
 
         layout = {
-          gaps = 16;
+          gaps = 12;
           center-focused-column = "never";
           background-color = "transparent";
           default-column-width = { proportion = 0.5; };
@@ -43,6 +43,12 @@
 	    active-color = "#${theme.base04}";
 	    inactive-color = "#${theme.base00}";
           };
+	  struts = {
+	    left = 24;
+	    right = 24;
+	    top = 16;
+	    bottom = 16;
+	  };
 	  shadow = {
 	    on = null;
 	    softness = 5;
@@ -63,7 +69,7 @@
         };
 
         spawn-at-startup = ["quickshell"];
-        spawn-sh-at-startup = ["swaybg -i /home/narayan/nixcfg/modules/packages/quickshell/config/modules/wallpaper/pattern.png"];
+        spawn-sh-at-startup = ["swaybg -i /home/narayan/nixcfg/modules/packages/quickshell/config/modules/wallpaper/pictures/sky.jpg"];
 
         screenshot-path = "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png";
 
@@ -82,7 +88,7 @@
 
         window-rules = [
           {
-            geometry-corner-radius = 0;
+            geometry-corner-radius = 5;
             clip-to-geometry = true;
           }
         ];
