@@ -4,6 +4,8 @@
     specialArgs = { inherit self inputs; };
     modules = [
       self.nixosModules.driver
+      self.nixosModules.desktop
+      self.nixosModules.display
       self.nixosModules.fonts
       self.nixosModules.gtk
       self.nixosModules.yazi
