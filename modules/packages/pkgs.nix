@@ -11,6 +11,29 @@
       enable = true;
       package = self.packages."${pkgs.stdenv.hostPlatform.system}".niri;
     };
+
+    environment.pathsToLink = [ "/libexec" ];
+    services.xserver = {
+      enable = true;
+
+      desktopManager = {
+        xterm.enable = false;
+      };
+  
+      displayManager = {
+        lightdm.enable = true;
+      };
+
+      windowManager.i3 = {
+        enable = true;
+	package = self.packages."${pkgs.stdenv.hostPlatform.system}".i3;
+      };
+    };
+
+    services = {
+      displayManager.gdm.enable = true;
+      desktopManager.gnome.enable = true;
+    }
  
     environment.systemPackages = with pkgs; [
       nautilus
@@ -18,6 +41,7 @@
       gtk3
       gtk4
       vlc
+      tg
       telegram-desktop
       whitesur-cursors
       xwayland-satellite
@@ -29,6 +53,7 @@
       self.packages."${pkgs.stdenv.hostPlatform.system}".neovim
       self.packages."${pkgs.stdenv.hostPlatform.system}".git
       self.packages."${pkgs.stdenv.hostPlatform.system}".fuzzel
+      self.packages."${pkgs.stdenv.hostPlatform.system}".rofi
       yazi
       typst
       starship
