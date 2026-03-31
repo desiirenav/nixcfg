@@ -11,8 +11,9 @@
       self.packages."${pkgs.stdenv.hostPlatform.system}".git
       self.packages."${pkgs.stdenv.hostPlatform.system}".rofi
       self.packages."${pkgs.stdenv.hostPlatform.system}".kitty
+      self.packages."${pkgs.stdenv.hostPlatform.system}".fuzzel
       self.packages."${pkgs.stdenv.hostPlatform.system}".neovim
-      self.packages."${pkgs.stdenv.hostPlatform.system}".quickshell
+      self.packages."${pkgs.stdenv.hostPlatform.system}".wallpaper
     ]; 
   };
 }

@@ -4,6 +4,7 @@
 
     environment.systemPackages = with pkgs; [
       vlc
+      yazi
       krita
       unzip
       weylus

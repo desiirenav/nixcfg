@@ -8,26 +8,22 @@
     };
 
     environment.pathsToLink = [ "/libexec" ];
-    services.xserver = {
-      enable = true;
-
-      desktopManager = {
-        xterm.enable = false;
-      };
-        
-      windowManager.i3 = {
-        enable = true;
-	package = self.packages."${pkgs.stdenv.hostPlatform.system}".i3;
-      };
-    };
-
     services = {
+      xserver = {
+        enable = true;
+        windowManager.i3 = {
+          enable = true;
+    	  package = self.packages."${pkgs.stdenv.hostPlatform.system}".i3;
+        };
+      };
       displayManager.gdm.enable = true;
     };
- 
+
     environment.systemPackages = with pkgs; [
       nautilus
       swaybg
+      feh
+      swww
       gtk3
       gtk4
       whitesur-cursors

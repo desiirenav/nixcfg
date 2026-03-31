@@ -4,7 +4,6 @@
       set -g fish_greeting
       set -gx EDITOR nvim
       command -qv nvim && alias vim nvim
-      starship init fish | source
     '';
   in {
     packages.fish-wrapper = inputs.wrappers.lib.wrapPackage {
