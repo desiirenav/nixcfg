@@ -3,20 +3,18 @@
   flake.nixosConfigurations.nixos = inputs.nixpkgs.lib.nixosSystem {
     specialArgs = { inherit self inputs; };
     modules = [
-      self.nixosModules.driver
-      self.nixosModules.desktop
-      self.nixosModules.display
-      self.nixosModules.fonts
       self.nixosModules.gtk
       self.nixosModules.yazi
-      self.nixosModules.zen-browser
-      self.nixosModules.discord
       self.nixosModules.hjem
-      self.nixosModules.config
-      self.nixosModules.gaming
-      self.nixosModules.hardware
-      self.nixosModules.impermanence
       self.nixosModules.pkgs
+      self.nixosModules.fonts
+      self.nixosModules.config
+      self.nixosModules.driver
+      self.nixosModules.gaming
+      self.nixosModules.discord
+      self.nixosModules.hardware
+      self.nixosModules.zen-browser
+      self.nixosModules.impermanence
     ];
   };
 
@@ -29,11 +27,6 @@
     # ZFS & NTFS support
     boot.initrd.supportedFilesystems = [ "zfs" ];
     boot.supportedFilesystems = ["ntfs"];
-
-    # Firewall — Weylus ports
-    networking.firewall = {
-      allowedTCPPorts = [ 1701 9001 ];
-    };
 
     # Host settings
     networking.hostName = "nixos";
@@ -67,13 +60,6 @@
         jack.enable = true;
       };
     };
-
-    # Weylus — uinput access for tablet input
-    boot.kernelModules = [ "uinput" ];
-    users.groups.uinput = {};
-    services.udev.extraRules = ''
-      KERNEL=="uinput", MODE="0660", GROUP="uinput", OPTIONS+="static_node=uinput"
-    '';
 
     # User account
     users = {

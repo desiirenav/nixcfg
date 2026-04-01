@@ -69,7 +69,7 @@
         };
 
         spawn-at-startup = ["quickshell"];
-#        spawn-sh-at-startup = ["swaybg -i /home/narayan/nixcfg/modules/packages/quickshell/config/modules/wallpaper/pictures/sky.jpg"];
+        spawn-sh-at-startup = ["swaybg -i /home/narayan/nixcfg/modules/assets/sky.jpg"];
 
         screenshot-path = "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png";
 

@@ -8,6 +8,10 @@
     flake-parts.url = "github:hercules-ci/flake-parts";
     import-tree.url = "github:vic/import-tree";
 
+    awww = { 
+      url = "git+https://codeberg.org/LGFae/awww";
+    };
+
     hjem = {
       url = "github:feel-co/hjem";
       inputs.nixpkgs.follows = "nixpkgs";
