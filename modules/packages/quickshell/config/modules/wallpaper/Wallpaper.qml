@@ -21,6 +21,6 @@ PanelWindow {
     asynchronous: true
     anchors.fill: parent
     fillMode: Image.PreserveAspectCrop
-    source: Qt.resolvedUrl("./../../../../../../assets/sky.jpg")
+    source: Qt.resolvedUrl("/home/narayan/nixcfg/assets/sky.jpg")
   }
 }
