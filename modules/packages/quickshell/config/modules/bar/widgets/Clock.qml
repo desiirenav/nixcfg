@@ -4,7 +4,7 @@ import qs.reusables
 import QtQuick.Layouts
 
 Widget {
-  implicitWidth: 69
+  implicitWidth: 66
   topRightRadius: 3
   color: Theme.base08
   bottomRightRadius: 3

@@ -18,7 +18,7 @@ Scope {
       margins.top: 9
       anchors.top: true
       implicitHeight: 30
-      implicitWidth: 699
+      implicitWidth: 720
 
       Rectangle {
         radius: 6
@@ -31,7 +31,7 @@ Scope {
 
 	  RowLayout {
 	    spacing: 9
-	    Layout.leftMargin: 9
+	    Layout.leftMargin: 12
 	    Layout.alignment: Qt.AlignLeft | Qt.AlignVCenter
 
 	    Logo {}

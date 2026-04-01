@@ -5,5 +5,5 @@ import Quickshell.Io
 
 Widget { 
   color: Theme.base01
-  implicitWidth: 223
+  implicitWidth: 270 
 }
